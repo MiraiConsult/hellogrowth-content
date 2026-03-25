@@ -1,0 +1,48 @@
+{
+  "squad": "social-content",
+  "status": "completed",
+  "step": { "current": 10, "total": 10, "label": "step-10-final-approval" },
+  "agents": [
+    {
+      "id": "researcher",
+      "name": "Fábio Fonte",
+      "icon": "🔍",
+      "status": "done",
+      "deliverTo": null,
+      "desk": { "col": 1, "row": 1 }
+    },
+    {
+      "id": "instagram-creator",
+      "name": "Iago Insta",
+      "icon": "📸",
+      "status": "done",
+      "deliverTo": null,
+      "desk": { "col": 2, "row": 1 }
+    },
+    {
+      "id": "linkedin-creator",
+      "name": "Luna LinkedIn",
+      "icon": "💼",
+      "status": "done",
+      "deliverTo": null,
+      "desk": { "col": 3, "row": 1 }
+    },
+    {
+      "id": "reviewer",
+      "name": "Vera Veredito",
+      "icon": "⚖️",
+      "status": "done",
+      "deliverTo": null,
+      "desk": { "col": 1, "row": 2 }
+    }
+  ],
+  "handoff": {
+    "from": "reviewer",
+    "to": "checkpoint",
+    "message": "Revisão concluída: todas as 4 peças APROVADAS com score médio 4.3/5.0",
+    "completedAt": "2026-03-25T02:02:00Z"
+  },
+  "startedAt": "2026-03-25T01:56:17Z",
+  "updatedAt": "2026-03-25T02:13:15Z",
+  "completedAt": "2026-03-25T02:13:15Z"
+}
