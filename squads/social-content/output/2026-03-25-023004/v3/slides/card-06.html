@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 1080px; height: 1350px; font-family: 'Inter', sans-serif; overflow: hidden; }
+.card { width: 1080px; height: 1350px; padding: 70px; display: flex; flex-direction: column; justify-content: center; background: #0d0d0d; color: #fff; position: relative; }
+.handle { position: absolute; top: 40px; left: 70px; font-size: 18px; font-weight: 700; opacity: 0.5; }
+.label { font-size: 16px; font-weight: 800; text-transform: uppercase; letter-spacing: 4px; color: #2D7D5F; margin-bottom: 24px; }
+.headline { font-size: 52px; font-weight: 900; line-height: 1.1; margin-bottom: 10px; }
+.headline-green { font-size: 52px; font-weight: 900; line-height: 1.1; color: #3BAA7A; margin-bottom: 30px; }
+.body-text { font-size: 28px; font-weight: 400; line-height: 1.5; opacity: 0.7; margin-bottom: 50px; }
+.compare { display: flex; gap: 24px; }
+.compare-card { flex: 1; padding: 36px 28px; border-radius: 20px; text-align: center; }
+.compare-bad { background: rgba(255,68,68,0.08); border: 2px solid rgba(255,68,68,0.3); }
+.compare-good { background: rgba(59,170,122,0.08); border: 2px solid rgba(59,170,122,0.3); }
+.compare-num { font-size: 72px; font-weight: 900; line-height: 1; }
+.compare-bad .compare-num { color: #FF4444; }
+.compare-good .compare-num { color: #3BAA7A; }
+.compare-text { font-size: 20px; font-weight: 500; opacity: 0.6; margin-top: 14px; line-height: 1.35; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="handle">@hellogrowth__</div>
+  <div class="label">A virada</div>
+  <div class="headline">Reputação não é vaidade.</div>
+  <div class="headline-green">É infraestrutura de vendas.</div>
+  <div class="body-text">Responder avaliações, monitorar menções, pedir feedback. Isso separa quem cresce de quem reclama.</div>
+  <div class="compare">
+    <div class="compare-card compare-bad">
+      <div class="compare-num">83%</div>
+      <div class="compare-text">reclamam que<br>"o mercado tá difícil"</div>
+    </div>
+    <div class="compare-card compare-good">
+      <div class="compare-num">17%</div>
+      <div class="compare-text">crescem com<br>gestão de reputação</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

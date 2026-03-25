@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 1080px; height: 1350px; font-family: 'Inter', sans-serif; overflow: hidden; }
+.card { width: 1080px; height: 1350px; padding: 70px; display: flex; flex-direction: column; justify-content: center; background: #0d0d0d; color: #fff; position: relative; }
+.handle { position: absolute; top: 40px; left: 70px; font-size: 18px; font-weight: 700; opacity: 0.5; }
+.label { font-size: 16px; font-weight: 800; text-transform: uppercase; letter-spacing: 4px; color: #2D7D5F; margin-bottom: 24px; }
+.headline { font-size: 52px; font-weight: 900; line-height: 1.1; margin-bottom: 24px; }
+.accent { color: #6CCFAA; }
+.body-text { font-size: 28px; font-weight: 400; line-height: 1.5; opacity: 0.7; margin-bottom: 50px; }
+.stats-row { display: flex; gap: 20px; }
+.stat-card { flex: 1; background: rgba(45,125,95,0.1); border: 2px solid rgba(59,170,122,0.3); border-radius: 18px; padding: 30px 20px; text-align: center; }
+.stat-num { font-size: 56px; font-weight: 900; color: #3BAA7A; line-height: 1; }
+.stat-label { font-size: 18px; font-weight: 500; opacity: 0.55; margin-top: 12px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="handle">@hellogrowth__</div>
+  <div class="label">O problema</div>
+  <div class="headline">Apenas <span class="accent">17%</span> das empresas têm um plano de reputação.</div>
+  <div class="body-text"><span class="accent">83%</span> estão no escuro — perdendo vendas sem saber.</div>
+  <div class="stats-row">
+    <div class="stat-card">
+      <div class="stat-num">97%</div>
+      <div class="stat-label">pesquisam</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">17%</div>
+      <div class="stat-label">se preparam</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">83%</div>
+      <div class="stat-label">no escuro</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
