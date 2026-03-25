@@ -20,16 +20,22 @@
 - **Tema:** Reputação digital (reutilizou pesquisa do run anterior)
 - **Notícia:** Mesma do run anterior (#1)
 - **Ângulo:** Mesmo (#2 — "Sua Empresa Está Nua na Internet")
-- **Foco:** Testar novo agente Designer (Dani Design) — HTML/CSS → PNG via Playwright
-- **Peças produzidas:** Carrossel Feed (7 slides PNG renderizados)
-- **Estilo visual:** Editorial com fotos de fundo, estilo @brandsdecoded__
-- **Observação:** Fotos externas (Unsplash) não carregam no headless Chrome — resultado final mostra gradientes no lugar das fotos. Para produção, abrir HTMLs no Chrome normal ou substituir URLs por imagens locais.
+- **Foco:** Testar novo agente Designer (Dani Design) + geração de imagens com IA
+- **Peças produzidas:** Carrossel Feed (7 cards com fotos IA via Gamma Flux Pro), LinkedIn Post
+- **Design:** Gamma com tema dark, fotos AI-generated, acento verde #6CCFAA
+- **Link Gamma:** https://gamma.app/docs/49r08ajja4airhp
+- **Créditos Gamma usados:** 108 (restam 4.292)
+- **Status:** Aprovado pelo usuário para ajustes finais no Gamma
 
 ### Preferências identificadas
 
 - Diego tende a escolher ângulos provocativos/polêmicos
 - Prefere dados concretos com contraste forte (97% vs 17%)
 - Aprova conteúdo rápido quando qualidade é boa — confia no processo
-- Referência visual: @brandsdecoded__ — editorial com fotos, copys grandes
-- Prefere carrossel apenas (sem Stories ou Reels separados)
+- Referência visual: @brandsdecoded__ — editorial com fotos de pessoas, copys grandes
+- Prefere fotos full-bleed com texto sobreposto (não layout split)
+- Ferramenta de design preferida: Gamma com Flux Pro (AI images)
+- Cores da marca: verde gradiente #2D7D5F → #6CCFAA
+- Planeja criar carrossel diariamente
+- Tem Gamma Pro (créditos ilimitados)
 - Tema core: reputação digital (alinhado com HelloGrowth)
