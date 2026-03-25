@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 1080px; height: 1350px; font-family: 'Inter', sans-serif; overflow: hidden; }
+.slide {
+  width: 1080px; height: 1350px;
+  position: relative; overflow: hidden;
+}
+.bg-image {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1080&h=1350&fit=crop') center/cover;
+}
+.overlay {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.93) 50%);
+}
+.content {
+  position: relative; z-index: 2; width: 100%; height: 100%;
+  padding: 60px 70px; display: flex; flex-direction: column;
+  justify-content: flex-end; color: #fff;
+}
+.top-bar {
+  position: absolute; top: 40px; left: 70px; z-index: 3;
+  font-size: 18px; font-weight: 700; opacity: 0.7;
+}
+.label {
+  font-size: 15px; font-weight: 800; text-transform: uppercase;
+  letter-spacing: 4px; color: #00CC88; margin-bottom: 20px;
+}
+.headline {
+  font-size: 48px; font-weight: 900; line-height: 1.1;
+  margin-bottom: 24px;
+}
+.accent-green { color: #00CC88; }
+.body-text {
+  font-size: 27px; font-weight: 400; line-height: 1.5;
+  opacity: 0.75; margin-bottom: 40px;
+}
+.compare {
+  display: flex; gap: 20px;
+}
+.compare-card {
+  flex: 1; padding: 30px 24px; border-radius: 18px; text-align: center;
+}
+.compare-bad {
+  background: rgba(255,68,68,0.12); border: 2px solid rgba(255,68,68,0.4);
+}
+.compare-good {
+  background: rgba(0,204,136,0.12); border: 2px solid rgba(0,204,136,0.4);
+}
+.compare-num { font-size: 64px; font-weight: 900; line-height: 1; }
+.compare-bad .compare-num { color: #FF4444; }
+.compare-good .compare-num { color: #00CC88; }
+.compare-text {
+  font-size: 20px; font-weight: 500; opacity: 0.7; margin-top: 12px;
+  line-height: 1.3;
+}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="bg-image"></div>
+  <div class="overlay"></div>
+  <div class="top-bar">@hellogrowth</div>
+  <div class="content">
+    <div class="label">A virada</div>
+    <div class="headline">Reputação não é vaidade.<br><span class="accent-green">É infraestrutura de vendas.</span></div>
+    <div class="body-text">Responder avaliações, monitorar menções, pedir feedback. Isso separa quem cresce de quem reclama.</div>
+    <div class="compare">
+      <div class="compare-card compare-bad">
+        <div class="compare-num">83%</div>
+        <div class="compare-text">reclamam que<br>"o mercado tá difícil"</div>
+      </div>
+      <div class="compare-card compare-good">
+        <div class="compare-num">17%</div>
+        <div class="compare-text">crescem com<br>gestão de reputação</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

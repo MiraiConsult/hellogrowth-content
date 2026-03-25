@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 1080px; height: 1350px; font-family: 'Inter', sans-serif; overflow: hidden; }
+.slide {
+  width: 1080px; height: 1350px;
+  position: relative; overflow: hidden;
+}
+.bg-image {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background: url('https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1080&h=1350&fit=crop') center/cover;
+}
+.overlay {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(180deg, rgba(0,10,5,0.5) 0%, rgba(0,10,5,0.95) 55%);
+}
+.content {
+  position: relative; z-index: 2; width: 100%; height: 100%;
+  padding: 60px 70px; display: flex; flex-direction: column;
+  justify-content: flex-end; color: #fff;
+}
+.top-bar {
+  position: absolute; top: 40px; left: 70px; z-index: 3;
+  font-size: 18px; font-weight: 700; opacity: 0.7;
+}
+.label {
+  font-size: 15px; font-weight: 800; text-transform: uppercase;
+  letter-spacing: 4px; color: #00E5A0; margin-bottom: 24px;
+}
+.tool-row {
+  display: flex; gap: 14px; margin-bottom: 30px; flex-wrap: wrap;
+}
+.tool-badge {
+  background: rgba(0,229,160,0.12); border: 2px solid rgba(0,229,160,0.4);
+  border-radius: 30px; padding: 12px 26px;
+  font-size: 20px; font-weight: 700; color: #00E5A0;
+}
+.headline {
+  font-size: 52px; font-weight: 900; line-height: 1.08;
+  margin-bottom: 28px;
+}
+.body-text {
+  font-size: 27px; font-weight: 400; line-height: 1.5;
+  opacity: 0.75; margin-bottom: 30px;
+}
+.accent { color: #00E5A0; font-weight: 700; }
+.alert-badge {
+  display: inline-block; background: #FF4444; color: #fff;
+  padding: 14px 32px; border-radius: 12px; font-size: 26px;
+  font-weight: 800;
+}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="bg-image"></div>
+  <div class="overlay"></div>
+  <div class="top-bar">@hellogrowth</div>
+  <div class="content">
+    <div class="label">O novo juiz</div>
+    <div class="tool-row">
+      <div class="tool-badge">ChatGPT</div>
+      <div class="tool-badge">Perplexity</div>
+      <div class="tool-badge">Google AI</div>
+    </div>
+    <div class="headline">A IA agora julga sua reputação.</div>
+    <div class="body-text">Com o <span class="accent">GEO</span>, ferramentas de IA leem suas avaliações para decidir se recomendam você ou o concorrente.</div>
+    <div class="alert-badge">Marketing de fachada acabou.</div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 1080px; height: 1350px; font-family: 'Inter', sans-serif; overflow: hidden; }
+.slide {
+  width: 1080px; height: 1350px;
+  position: relative; overflow: hidden;
+}
+.bg-image {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background: url('https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1080&h=1350&fit=crop') center/cover;
+}
+.overlay {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.9) 55%);
+}
+.content {
+  position: relative; z-index: 2; width: 100%; height: 100%;
+  padding: 60px 70px; display: flex; flex-direction: column;
+  justify-content: flex-end; color: #fff;
+}
+.top-bar {
+  position: absolute; top: 40px; left: 70px; z-index: 3;
+  font-size: 18px; font-weight: 700; opacity: 0.7;
+}
+.label {
+  font-size: 15px; font-weight: 800; text-transform: uppercase;
+  letter-spacing: 4px; color: #5B8DEF; margin-bottom: 20px;
+}
+.stat-number {
+  font-size: 160px; font-weight: 900; line-height: 0.9;
+  color: #5B8DEF; margin-bottom: 10px;
+}
+.headline {
+  font-size: 46px; font-weight: 900; line-height: 1.1;
+  margin-bottom: 28px;
+}
+.body-text {
+  font-size: 27px; font-weight: 400; line-height: 1.5;
+  opacity: 0.75; margin-bottom: 30px;
+}
+.quote-box {
+  background: rgba(91,141,239,0.12); border-left: 4px solid #5B8DEF;
+  padding: 22px 28px; border-radius: 0 14px 14px 0;
+}
+.quote-text {
+  font-size: 28px; font-weight: 600; font-style: italic;
+  color: #B0CFFF; line-height: 1.35;
+}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="bg-image"></div>
+  <div class="overlay"></div>
+  <div class="top-bar">@hellogrowth</div>
+  <div class="content">
+    <div class="label">A consequência</div>
+    <div class="stat-number">40%</div>
+    <div class="headline">já deixaram de seguir marcas por ações negativas.</div>
+    <div class="body-text">Não foram concorrentes. Foi a própria empresa que espantou seus clientes.</div>
+    <div class="quote-box">
+      <div class="quote-text">"O consumidor de 2026 não reclama — ele simplesmente some. E leva o dinheiro."</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

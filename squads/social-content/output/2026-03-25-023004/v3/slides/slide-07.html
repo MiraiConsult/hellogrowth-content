@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 1080px; height: 1350px; font-family: 'Inter', sans-serif; overflow: hidden; }
+.slide {
+  width: 1080px; height: 1350px;
+  position: relative; overflow: hidden;
+}
+.bg-image {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1080&h=1350&fit=crop') center/cover;
+}
+.overlay {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.92) 45%);
+}
+.content {
+  position: relative; z-index: 2; width: 100%; height: 100%;
+  padding: 60px 70px; display: flex; flex-direction: column;
+  justify-content: flex-end; align-items: center; color: #fff;
+  text-align: center;
+}
+.top-bar {
+  position: absolute; top: 40px; left: 70px; z-index: 3;
+  font-size: 18px; font-weight: 700; opacity: 0.7;
+}
+.headline {
+  font-size: 54px; font-weight: 900; line-height: 1.1;
+  margin-bottom: 16px;
+}
+.subtitle {
+  font-size: 28px; font-weight: 400; opacity: 0.6;
+  margin-bottom: 40px;
+}
+.cta-button {
+  background: #FF4444; color: #fff; padding: 24px 60px;
+  border-radius: 16px; font-size: 28px; font-weight: 800;
+  display: inline-flex; align-items: center; gap: 12px;
+  margin-bottom: 50px;
+}
+.divider {
+  width: 80px; height: 2px; background: rgba(255,255,255,0.2);
+  margin-bottom: 40px;
+}
+.brand-name {
+  font-size: 38px; font-weight: 900; letter-spacing: 3px;
+  color: #FF4444; margin-bottom: 10px;
+}
+.brand-slogan {
+  font-size: 20px; font-weight: 400; opacity: 0.45;
+  margin-bottom: 30px;
+}
+.source {
+  font-size: 13px; opacity: 0.25;
+}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="bg-image"></div>
+  <div class="overlay"></div>
+  <div class="top-bar">@hellogrowth</div>
+  <div class="content">
+    <div class="headline">Qual a nota da sua empresa no Google?</div>
+    <div class="subtitle">Se você não sabe, esse é o primeiro problema.</div>
+    <div class="cta-button">Comenta aqui embaixo 👇</div>
+    <div class="divider"></div>
+    <div class="brand-name">HELLOGROWTH</div>
+    <div class="brand-slogan">Mais reputação. Mais confiança. Mais vendas.</div>
+    <div class="source">Fonte: Portal Information Management / Edelman Trust Barometer 2026</div>
+  </div>
+</div>
+</body>
+</html>

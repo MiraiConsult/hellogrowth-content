@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 1080px; height: 1350px; font-family: 'Inter', sans-serif; overflow: hidden; }
+.slide {
+  width: 1080px; height: 1350px;
+  position: relative; overflow: hidden;
+}
+.bg-image {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1080&h=1350&fit=crop') center/cover;
+}
+.overlay {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(180deg, rgba(15,15,30,0.6) 0%, rgba(15,15,30,0.95) 55%);
+}
+.content {
+  position: relative; z-index: 2; width: 100%; height: 100%;
+  padding: 60px 70px; display: flex; flex-direction: column;
+  justify-content: flex-end; color: #fff;
+}
+.top-bar {
+  position: absolute; top: 40px; left: 70px; z-index: 3;
+  font-size: 18px; font-weight: 700; opacity: 0.7;
+}
+.label {
+  font-size: 15px; font-weight: 800; text-transform: uppercase;
+  letter-spacing: 4px; color: #FF6B35; margin-bottom: 24px;
+}
+.headline {
+  font-size: 50px; font-weight: 900; line-height: 1.1;
+  margin-bottom: 24px;
+}
+.body-text {
+  font-size: 27px; font-weight: 400; line-height: 1.5;
+  opacity: 0.75; margin-bottom: 40px;
+}
+.accent { color: #FF6B35; font-weight: 800; }
+.stats-row {
+  display: flex; gap: 16px;
+}
+.stat-card {
+  flex: 1; background: rgba(255,107,53,0.12); border: 2px solid rgba(255,107,53,0.35);
+  border-radius: 16px; padding: 28px 20px; text-align: center;
+}
+.stat-num { font-size: 52px; font-weight: 900; color: #FF6B35; line-height: 1; }
+.stat-label { font-size: 16px; font-weight: 500; opacity: 0.6; margin-top: 10px; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="bg-image"></div>
+  <div class="overlay"></div>
+  <div class="top-bar">@hellogrowth</div>
+  <div class="content">
+    <div class="label">O problema</div>
+    <div class="headline">Apenas <span class="accent">17%</span> das empresas têm um plano de reputação.</div>
+    <div class="body-text"><span class="accent">83%</span> estão operando no escuro — perdendo vendas sem saber.</div>
+    <div class="stats-row">
+      <div class="stat-card">
+        <div class="stat-num">97%</div>
+        <div class="stat-label">pesquisam</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">17%</div>
+        <div class="stat-label">se preparam</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">83%</div>
+        <div class="stat-label">no escuro</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

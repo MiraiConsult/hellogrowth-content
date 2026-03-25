@@ -1,0 +1,16 @@
+{
+  "squad": "social-content",
+  "status": "completed",
+  "step": { "current": 11, "total": 11, "label": "step-11-final-approval" },
+  "agents": [
+    { "id": "researcher", "name": "Fábio Fonte", "icon": "🔍", "status": "done", "deliverTo": null, "desk": { "col": 1, "row": 1 } },
+    { "id": "instagram-creator", "name": "Iago Insta", "icon": "📸", "status": "done", "deliverTo": null, "desk": { "col": 2, "row": 1 } },
+    { "id": "linkedin-creator", "name": "Luna LinkedIn", "icon": "💼", "status": "done", "deliverTo": null, "desk": { "col": 3, "row": 1 } },
+    { "id": "designer", "name": "Dani Design", "icon": "🎨", "status": "done", "deliverTo": null, "desk": { "col": 1, "row": 2 } },
+    { "id": "reviewer", "name": "Vera Veredito", "icon": "⚖️", "status": "done", "deliverTo": null, "desk": { "col": 2, "row": 2 } }
+  ],
+  "handoff": { "from": "designer", "to": "checkpoint", "message": "Carrossel de 7 slides renderizado como PNG no estilo @brandsdecoded__", "completedAt": "2026-03-25T02:55:00Z" },
+  "startedAt": "2026-03-25T02:30:04Z",
+  "updatedAt": "2026-03-25T02:55:00Z",
+  "completedAt": "2026-03-25T02:55:00Z"
+}
