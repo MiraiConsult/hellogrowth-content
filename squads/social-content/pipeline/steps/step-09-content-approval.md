@@ -4,7 +4,7 @@ type: checkpoint
 
 # Aprovação do Conteúdo
 
-Neste passo, apresentamos todo o conteúdo criado para aprovação do usuário antes da revisão de qualidade.
+Neste passo, apresentamos todo o conteúdo criado (textos + imagens) para aprovação do usuário antes da revisão de qualidade.
 
 ## Instruções de apresentação
 
@@ -12,15 +12,13 @@ Neste passo, apresentamos todo o conteúdo criado para aprovação do usuário a
 
    **Instagram Feed (Carrossel):**
    - Número de slides e resumo do conteúdo de cada um
+   - Preview das imagens geradas pela Dani Design
    - Legenda proposta
    - Hashtags selecionadas
 
-   **Instagram Reels:**
-   - Resumo do roteiro com duração estimada
-   - Gancho e CTA
-
    **Instagram Stories:**
    - Sequência de Stories com elementos interativos
+   - Preview das imagens geradas
 
    **LinkedIn:**
    - Post completo com gancho e CTA
@@ -36,5 +34,6 @@ Neste passo, apresentamos todo o conteúdo criado para aprovação do usuário a
 ## Orientações
 
 - Apresentar o conteúdo de forma organizada e fácil de revisar.
+- Mostrar as imagens renderizadas para que o usuário veja o visual final.
 - Se o usuário solicitar ajustes, registrar claramente o que precisa ser alterado.
 - Somente avançar para a revisão quando o usuário aprovar explicitamente.

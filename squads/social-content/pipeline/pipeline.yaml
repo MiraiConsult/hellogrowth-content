@@ -1,6 +1,6 @@
 name: social-content-pipeline
 title: "Pipeline de Produção de Conteúdo Social"
-version: "1.0.0"
+version: "2.0.0"
 
 steps:
   - id: step-01-research-focus
@@ -49,21 +49,28 @@ steps:
     execution: subagent
     format: linkedin-post
 
-  - id: step-08-content-approval
+  - id: step-08-design-visuals
+    name: "Design Visual (HTML/CSS → Imagens)"
+    file: steps/step-08-design-visuals.md
+    type: agent
+    agent: designer
+    execution: inline
+
+  - id: step-09-content-approval
     name: "Aprovação do Conteúdo"
-    file: steps/step-08-content-approval.md
+    file: steps/step-09-content-approval.md
     type: checkpoint
 
-  - id: step-09-review
+  - id: step-10-review
     name: "Revisão de Qualidade"
-    file: steps/step-09-review.md
+    file: steps/step-10-review.md
     type: agent
     agent: reviewer
     execution: inline
 
-  - id: step-10-final-approval
+  - id: step-11-final-approval
     name: "Aprovação Final"
-    file: steps/step-10-final-approval.md
+    file: steps/step-11-final-approval.md
     type: checkpoint
     on_reject:
       goto: step-06-create-instagram

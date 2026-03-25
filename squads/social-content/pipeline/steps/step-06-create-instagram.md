@@ -8,7 +8,7 @@ outputFile: squads/social-content/output/instagram-content.md
 
 # Criação Conteúdo Instagram
 
-Iago Insta, com base no ângulo selecionado pelo usuário, crie conteúdo completo para Instagram nos três formatos principais.
+Iago Insta, com base no ângulo selecionado pelo usuário, crie conteúdo completo para Instagram nos dois formatos principais.
 
 ## Tarefas a executar
 
@@ -19,20 +19,17 @@ Iago Insta, com base no ângulo selecionado pelo usuário, crie conteúdo comple
 - Slide final: CTA (Call to Action) com convite para engajamento
 - Incluir sugestão de **legenda** (caption) com até 2.200 caracteres
 - Incluir **30 hashtags** relevantes organizadas por categoria (principais, nicho, alcance)
+- Para cada slide, incluir indicações visuais detalhadas (cor de fundo, destaques, tipografia) para a Dani Design renderizar
 
-### 2. Instagram Reels (Roteiro)
-- Criar roteiro de Reels com duração de **30 a 60 segundos**
-- Estrutura: Gancho (3s) → Problema (5s) → Desenvolvimento (15-30s) → CTA (5s)
-- Incluir indicações de: texto na tela, transições, e áudio sugerido
-- Incluir **legenda** para o Reels e hashtags
-
-### 3. Instagram Stories (Sequência)
+### 2. Instagram Stories (Sequência)
 - Criar sequência de **4 a 6 Stories**
 - Incluir: enquetes, caixas de perguntas, e stickers de engajamento
 - Story final com CTA direcionando para o Feed ou link
+- Para cada frame, incluir indicações visuais detalhadas para a Dani Design renderizar
 
 ## Orientações gerais
 - Tom de voz: acessível, profissional e educativo
 - Consultar o arquivo tone-of-voice.md para referência
 - Consultar quality-criteria.md para padrões de qualidade
 - Consultar anti-patterns.md para evitar erros comuns
+- O conteúdo de texto será transformado em imagens pela Dani Design na etapa seguinte

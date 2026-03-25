@@ -11,7 +11,7 @@ Neste passo, apresentamos o relatório de revisão de qualidade e solicitamos a 
 ## Instruções de apresentação
 
 1. Exibir o **relatório de revisão** (review-report.md) com:
-   - Score de cada peça de conteúdo (Instagram Feed, Reels, Stories, LinkedIn)
+   - Score de cada peça de conteúdo (Instagram Feed, Stories, LinkedIn)
    - Score geral do pacote
    - Pontos fortes e pontos de melhoria identificados
    - Recomendação da revisora (APROVADO ou NECESSITA REVISÃO)
@@ -29,4 +29,4 @@ Neste passo, apresentamos o relatório de revisão de qualidade e solicitamos a 
 - Se a revisora recomendou NECESSITA REVISÃO, destaque os ajustes prioritários ao apresentar ao usuário.
 - Se o score geral for >= 7 e a revisora recomendou APROVADO, indique isso positivamente ao usuário.
 - Em caso de rejeição, solicitar ao usuário orientações específicas sobre o que deseja diferente na nova versão.
-- O loop de rejeição retorna ao step-06 (criação Instagram), passando novamente por step-07 (LinkedIn), step-08 (aprovação), step-09 (revisão) e step-10 (aprovação final).
+- O loop de rejeição retorna ao step-06 (criação Instagram), passando novamente por step-07 (LinkedIn), step-08 (design), step-09 (aprovação), step-10 (revisão) e step-11 (aprovação final).

@@ -2,4 +2,5 @@ id,name,title,icon,execution,path
 researcher,Fábio Fonte,Pesquisador,🔍,subagent,./agents/researcher.agent.md
 instagram-creator,Iago Insta,Criador Instagram,📱,inline,./agents/instagram-creator.agent.md
 linkedin-creator,Luna LinkedIn,Criadora LinkedIn,💼,subagent,./agents/linkedin-creator.agent.md
+designer,Dani Design,Designer Visual,🎨,inline,./agents/designer.agent.md
 reviewer,Vera Veredito,Revisora de Qualidade,✅,inline,./agents/reviewer.agent.md
