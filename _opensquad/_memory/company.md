@@ -23,7 +23,7 @@
 - **Texto claro:** #ffffff
 
 ### Tipografia
-- Font principal: Inter (ou system sans-serif)
+- Font principal: Montserrat (Google Fonts)
 
 ### Referência visual Instagram
 - Estilo @brandsdecoded__ — editorial com fotos de pessoas, copys grandes e bold
