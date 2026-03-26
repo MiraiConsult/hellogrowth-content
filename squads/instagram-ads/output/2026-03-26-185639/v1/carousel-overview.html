@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  width: 3240px;
+  height: 2700px;
+  background: #0a0a12;
+  display: grid;
+  grid-template-columns: repeat(3, 1080px);
+  grid-template-rows: repeat(2, 1350px);
+  gap: 0;
+}
+.slide {
+  width: 1080px;
+  height: 1350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 80px 60px;
+  position: relative;
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color: #ffffff;
+  overflow: hidden;
+}
+.slide::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  opacity: 0.08;
+  background: repeating-linear-gradient(45deg, transparent, transparent 50px, rgba(255,255,255,0.03) 50px, rgba(255,255,255,0.03) 51px);
+}
+.dark { background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 50%, #0d1b2a 100%); }
+.light { background: linear-gradient(135deg, #0e0e24 0%, #12122e 50%, #0f1528 100%); }
+.hero { font-size: 160px; font-weight: 900; color: #00c853; line-height: 1; margin-bottom: 20px; position: relative; z-index: 1; }
+.hero-sm { font-size: 120px; font-weight: 900; color: #00c853; line-height: 1; margin-bottom: 20px; position: relative; z-index: 1; }
+.subtitle { font-size: 38px; font-weight: 400; color: #ffffff; margin-bottom: 16px; position: relative; z-index: 1; line-height: 1.3; }
+.subtitle b { font-weight: 700; }
+.accent { color: #00c853; font-weight: 700; }
+.small { font-size: 26px; color: #8a8aa0; margin-top: 12px; position: relative; z-index: 1; }
+.stars { font-size: 28px; color: #ffd700; margin-top: 30px; position: relative; z-index: 1; }
+.swipe { font-size: 22px; color: #555570; margin-top: 30px; position: relative; z-index: 1; }
+.bottom-bar {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 80px;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  font-size: 20px;
+  color: #8a8aa0;
+  z-index: 2;
+}
+.brand { color: #00c853; font-weight: 700; font-size: 22px; }
+.card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 16px;
+  padding: 24px 36px;
+  margin: 10px 0;
+  width: 85%;
+  text-align: left;
+  font-size: 30px;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.card-icon { font-size: 36px; }
+.stats-row {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  position: relative;
+  z-index: 1;
+}
+.stat {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  padding: 20px 30px;
+  text-align: center;
+}
+.stat-num { font-size: 42px; font-weight: 900; color: #00c853; }
+.stat-label { font-size: 22px; color: #8a8aa0; margin-top: 4px; }
+.cta-btn {
+  background: #00c853;
+  color: #0a0a1a;
+  font-size: 36px;
+  font-weight: 700;
+  padding: 24px 60px;
+  border-radius: 50px;
+  margin-top: 30px;
+  position: relative;
+  z-index: 1;
+}
+.price { font-size: 52px; font-weight: 700; color: #00c853; margin: 20px 0; position: relative; z-index: 1; }
+.split { position: relative; z-index: 1; width: 100%; }
+.split-top, .split-bottom {
+  padding: 40px;
+}
+.split-line {
+  width: 80%;
+  height: 1px;
+  background: rgba(255,255,255,0.15);
+  margin: 20px auto;
+}
+.red { color: #ff4444; }
+.gray { color: #555570; }
+.slide-num {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  font-size: 24px;
+  color: #555570;
+  z-index: 2;
+  font-weight: 600;
+}
+</style>
+</head>
+<body>
+
+<!-- Slide 1: Cover -->
+<div class="slide dark">
+  <span class="slide-num">1/6</span>
+  <div class="hero">83%</div>
+  <div class="subtitle">das empresas ignoram isso.</div>
+  <div class="subtitle">As que não ignoram<br><b>faturam <span class="accent">62%</span> a mais.</b></div>
+  <div class="stars">★★★★★ <span style="color:#fff;font-size:24px;">4.8</span></div>
+  <div class="swipe">Deslize →</div>
+  <div class="bottom-bar">
+    <span>Mais reputação. Mais confiança. Mais vendas.</span>
+    <span class="brand">HelloGrowth</span>
+  </div>
+</div>
+
+<!-- Slide 2: Dado -->
+<div class="slide light">
+  <span class="slide-num">2/6</span>
+  <div class="hero-sm">96%</div>
+  <div class="subtitle">dos consumidores pesquisam<br><b>avaliações antes de comprar.</b></div>
+  <div class="small">9 em cada 10 descartam notas abaixo de 4 estrelas.</div>
+  <div class="small" style="margin-top:30px;font-size:20px;font-style:italic;">Fonte: Reclame Aqui, 2025</div>
+  <div class="swipe">Deslize →</div>
+  <div class="bottom-bar">
+    <span>Mais reputação. Mais confiança. Mais vendas.</span>
+    <span class="brand">HelloGrowth</span>
+  </div>
+</div>
+
+<!-- Slide 3: Problema -->
+<div class="slide dark">
+  <span class="slide-num">3/6</span>
+  <div class="split">
+    <div class="split-top" style="text-align:center;">
+      <div style="font-size:50px;">😞</div>
+      <div class="subtitle">O cliente insatisfeito</div>
+      <div style="font-size:60px;font-weight:900;color:#ff4444;">avalia.</div>
+    </div>
+    <div class="split-line"></div>
+    <div class="split-bottom" style="text-align:center;">
+      <div style="font-size:50px;">😊</div>
+      <div class="subtitle">O cliente satisfeito</div>
+      <div style="font-size:60px;font-weight:900;color:#555570;">esquece.</div>
+    </div>
+  </div>
+  <div class="subtitle" style="margin-top:40px;font-weight:700;">Você não controla quem avalia.</div>
+  <div class="swipe">Deslize →</div>
+  <div class="bottom-bar">
+    <span>Mais reputação. Mais confiança. Mais vendas.</span>
+    <span class="brand">HelloGrowth</span>
+  </div>
+</div>
+
+<!-- Slide 4: Solução -->
+<div class="slide light">
+  <span class="slide-num">4/6</span>
+  <div class="subtitle" style="font-size:44px;">Com o HelloRating,</div>
+  <div style="font-size:64px;font-weight:900;color:#00c853;margin-bottom:40px;position:relative;z-index:1;">isso muda.</div>
+  <div class="card"><span class="card-icon">📊</span> Mede satisfação automaticamente</div>
+  <div class="card"><span class="card-icon">⭐</span> Direciona satisfeitos para o Google</div>
+  <div class="card"><span class="card-icon">🔔</span> Alerta internamente sobre insatisfeitos</div>
+  <div class="subtitle" style="margin-top:40px;font-size:32px;font-weight:700;">Sua nota sobe. Suas avaliações multiplicam.</div>
+  <div class="swipe">Deslize →</div>
+  <div class="bottom-bar">
+    <span>Mais reputação. Mais confiança. Mais vendas.</span>
+    <span class="brand">HelloGrowth</span>
+  </div>
+</div>
+
+<!-- Slide 5: Prova -->
+<div class="slide dark">
+  <span class="slide-num">5/6</span>
+  <div class="hero-sm">200+</div>
+  <div class="subtitle">empresas já comprovaram</div>
+  <div class="card" style="justify-content:center;text-align:center;margin-top:30px;">
+    <span>📈 Uma clínica dobrou as avaliações no Google em 30 dias</span>
+  </div>
+  <div class="stats-row">
+    <div class="stat"><div class="stat-num">+28%</div><div class="stat-label">conversão</div></div>
+    <div class="stat"><div class="stat-num">+40%</div><div class="stat-label">vendas</div></div>
+    <div class="stat"><div class="stat-num">3,1x</div><div class="stat-label">avaliações</div></div>
+  </div>
+  <div class="small" style="margin-top:20px;">Dados reais de clientes HelloGrowth</div>
+  <div class="swipe">Deslize →</div>
+  <div class="bottom-bar">
+    <span>Mais reputação. Mais confiança. Mais vendas.</span>
+    <span class="brand">HelloGrowth</span>
+  </div>
+</div>
+
+<!-- Slide 6: CTA -->
+<div class="slide light">
+  <span class="slide-num">6/6</span>
+  <div class="subtitle" style="font-size:48px;">Sua nota no Google,</div>
+  <div style="font-size:72px;font-weight:900;color:#00c853;position:relative;z-index:1;">no controle.</div>
+  <div class="price">A partir de R$99,90/mês</div>
+  <div class="small">Sem fidelidade. Configuração em 5 minutos.</div>
+  <div class="cta-btn">Saiba Mais →</div>
+  <div style="font-size:36px;font-weight:700;color:#00c853;margin-top:40px;position:relative;z-index:1;">HelloGrowth</div>
+  <div class="bottom-bar">
+    <span>Mais reputação. Mais confiança. Mais vendas.</span>
+    <span class="brand">HelloGrowth</span>
+  </div>
+</div>
+
+</body>
+</html>
