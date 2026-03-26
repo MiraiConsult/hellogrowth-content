@@ -8,25 +8,24 @@
 html, body { background: #0d0d0d; width: 1080px; height: 1920px; font-family: 'Montserrat', sans-serif; overflow: hidden; }
 .story { width: 1080px; height: 1920px; padding: 80px; display: flex; flex-direction: column; justify-content: center; align-items: center; background: #0d0d0d; color: #fff; text-align: center; position: relative; }
 .handle { position: absolute; top: 50px; left: 80px; font-size: 20px; font-weight: 700; opacity: 0.5; text-align: left; }
-.big-number { font-size: 240px; font-weight: 900; color: #3BAA7A; line-height: 0.85; margin-bottom: 30px; }
-.text { font-size: 44px; font-weight: 700; line-height: 1.3; margin-bottom: 70px; max-width: 850px; }
-.slider-track { width: 100%; max-width: 800px; background: rgba(255,255,255,0.08); border-radius: 30px; height: 60px; position: relative; overflow: hidden; }
-.slider-fill { width: 92%; height: 100%; background: linear-gradient(90deg, #2D7D5F, #6CCFAA); border-radius: 30px; display: flex; align-items: center; justify-content: flex-end; padding-right: 20px; }
-.slider-emoji { font-size: 36px; }
-.slider-label { font-size: 24px; font-weight: 500; opacity: 0.45; margin-top: 20px; }
+.label { font-size: 18px; font-weight: 800; text-transform: uppercase; letter-spacing: 5px; color: #2D7D5F; margin-bottom: 50px; }
+.headline { font-size: 48px; font-weight: 900; line-height: 1.15; margin-bottom: 60px; max-width: 850px; }
+.accent { color: #6CCFAA; }
+.tips { width: 100%; max-width: 850px; text-align: left; }
+.tip { background: rgba(45,125,95,0.08); border-left: 4px solid #3BAA7A; padding: 28px 34px; border-radius: 0 16px 16px 0; margin-bottom: 24px; font-size: 30px; font-weight: 500; line-height: 1.4; }
+.tip-num { color: #6CCFAA; font-weight: 900; margin-right: 14px; }
 </style>
 </head>
 <body>
 <div class="story">
   <div class="handle">@hellogrowth__</div>
-  <div class="big-number">92%</div>
-  <div class="text">dos consumidores só interagem com empresas nota 4+</div>
-  <div class="slider-track">
-    <div class="slider-fill">
-      <span class="slider-emoji">🔥</span>
-    </div>
+  <div class="label">Dica do dia</div>
+  <div class="headline">3 ações para <span class="accent">melhorar</span> sua nota no Google hoje</div>
+  <div class="tips">
+    <div class="tip"><span class="tip-num">1.</span> Responda TODA avaliação em até 24h</div>
+    <div class="tip"><span class="tip-num">2.</span> Peça feedback após cada venda</div>
+    <div class="tip"><span class="tip-num">3.</span> Resolva reclamações em público, não no privado</div>
   </div>
-  <div class="slider-label">Quão preparada tá sua empresa?</div>
 </div>
 </body>
 </html>
