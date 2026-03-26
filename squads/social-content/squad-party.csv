@@ -4,3 +4,4 @@ instagram-creator,Iago Insta,Criador Instagram,📱,inline,./agents/instagram-cr
 linkedin-creator,Luna LinkedIn,Criadora LinkedIn,💼,subagent,./agents/linkedin-creator.agent.md
 designer,Dani Design,Designer Visual,🎨,inline,./agents/designer.agent.md
 reviewer,Vera Veredito,Revisora de Qualidade,✅,inline,./agents/reviewer.agent.md
+instagram-publisher,Pub Insta,Publicador Instagram,📤,inline,./agents/instagram-publisher.agent.md

@@ -1,6 +1,6 @@
 name: social-content-pipeline
 title: "Pipeline de Produção de Conteúdo Social"
-version: "2.0.0"
+version: "3.0.0"
 
 steps:
   - id: step-01-research-focus
@@ -74,3 +74,10 @@ steps:
     type: checkpoint
     on_reject:
       goto: step-06-create-instagram
+
+  - id: step-12-publish-instagram
+    name: "Publicação no Instagram"
+    file: steps/step-12-publish-instagram.md
+    type: agent
+    agent: instagram-publisher
+    execution: inline
