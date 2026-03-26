@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { background: #0d0d0d; width: 1080px; height: 1920px; font-family: 'Montserrat', sans-serif; overflow: hidden; }
+.story { width: 1080px; height: 1920px; padding: 80px; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(180deg, #0d0d0d 0%, #0a1a14 100%); color: #fff; text-align: center; position: relative; }
+.handle { position: absolute; top: 50px; left: 80px; font-size: 20px; font-weight: 700; opacity: 0.5; text-align: left; }
+.emoji { font-size: 80px; margin-bottom: 50px; }
+.question { font-size: 52px; font-weight: 900; line-height: 1.2; margin-bottom: 70px; max-width: 850px; }
+.poll { display: flex; gap: 24px; width: 100%; max-width: 800px; }
+.poll-option { flex: 1; padding: 36px; border-radius: 20px; font-size: 32px; font-weight: 700; text-align: center; }
+.poll-yes { background: rgba(45,125,95,0.15); border: 3px solid #3BAA7A; color: #6CCFAA; }
+.poll-no { background: rgba(255,68,68,0.1); border: 3px solid rgba(255,68,68,0.4); color: #FF6666; }
+</style>
+</head>
+<body>
+<div class="story">
+  <div class="handle">@hellogrowth__</div>
+  <div class="emoji">🤔</div>
+  <div class="question">Você sabe qual a nota da sua empresa no Google?</div>
+  <div class="poll">
+    <div class="poll-option poll-yes">Sim, sei!</div>
+    <div class="poll-option poll-no">Nunca vi</div>
+  </div>
+</div>
+</body>
+</html>
