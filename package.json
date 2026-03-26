@@ -10,9 +10,10 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
-"@heroicons/react": "^2.2.0",
+    "@heroicons/react": "^2.2.0",
     "@supabase/supabase-js": "^2.45.0",
     "lucide-react": "^0.561.0",
+    "playwright": "^1.58.2",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "react-router-dom": "6.25.1",
