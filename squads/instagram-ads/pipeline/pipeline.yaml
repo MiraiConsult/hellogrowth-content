@@ -1,0 +1,81 @@
+name: instagram-ads-pipeline
+title: "Pipeline de Produção de Anúncios Instagram Feed"
+version: "1.0.0"
+
+steps:
+  - id: step-01-research-focus
+    name: "Foco da Pesquisa"
+    file: steps/step-01-research-focus.md
+    type: checkpoint
+
+  - id: step-02-research
+    name: "Pesquisa de Oportunidades"
+    file: steps/step-02-research.md
+    type: agent
+    agent: researcher
+    execution: subagent
+    inputFile: squads/instagram-ads/pipeline/data/research-focus.md
+
+  - id: step-03-opportunity-selection
+    name: "Seleção de Oportunidade"
+    file: steps/step-03-opportunity-selection.md
+    type: checkpoint
+
+  - id: step-04-generate-angles
+    name: "Geração de Ângulos"
+    file: steps/step-04-generate-angles.md
+    type: agent
+    agent: ad-creator
+    execution: inline
+
+  - id: step-05-angle-selection
+    name: "Seleção de Ângulo"
+    file: steps/step-05-angle-selection.md
+    type: checkpoint
+
+  - id: step-06-create-ad-copy
+    name: "Criação de Copy + Otimização"
+    file: steps/step-06-create-ad-copy.md
+    type: agent
+    agent: ad-creator
+    execution: inline
+    format: instagram-feed
+
+  - id: step-07-copy-approval
+    name: "Aprovação da Copy"
+    file: steps/step-07-copy-approval.md
+    type: checkpoint
+
+  - id: step-08-design-creative
+    name: "Design dos Criativos"
+    file: steps/step-08-design-creative.md
+    type: agent
+    agent: designer
+    execution: subagent
+
+  - id: step-09-creative-approval
+    name: "Aprovação das Artes"
+    file: steps/step-09-creative-approval.md
+    type: checkpoint
+
+  - id: step-10-review
+    name: "Revisão de Qualidade"
+    file: steps/step-10-review.md
+    type: agent
+    agent: reviewer
+    execution: inline
+
+  - id: step-11-final-approval
+    name: "Aprovação Final"
+    file: steps/step-11-final-approval.md
+    type: checkpoint
+    on_reject:
+      goto: step-06-create-ad-copy
+
+checkpoints:
+  - step-01-research-focus
+  - step-03-opportunity-selection
+  - step-05-angle-selection
+  - step-07-copy-approval
+  - step-09-creative-approval
+  - step-11-final-approval

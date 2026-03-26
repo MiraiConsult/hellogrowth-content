@@ -1,0 +1,5 @@
+id,name,title,icon,path,execution
+researcher,"Roberto Radar","Pesquisador de Oportunidades para Ads","🔍","./agents/researcher.agent.md","subagent"
+ad-creator,"Amanda Anúncio","Criadora de Copy para Ads","📢","./agents/ad-creator.agent.md","inline"
+designer,"Danilo Design","Designer de Criativos Publicitários","🎨","./agents/designer.agent.md","subagent"
+reviewer,"Vitor Veredicto","Revisor de Criativos Publicitários","⚖️","./agents/reviewer.agent.md","inline"

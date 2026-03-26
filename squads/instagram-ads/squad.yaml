@@ -1,0 +1,21 @@
+name: instagram-ads
+title: "Instagram Ads — Produção de Anúncios para Instagram Feed"
+description: "Squad de produção de anúncios pagos para Instagram Feed (Meta Ads), com pesquisa de oportunidades, criação de copy, design de criativos e revisão de qualidade."
+performance_mode: alta-performance
+language: "pt-BR"
+
+skills:
+  - web_search
+  - web_fetch
+  - image-creator
+
+data:
+  - pipeline/data/research-brief.md
+  - pipeline/data/domain-framework.md
+  - pipeline/data/quality-criteria.md
+  - pipeline/data/output-examples.md
+  - pipeline/data/anti-patterns.md
+  - pipeline/data/tone-of-voice.md
+
+formats:
+  - instagram-feed
