@@ -1,19 +1,19 @@
 {
   "squad": "instagram-ads",
   "status": "running",
-  "step": { "current": 2, "total": 11, "label": "step-02-research" },
+  "step": { "current": 4, "total": 11, "label": "step-04-generate-angles" },
   "agents": [
-    { "id": "researcher", "name": "Roberto Radar", "icon": "🔍", "status": "working", "deliverTo": null, "desk": { "col": 1, "row": 1 } },
-    { "id": "ad-creator", "name": "Amanda Anúncio", "icon": "📢", "status": "idle", "deliverTo": null, "desk": { "col": 2, "row": 1 } },
+    { "id": "researcher", "name": "Roberto Radar", "icon": "🔍", "status": "done", "deliverTo": null, "desk": { "col": 1, "row": 1 } },
+    { "id": "ad-creator", "name": "Amanda Anúncio", "icon": "📢", "status": "working", "deliverTo": null, "desk": { "col": 2, "row": 1 } },
     { "id": "designer", "name": "Danilo Design", "icon": "🎨", "status": "idle", "deliverTo": null, "desk": { "col": 3, "row": 1 } },
     { "id": "reviewer", "name": "Vitor Veredicto", "icon": "⚖️", "status": "idle", "deliverTo": null, "desk": { "col": 1, "row": 2 } }
   ],
   "handoff": {
-    "from": "checkpoint",
-    "to": "researcher",
-    "message": "Foco definido: Falta de prova social. Período: último mês.",
-    "completedAt": "2026-03-26T18:57:15Z"
+    "from": "researcher",
+    "to": "ad-creator",
+    "message": "Oportunidade selecionada: 96% dos consumidores leem avaliações antes de comprar.",
+    "completedAt": "2026-03-26T19:05:00Z"
   },
   "startedAt": "2026-03-26T18:56:39Z",
-  "updatedAt": "2026-03-26T18:57:30Z"
+  "updatedAt": "2026-03-26T19:05:00Z"
 }
