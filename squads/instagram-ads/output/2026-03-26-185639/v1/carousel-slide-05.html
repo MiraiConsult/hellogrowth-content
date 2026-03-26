@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Slide 05 - Prova</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px;
+    height: 1350px;
+    font-family: system-ui, -apple-system, sans-serif;
+    background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 50%, #0d1b2a 100%);
+    color: #ffffff;
+    overflow: hidden;
+    position: relative;
+  }
+  .geo-lines {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .geo-lines::before {
+    content: '';
+    position: absolute;
+    top: 80px; left: -100px;
+    width: 550px; height: 550px;
+    border: 1px solid rgba(0,200,83,0.05);
+    border-radius: 50%;
+  }
+  .geo-lines::after {
+    content: '';
+    position: absolute;
+    bottom: 200px; right: -120px;
+    width: 480px; height: 480px;
+    border: 1px solid rgba(255,255,255,0.03);
+    border-radius: 50%;
+  }
+  .line-diag {
+    position: absolute;
+    width: 1px;
+    background: rgba(255,255,255,0.03);
+    transform-origin: top left;
+  }
+  .line-diag-1 { top: 0; left: 250px; height: 1350px; transform: rotate(14deg); }
+  .line-diag-2 { top: 0; left: 800px; height: 1350px; transform: rotate(-10deg); }
+
+  .content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 100px);
+    padding: 80px 80px 0;
+    text-align: center;
+  }
+
+  .hero-number {
+    font-size: 160px;
+    font-weight: 800;
+    color: #00c853;
+    line-height: 1;
+    letter-spacing: -4px;
+  }
+  .subtitle {
+    font-size: 42px;
+    font-weight: 500;
+    margin-top: 15px;
+    opacity: 0.9;
+  }
+
+  .case-box {
+    margin-top: 50px;
+    padding: 36px 44px;
+    border: 1px solid rgba(0,200,83,0.2);
+    border-radius: 16px;
+    background: rgba(0,200,83,0.05);
+    max-width: 820px;
+    width: 100%;
+  }
+  .case-box .case-text {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+  .case-box .case-icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .stats-row {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    width: 100%;
+    max-width: 820px;
+  }
+  .stat {
+    flex: 1;
+    padding: 30px 20px;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    background: rgba(255,255,255,0.03);
+  }
+  .stat-value {
+    font-size: 40px;
+    font-weight: 800;
+    color: #00c853;
+  }
+  .stat-label {
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.6);
+    margin-top: 8px;
+  }
+
+  .source {
+    font-size: 20px;
+    color: rgba(255,255,255,0.3);
+    margin-top: 40px;
+  }
+
+  .swipe {
+    margin-top: 30px;
+    font-size: 22px;
+    color: rgba(255,255,255,0.4);
+    letter-spacing: 2px;
+    font-weight: 500;
+  }
+
+  .bottom-bar {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 100px;
+    background: rgba(0,0,0,0.35);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    z-index: 2;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+  .bottom-bar .tagline {
+    font-size: 20px;
+    color: rgba(255,255,255,0.5);
+    font-weight: 400;
+  }
+  .bottom-bar .logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #00c853;
+  }
+</style>
+</head>
+<body>
+  <div class="geo-lines">
+    <div class="line-diag line-diag-1"></div>
+    <div class="line-diag line-diag-2"></div>
+  </div>
+  <div class="content">
+    <div class="hero-number">200+</div>
+    <div class="subtitle">empresas já comprovaram</div>
+    <div class="case-box">
+      <div class="case-icon">📈</div>
+      <div class="case-text">Uma clínica dobrou as avaliações no Google em 30 dias</div>
+    </div>
+    <div class="stats-row">
+      <div class="stat">
+        <div class="stat-value">+28%</div>
+        <div class="stat-label">conversão</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">+40%</div>
+        <div class="stat-label">vendas</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">3,1x</div>
+        <div class="stat-label">avaliações</div>
+      </div>
+    </div>
+    <div class="source">Dados reais de clientes HelloGrowth</div>
+    <div class="swipe">Deslize →</div>
+  </div>
+  <div class="bottom-bar">
+    <div class="tagline">Mais reputação. Mais confiança. Mais vendas.</div>
+    <div class="logo">HelloGrowth</div>
+  </div>
+</body>
+</html>

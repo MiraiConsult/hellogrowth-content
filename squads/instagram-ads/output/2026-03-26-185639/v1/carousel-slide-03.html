@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Slide 03 - Problema</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px;
+    height: 1350px;
+    font-family: system-ui, -apple-system, sans-serif;
+    background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 50%, #0d1b2a 100%);
+    color: #ffffff;
+    overflow: hidden;
+    position: relative;
+  }
+  .geo-lines {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .geo-lines::before {
+    content: '';
+    position: absolute;
+    top: 50px; left: -150px;
+    width: 500px; height: 500px;
+    border: 1px solid rgba(255,255,255,0.03);
+    border-radius: 50%;
+  }
+  .geo-lines::after {
+    content: '';
+    position: absolute;
+    bottom: 150px; right: -100px;
+    width: 450px; height: 450px;
+    border: 1px solid rgba(0,200,83,0.04);
+    border-radius: 50%;
+  }
+  .line-diag {
+    position: absolute;
+    width: 1px;
+    background: rgba(255,255,255,0.03);
+    transform-origin: top left;
+  }
+  .line-diag-1 { top: 0; left: 150px; height: 1350px; transform: rotate(18deg); }
+  .line-diag-2 { top: 0; left: 850px; height: 1350px; transform: rotate(-12deg); }
+
+  .content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 100px);
+    padding: 60px 80px 0;
+    text-align: center;
+  }
+
+  .section {
+    width: 100%;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-top .label {
+    font-size: 38px;
+    font-weight: 400;
+    opacity: 0.8;
+  }
+  .section-top .action {
+    font-size: 64px;
+    font-weight: 800;
+    color: #ff5252;
+    margin-top: 10px;
+  }
+  .section-top .icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+
+  .divider {
+    width: 700px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+    margin: 10px 0;
+  }
+
+  .section-bottom .label {
+    font-size: 38px;
+    font-weight: 400;
+    opacity: 0.8;
+  }
+  .section-bottom .action {
+    font-size: 64px;
+    font-weight: 800;
+    color: rgba(255,255,255,0.3);
+    margin-top: 10px;
+  }
+  .section-bottom .icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+    opacity: 0.4;
+  }
+
+  .conclusion {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 50px;
+    line-height: 1.4;
+    max-width: 800px;
+  }
+
+  .swipe {
+    margin-top: 40px;
+    font-size: 22px;
+    color: rgba(255,255,255,0.4);
+    letter-spacing: 2px;
+    font-weight: 500;
+  }
+
+  .bottom-bar {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 100px;
+    background: rgba(0,0,0,0.35);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    z-index: 2;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+  .bottom-bar .tagline {
+    font-size: 20px;
+    color: rgba(255,255,255,0.5);
+    font-weight: 400;
+  }
+  .bottom-bar .logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #00c853;
+  }
+</style>
+</head>
+<body>
+  <div class="geo-lines">
+    <div class="line-diag line-diag-1"></div>
+    <div class="line-diag line-diag-2"></div>
+  </div>
+  <div class="content">
+    <div class="section section-top">
+      <div class="icon">😡</div>
+      <div class="label">O cliente insatisfeito</div>
+      <div class="action">avalia.</div>
+    </div>
+    <div class="divider"></div>
+    <div class="section section-bottom">
+      <div class="icon">😐</div>
+      <div class="label">O cliente satisfeito</div>
+      <div class="action">esquece.</div>
+    </div>
+    <div class="conclusion">Você não controla quem avalia.</div>
+    <div class="swipe">Deslize →</div>
+  </div>
+  <div class="bottom-bar">
+    <div class="tagline">Mais reputação. Mais confiança. Mais vendas.</div>
+    <div class="logo">HelloGrowth</div>
+  </div>
+</body>
+</html>

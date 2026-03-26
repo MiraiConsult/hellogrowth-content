@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Slide 01 - Cover</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px;
+    height: 1350px;
+    font-family: system-ui, -apple-system, sans-serif;
+    background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 50%, #0d1b2a 100%);
+    color: #ffffff;
+    overflow: hidden;
+    position: relative;
+  }
+  /* Geometric lines */
+  .geo-lines {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .geo-lines::before {
+    content: '';
+    position: absolute;
+    top: 120px; left: -100px;
+    width: 600px; height: 600px;
+    border: 1px solid rgba(255,255,255,0.04);
+    border-radius: 50%;
+  }
+  .geo-lines::after {
+    content: '';
+    position: absolute;
+    bottom: 200px; right: -150px;
+    width: 500px; height: 500px;
+    border: 1px solid rgba(0,200,83,0.06);
+    border-radius: 50%;
+  }
+  .line-diag {
+    position: absolute;
+    width: 1px;
+    background: rgba(255,255,255,0.03);
+    transform-origin: top left;
+  }
+  .line-diag-1 { top: 0; left: 200px; height: 1350px; transform: rotate(15deg); }
+  .line-diag-2 { top: 0; left: 600px; height: 1350px; transform: rotate(-10deg); }
+  .line-diag-3 { top: 0; left: 900px; height: 1350px; transform: rotate(20deg); }
+
+  .content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 100px);
+    padding: 80px 80px 0;
+    text-align: center;
+  }
+  .hero-number {
+    font-size: 200px;
+    font-weight: 800;
+    color: #00c853;
+    line-height: 1;
+    letter-spacing: -6px;
+  }
+  .line1 {
+    font-size: 48px;
+    font-weight: 400;
+    margin-top: 10px;
+    opacity: 0.9;
+  }
+  .line2 {
+    font-size: 44px;
+    font-weight: 400;
+    margin-top: 30px;
+    opacity: 0.85;
+  }
+  .line3 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-top: 8px;
+  }
+  .line3 .green { color: #00c853; font-weight: 800; }
+  .stars {
+    margin-top: 40px;
+    font-size: 36px;
+    color: #ffd600;
+    letter-spacing: 4px;
+  }
+  .stars .rating {
+    font-size: 28px;
+    color: rgba(255,255,255,0.7);
+    margin-left: 12px;
+    letter-spacing: 0;
+  }
+  .swipe {
+    margin-top: 50px;
+    font-size: 22px;
+    color: rgba(255,255,255,0.45);
+    letter-spacing: 2px;
+    font-weight: 500;
+  }
+
+  /* Bottom bar */
+  .bottom-bar {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 100px;
+    background: rgba(0,0,0,0.35);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    z-index: 2;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+  .bottom-bar .tagline {
+    font-size: 20px;
+    color: rgba(255,255,255,0.5);
+    font-weight: 400;
+  }
+  .bottom-bar .logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #00c853;
+  }
+</style>
+</head>
+<body>
+  <div class="geo-lines">
+    <div class="line-diag line-diag-1"></div>
+    <div class="line-diag line-diag-2"></div>
+    <div class="line-diag line-diag-3"></div>
+  </div>
+  <div class="content">
+    <div class="hero-number">83%</div>
+    <div class="line1">das empresas ignoram isso.</div>
+    <div class="line2">As que não ignoram</div>
+    <div class="line3">faturam <span class="green">62%</span> a mais.</div>
+    <div class="stars">★★★★★ <span class="rating">4.8</span></div>
+    <div class="swipe">Deslize →</div>
+  </div>
+  <div class="bottom-bar">
+    <div class="tagline">Mais reputação. Mais confiança. Mais vendas.</div>
+    <div class="logo">HelloGrowth</div>
+  </div>
+</body>
+</html>
