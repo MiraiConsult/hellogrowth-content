@@ -7,6 +7,7 @@ language: "pt-BR"
 skills:
   - web_search
   - web_fetch
+  - image-generator
   - image-creator
 
 data:

@@ -1,7 +1,9 @@
 ---
 task: design-ad-creative
-order: 1
-input: squads/instagram-ads/output/ad-copy.md
+order: 2
+input:
+  - ad_copy: "Copy aprovada com direção visual (squads/instagram-ads/output/ad-copy.md)"
+  - backgrounds: "Imagens de background geradas por IA (squads/instagram-ads/output/bg-*.jpg)"
 output: squads/instagram-ads/output/*.html
 ---
 
@@ -28,11 +30,12 @@ Para cada anúncio identificado na copy:
 
 Cada arquivo HTML deve:
 - Definir o viewport em `1080x1350px` (formato 4:5 para Instagram Feed)
-- Ser completamente autossuficiente — sem imports externos, sem fontes de CDN, sem imagens de URL
+- Ser completamente autossuficiente — sem imports externos, sem fontes de CDN
 - Usar apenas CSS inline ou `<style>` embutido no `<head>`
+- **Embutir as imagens de background geradas por IA** como base64 data URI no CSS (`background-image: url(data:image/jpeg;base64,...)`) — ler o arquivo .jpg e converter para base64
 - Aplicar a identidade visual da HelloGrowth: cores da marca, tipografia consistente, posicionamento de logo
 - Incluir todos os elementos de copy (headline, texto de suporte, CTA) com hierarquia visual clara
-- Usar CSS gradients, shapes e layouts para criar profundidade visual sem imagens externas
+- Aplicar overlay semi-transparente sobre a imagem de fundo para garantir legibilidade do texto
 - Garantir alto contraste entre texto e fundo para legibilidade mobile
 
 ### Passo 3 — Nomear e salvar os arquivos
