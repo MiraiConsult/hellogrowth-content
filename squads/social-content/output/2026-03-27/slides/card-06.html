@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    background: #0d0d0d;
+    font-family: 'Montserrat', sans-serif;
+    width: 1080px;
+    height: 1350px;
+    overflow: hidden;
+  }
+  .card {
+    width: 1080px;
+    height: 1350px;
+    background: #0d0d0d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+  }
+  .label {
+    font-size: 20px;
+    font-weight: 700;
+    color: #6CCFAA;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  .headline {
+    font-size: 44px;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: 50px;
+  }
+  .tips {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  .tip {
+    background: rgba(45,125,95,0.1);
+    border-left: 5px solid #3BAA7A;
+    border-radius: 0 14px 14px 0;
+    padding: 32px 36px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .tip-number {
+    font-size: 36px;
+    font-weight: 900;
+    color: #2D7D5F;
+    min-width: 50px;
+  }
+  .tip-text {
+    font-size: 26px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.9);
+    line-height: 1.4;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="label">O QUE FAZER</div>
+  <div class="headline">3 ações que transformam avaliações em vendas.</div>
+  <div class="tips">
+    <div class="tip">
+      <span class="tip-number">1</span>
+      <span class="tip-text">Peça feedback 24h após a entrega</span>
+    </div>
+    <div class="tip">
+      <span class="tip-number">2</span>
+      <span class="tip-text">Responda TODA avaliação — positiva e negativa</span>
+    </div>
+    <div class="tip">
+      <span class="tip-number">3</span>
+      <span class="tip-text">Mostre reviews reais no seu site e redes</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

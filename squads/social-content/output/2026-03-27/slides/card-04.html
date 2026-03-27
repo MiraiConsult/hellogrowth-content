@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    background: #0d0d0d;
+    font-family: 'Montserrat', sans-serif;
+    width: 1080px;
+    height: 1350px;
+    overflow: hidden;
+  }
+  .card {
+    width: 1080px;
+    height: 1350px;
+    background: #0d0d0d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+  }
+  .label {
+    font-size: 20px;
+    font-weight: 700;
+    color: #6CCFAA;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    align-self: flex-start;
+  }
+  .stats {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+  }
+  .stat-card {
+    flex: 1;
+    background: rgba(45,125,95,0.12);
+    border: 2px solid rgba(59,170,122,0.3);
+    border-radius: 20px;
+    padding: 50px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .stat-card .number {
+    font-size: 56px;
+    font-weight: 900;
+    color: #3BAA7A;
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+  .stat-card .desc {
+    font-size: 22px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.3;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="label">OS NÚMEROS</div>
+  <div class="stats">
+    <div class="stat-card">
+      <div class="number">R$260bi</div>
+      <div class="desc">e-commerce 2026</div>
+    </div>
+    <div class="stat-card">
+      <div class="number">70%</div>
+      <div class="desc">leem reviews</div>
+    </div>
+    <div class="stat-card">
+      <div class="number">43%</div>
+      <div class="desc">decisão de compra</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
