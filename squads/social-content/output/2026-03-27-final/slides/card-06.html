@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Card 06 - Green Gradient</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 1080px;
+    height: 1350px;
+    background: #0d0d0d;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+  }
+  .card {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    background: linear-gradient(180deg, #3BAA7A 0%, #2D7D5F 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+    box-sizing: border-box;
+  }
+  .title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 80px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1.05;
+    margin: 0 0 40px 0;
+  }
+  .body-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.9);
+    line-height: 1.6;
+    margin: 0 0 60px 0;
+  }
+  .highlights {
+    display: flex;
+    gap: 30px;
+  }
+  .highlight-box {
+    flex: 1;
+    background: rgba(255,255,255,0.15);
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    padding: 45px 35px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+  }
+  .highlight-box .number {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 80px;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  .highlight-box .desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.85);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .handle {
+    position: absolute;
+    bottom: 50px;
+    left: 80px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.5);
+  }
+  /* Decorative */
+  .ring {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    width: 120px;
+    height: 120px;
+    border: 3px solid rgba(255,255,255,0.15);
+    border-radius: 50%;
+  }
+  .ring::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 76px;
+    height: 76px;
+    border: 2px solid rgba(255,255,255,0.1);
+    border-radius: 50%;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="ring"></div>
+  <h1 class="title">REPUTACAO = RECEITA</h1>
+  <p class="body-text">Empresas focadas em CX aumentam receita em ate 80%. Marcas centradas no cliente tem 60% mais lucro.</p>
+  <div class="highlights">
+    <div class="highlight-box">
+      <div class="number">+80%</div>
+      <div class="desc">receita</div>
+    </div>
+    <div class="highlight-box">
+      <div class="number">+60%</div>
+      <div class="desc">lucro</div>
+    </div>
+  </div>
+  <div class="handle">@hellogrowth__</div>
+</div>
+</body>
+</html>

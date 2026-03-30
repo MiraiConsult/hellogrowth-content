@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Story 01 - Green</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 1080px;
+    height: 1920px;
+    background: #0d0d0d;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+  }
+  .card {
+    width: 1080px;
+    height: 1920px;
+    position: relative;
+    background: linear-gradient(180deg, #3BAA7A 0%, #2D7D5F 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+    box-sizing: border-box;
+  }
+  .handle {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.7);
+  }
+  .big-number {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 280px;
+    color: #fff;
+    line-height: 1;
+    margin: 0 0 30px 0;
+  }
+  .text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.4;
+    margin: 0 0 30px 0;
+    max-width: 800px;
+  }
+  .subtext {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.6);
+    margin: 0;
+  }
+  /* Decorative */
+  .circle-accent {
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.05);
+  }
+  .circle-accent-2 {
+    position: absolute;
+    top: 200px;
+    right: 60px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.04);
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="circle-accent"></div>
+  <div class="circle-accent-2"></div>
+  <div class="handle">@hellogrowth__</div>
+  <div class="big-number">83%</div>
+  <p class="text">dos clientes abandonam apos UMA experiencia ruim</p>
+  <p class="subtext">E a maioria nunca volta.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Card 02 - Green Background</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 1080px;
+    height: 1350px;
+    background: #0d0d0d;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+  }
+  .card {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    background: #2D7D5F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+    box-sizing: border-box;
+  }
+  .title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 0 40px 0;
+  }
+  .body-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.5;
+    margin: 0 0 60px 0;
+  }
+  .stat-box {
+    border: 3px solid #fff;
+    border-radius: 24px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .stat-box .number {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 120px;
+    color: #fff;
+    line-height: 1;
+  }
+  .stat-box .label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.9);
+    line-height: 1.4;
+  }
+  .handle {
+    position: absolute;
+    bottom: 50px;
+    left: 80px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.6);
+  }
+  /* Decorative accent */
+  .accent-circle {
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.06);
+  }
+  .accent-circle-2 {
+    position: absolute;
+    bottom: -40px;
+    right: 120px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.04);
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="accent-circle"></div>
+  <div class="accent-circle-2"></div>
+  <h1 class="title">O CONSUMIDOR DE 2026 NAO PERDOA.</h1>
+  <p class="body-text">66% abandonam marcas que nao personalizam a experiencia.</p>
+  <div class="stat-box">
+    <div class="number">66%</div>
+    <div class="label">abandonam sem<br>personalizacao</div>
+  </div>
+  <div class="handle">@hellogrowth__</div>
+</div>
+</body>
+</html>

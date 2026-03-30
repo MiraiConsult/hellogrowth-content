@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Card 01 - Cover</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 1080px;
+    height: 1350px;
+    background: #0d0d0d;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+  }
+  .card {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    background: url('gamma-cover.png') center/cover no-repeat;
+  }
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.15) 30%, rgba(0,0,0,0.85) 70%, rgba(0,0,0,0.95) 100%);
+  }
+  .header-bar {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+  }
+  .header-bar span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .handle-badge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 2;
+  }
+  .handle-badge .dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #3BAA7A;
+    box-shadow: 0 0 12px rgba(59,170,122,0.6);
+  }
+  .handle-badge span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.5px;
+  }
+  .title-area {
+    position: absolute;
+    bottom: 120px;
+    left: 60px;
+    right: 60px;
+    z-index: 2;
+  }
+  .title-area h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 88px;
+    line-height: 1.0;
+    text-transform: uppercase;
+    margin: 0;
+    color: #fff;
+  }
+  .title-area h1 .green {
+    color: #3BAA7A;
+  }
+  .subtitle-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 30px;
+  }
+  .subtitle-row .arrow {
+    font-size: 36px;
+    color: #3BAA7A;
+    font-weight: 700;
+  }
+  .subtitle-row span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.8);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="overlay"></div>
+  <div class="header-bar">
+    <span>Powered by HelloGrowth</span>
+    <span>@hellogrowth__</span>
+    <span>Marco 2026 &reg;</span>
+  </div>
+  <div class="handle-badge">
+    <div class="dot"></div>
+    <span>@hellogrowth__</span>
+  </div>
+  <div class="title-area">
+    <h1>83% DOS CLIENTES<br>ABANDONAM APOS<br>UMA EXPERIENCIA<br><span class="green">RUIM</span></h1>
+    <div class="subtitle-row">
+      <span class="arrow">&rarr;</span>
+      <span>E a maioria NUNCA volta</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

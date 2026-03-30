@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Story 02 - Dark Impact</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 1080px;
+    height: 1920px;
+    background: #0d0d0d;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+  }
+  .card {
+    width: 1080px;
+    height: 1920px;
+    position: relative;
+    background: #0d0d0d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .handle {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.4);
+  }
+  .label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #3BAA7A;
+    letter-spacing: 6px;
+    margin-bottom: 40px;
+  }
+  .title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 72px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1.1;
+    margin: 0 0 50px 0;
+  }
+  .body-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    color: #6CCFAA;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 750px;
+  }
+  /* Glow */
+  .glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(59,170,122,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .line-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, #2D7D5F, #3BAA7A, #6CCFAA, #3BAA7A, #2D7D5F);
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="line-top"></div>
+  <div class="glow"></div>
+  <div class="handle">@hellogrowth__</div>
+  <div class="label">DICA DO DIA</div>
+  <h1 class="title">REPUTACAO = RECEITA</h1>
+  <p class="body-text">Empresas focadas no cliente lucram 60% mais.</p>
+</div>
+</body>
+</html>

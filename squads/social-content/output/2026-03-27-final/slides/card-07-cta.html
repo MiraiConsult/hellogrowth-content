@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Card 07 - CTA</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 1080px;
+    height: 1350px;
+    background: #0d0d0d;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+  }
+  .card {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    background: linear-gradient(180deg, #0d0d0d 0%, #0a1a14 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 56px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1.1;
+    margin: 0 0 40px 0;
+    max-width: 850px;
+  }
+  .subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #6CCFAA;
+    margin: 0 0 50px 0;
+  }
+  .divider {
+    width: 120px;
+    height: 4px;
+    background: linear-gradient(90deg, #2D7D5F, #6CCFAA);
+    border-radius: 2px;
+    margin-bottom: 50px;
+  }
+  .brand {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 42px;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #2D7D5F, #6CCFAA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 25px;
+  }
+  .tagline {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.6);
+    margin: 0 0 60px 0;
+  }
+  .source {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.25);
+    position: absolute;
+    bottom: 50px;
+    left: 80px;
+    right: 80px;
+    text-align: center;
+  }
+  /* Glow accent */
+  .glow-top {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 300px;
+    background: radial-gradient(ellipse, rgba(59,170,122,0.1) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .glow-bottom {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 250px;
+    background: radial-gradient(ellipse, rgba(108,207,170,0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="glow-top"></div>
+  <div class="glow-bottom"></div>
+  <h1 class="title">QUANDO FOI A ULTIMA VEZ QUE VOCE RESPONDEU UMA AVALIACAO?</h1>
+  <p class="subtitle">Comenta aqui &#x1F447;</p>
+  <div class="divider"></div>
+  <div class="brand">HELLOGROWTH</div>
+  <p class="tagline">Mais reputacao. Mais confianca. Mais vendas.</p>
+  <div class="source">Dados: Zendesk CX Trends 2026 / KPMG CEE Report</div>
+</div>
+</body>
+</html>

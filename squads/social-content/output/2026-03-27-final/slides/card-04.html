@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Card 04 - Photo Emotional</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 1080px;
+    height: 1350px;
+    background: #0d0d0d;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+  }
+  .card {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    background: url('gamma-card04.png') center/cover no-repeat;
+  }
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.75) 50%, rgba(0,0,0,0.92) 100%);
+  }
+  .handle {
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.5);
+    z-index: 2;
+  }
+  .content {
+    position: absolute;
+    bottom: 140px;
+    left: 80px;
+    right: 80px;
+    z-index: 2;
+  }
+  .label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #2D7D5F;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+  }
+  .green-line {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #3BAA7A, #6CCFAA);
+    border-radius: 2px;
+    margin-bottom: 30px;
+  }
+  .quote {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    font-style: italic;
+    color: #fff;
+    line-height: 1.45;
+    margin: 0 0 35px 0;
+  }
+  .source {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.45);
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="overlay"></div>
+  <div class="handle">@hellogrowth__</div>
+  <div class="content">
+    <div class="label">A REALIDADE</div>
+    <div class="green-line"></div>
+    <p class="quote">&ldquo;O consumidor de 2026 nao reclama. Ele simplesmente some. E conta pra todo mundo.&rdquo;</p>
+    <div class="source">&mdash; Zendesk CX Trends 2026</div>
+  </div>
+</div>
+</body>
+</html>
