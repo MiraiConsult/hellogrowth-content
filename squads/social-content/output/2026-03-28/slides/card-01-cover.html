@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+<title>Card 01 - Cover</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #0d0d0d;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .card {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    overflow: hidden;
+    background: url('gamma-cover.png') center/cover no-repeat;
+  }
+  .gradient-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 20%, rgba(13,13,13,0.6) 50%, rgba(13,13,13,0.95) 100%);
+  }
+  .header-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 0.5px;
+    z-index: 2;
+  }
+  .handle-badge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 50px;
+    padding: 14px 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #fff;
+    z-index: 2;
+  }
+  .title-block {
+    position: absolute;
+    bottom: 120px;
+    left: 48px;
+    right: 48px;
+    z-index: 2;
+  }
+  .title-block h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 84px;
+    line-height: 0.95;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .title-block h1 .orange {
+    color: #FF8C42;
+  }
+  .subtitle {
+    margin-top: 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: rgba(255,255,255,0.85);
+    letter-spacing: 1px;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="gradient-overlay"></div>
+  <div class="header-bar">
+    <span>Powered by HelloGrowth</span>
+    <span>@hellogrowth__</span>
+    <span>Março 2026 ®</span>
+  </div>
+  <div class="handle-badge">@hellogrowth__</div>
+  <div class="title-block">
+    <h1>
+      52,7% ACHAM<br>
+      IA ESSENCIAL<br>
+      MAS 65,7%<br>
+      <span class="orange">NÃO USAM</span>
+    </h1>
+    <div class="subtitle">→ O MAIOR DESPERDÍCIO DO EMPREENDEDORISMO BRASILEIRO</div>
+  </div>
+</div>
+</body>
+</html>

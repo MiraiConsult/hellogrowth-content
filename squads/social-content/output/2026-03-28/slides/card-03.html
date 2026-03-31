@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+<title>Card 03 - O Paradoxo</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #0d0d0d;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .card {
+    width: 1080px;
+    height: 1350px;
+    background: #0d0d0d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    padding: 80px;
+  }
+  .label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    color: #FF8C42;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 80px;
+  }
+  .columns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 0;
+  }
+  .col {
+    flex: 1;
+    text-align: center;
+    padding: 40px;
+  }
+  .big-number {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 120px;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+  .big-number.orange {
+    color: #FF8C42;
+  }
+  .big-number.green {
+    color: #6CCFAA;
+  }
+  .col-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    color: #fff;
+    line-height: 1.4;
+  }
+  .divider {
+    width: 2px;
+    height: 280px;
+    background: rgba(255,255,255,0.3);
+    flex-shrink: 0;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="label">O PARADOXO</div>
+  <div class="columns">
+    <div class="col">
+      <div class="big-number orange">52,7%</div>
+      <div class="col-text">acham IA essencial</div>
+    </div>
+    <div class="divider"></div>
+    <div class="col">
+      <div class="big-number green">65,7%</div>
+      <div class="col-text">NÃO usam nenhuma</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
