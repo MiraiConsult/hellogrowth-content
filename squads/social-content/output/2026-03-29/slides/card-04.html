@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Card 04 — Fake vs Real</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  html, body {
+    margin: 0; padding: 0;
+    width: 1080px; height: 1350px;
+    background: #0d0d0d;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+  }
+  .card {
+    width: 1080px; height: 1350px;
+    display: flex;
+    position: relative;
+  }
+  .left, .right {
+    width: 540px; height: 1350px;
+    display: flex; flex-direction: column;
+    justify-content: center;
+    padding: 0 60px;
+    box-sizing: border-box;
+  }
+  .left { background: #1a0a00; }
+  .right { background: #0a1a14; }
+  .divider {
+    position: absolute;
+    left: 539px; top: 200px; bottom: 200px;
+    width: 2px; background: rgba(255,255,255,0.15);
+  }
+  .side-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900; font-size: 80px;
+    text-transform: uppercase; line-height: 1;
+    margin: 0 0 50px 0;
+  }
+  .left .side-title { color: #FF6B35; }
+  .right .side-title { color: #6CCFAA; }
+  .list { list-style: none; padding: 0; margin: 0; }
+  .list li {
+    font-size: 26px; font-weight: 500;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 28px;
+    display: flex; align-items: center; gap: 16px;
+  }
+  .list li .bullet {
+    width: 12px; height: 12px;
+    border-radius: 50%; flex-shrink: 0;
+  }
+  .left .bullet { background: #FF6B35; }
+  .right .bullet { background: #6CCFAA; }
+  .handle {
+    position: absolute; bottom: 50px; left: 50%; transform: translateX(-50%);
+    font-size: 14px; color: rgba(255,255,255,0.35);
+    font-weight: 600; letter-spacing: 1px;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="left">
+    <h2 class="side-title">FAKE</h2>
+    <ul class="list">
+      <li><span class="bullet"></span> Compradas</li>
+      <li><span class="bullet"></span> Mesmo texto</li>
+      <li><span class="bullet"></span> Sem detalhes</li>
+    </ul>
+  </div>
+  <div class="divider"></div>
+  <div class="right">
+    <h2 class="side-title">REAL</h2>
+    <ul class="list">
+      <li><span class="bullet"></span> Organicas</li>
+      <li><span class="bullet"></span> Variadas</li>
+      <li><span class="bullet"></span> Com contexto</li>
+    </ul>
+  </div>
+  <div class="handle">@hellogrowth__</div>
+</div>
+</body>
+</html>

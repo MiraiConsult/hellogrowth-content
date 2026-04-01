@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Card 06 — 5 Regras</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  html, body {
+    margin: 0; padding: 0;
+    width: 1080px; height: 1350px;
+    background: #0d0d0d;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+  }
+  .card {
+    width: 1080px; height: 1350px;
+    background: linear-gradient(180deg, #0d0d0d 0%, #0a1a14 100%);
+    display: flex; flex-direction: column;
+    justify-content: center;
+    padding: 0 80px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800; font-size: 14px;
+    text-transform: uppercase; letter-spacing: 4px;
+    color: #3BAA7A; margin-bottom: 20px;
+  }
+  .title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900; font-size: 48px;
+    text-transform: uppercase; color: #fff;
+    margin: 0 0 60px 0; line-height: 1.1;
+  }
+  .item {
+    display: flex; align-items: baseline;
+    gap: 24px; margin-bottom: 36px;
+  }
+  .item-number {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900; font-size: 64px;
+    line-height: 1; flex-shrink: 0;
+    min-width: 60px;
+  }
+  .item-number.green { color: #3BAA7A; }
+  .item-number.orange { color: #FF6B35; }
+  .item-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px; font-weight: 500;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.4;
+  }
+  .handle {
+    position: absolute; bottom: 50px; left: 80px;
+    font-size: 14px; color: rgba(255,255,255,0.35);
+    font-weight: 600; letter-spacing: 1px;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="label">COMO CONSTRUIR REPUTACAO REAL</div>
+  <h1 class="title">5 REGRAS DE OURO</h1>
+
+  <div class="item">
+    <span class="item-number green">1.</span>
+    <span class="item-text">Nunca compre avaliacoes</span>
+  </div>
+  <div class="item">
+    <span class="item-number orange">2.</span>
+    <span class="item-text">Peca feedback genuino pos-venda</span>
+  </div>
+  <div class="item">
+    <span class="item-number green">3.</span>
+    <span class="item-text">Responda TUDO em 24h</span>
+  </div>
+  <div class="item">
+    <span class="item-number orange">4.</span>
+    <span class="item-text">Mostre vulnerabilidade &mdash; resolva em publico</span>
+  </div>
+  <div class="item">
+    <span class="item-number green">5.</span>
+    <span class="item-text">Qualidade gera reviews. Nao o contrario.</span>
+  </div>
+
+  <div class="handle">@hellogrowth__</div>
+</div>
+</body>
+</html>

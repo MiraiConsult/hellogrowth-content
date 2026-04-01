@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Card 01 — Cover</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  html, body {
+    margin: 0; padding: 0;
+    width: 1080px; height: 1350px;
+    background: #0d0d0d;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+  }
+  .card {
+    position: relative;
+    width: 1080px; height: 1350px;
+    background: url('gamma-cover.png') center/cover no-repeat;
+  }
+  .overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 0%, transparent 25%, rgba(0,0,0,0.85) 70%, rgba(0,0,0,0.95) 100%);
+  }
+  .header {
+    position: absolute; top: 40px; left: 60px; right: 60px;
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 13px; color: rgba(255,255,255,0.45);
+    font-weight: 500; text-transform: uppercase; letter-spacing: 1.5px;
+  }
+  .handle-badge {
+    position: absolute; top: 520px; left: 60px;
+    display: flex; align-items: center; gap: 10px;
+    font-size: 15px; color: rgba(255,255,255,0.7);
+    font-weight: 600;
+  }
+  .handle-badge .dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    background: #3BAA7A;
+  }
+  .title-block {
+    position: absolute; bottom: 120px; left: 60px; right: 60px;
+  }
+  .title-block h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900; font-size: 84px; line-height: 0.95;
+    text-transform: uppercase; margin: 0; color: #fff;
+  }
+  .title-block h1 .orange { color: #FF6B35; }
+  .subtitle {
+    margin-top: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 3px;
+    color: rgba(255,255,255,0.6);
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="overlay">
+    <div class="header">
+      <span>Powered by HelloGrowth</span>
+      <span>@hellogrowth__</span>
+      <span>Marco 2026 &reg;</span>
+    </div>
+    <div class="handle-badge">
+      <span class="dot"></span>
+      <span>@hellogrowth__</span>
+    </div>
+    <div class="title-block">
+      <h1>GOOGLE REMOVEU<br>170 MILHOES DE<br>AVALIACOES<br><span class="orange">FALSAS</span></h1>
+      <div class="subtitle">&rarr; AS SUAS SAO REAIS?</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
