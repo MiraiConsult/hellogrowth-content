@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Card 01 - Cover</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  html, body {
+    margin: 0; padding: 0;
+    width: 1080px; height: 1350px;
+    background: #0d0d0d;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .card {
+    position: relative;
+    width: 1080px; height: 1350px;
+    background: url('gamma-cover.png') center/cover no-repeat;
+  }
+  .gradient-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.3) 30%, rgba(0,0,0,0.85) 65%, rgba(0,0,0,0.95) 100%);
+  }
+  .header {
+    position: absolute; top: 40px; left: 60px; right: 60px;
+    display: flex; justify-content: space-between; align-items: center;
+    z-index: 2;
+  }
+  .header-left {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; font-size: 22px;
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 1px;
+  }
+  .header-right {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; font-size: 22px;
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 1px;
+  }
+  .handle-badge {
+    position: absolute; top: 520px; left: 60px;
+    display: flex; align-items: center; gap: 12px;
+    z-index: 2;
+  }
+  .green-dot {
+    width: 14px; height: 14px;
+    background: #25D366;
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(37,211,102,0.6);
+  }
+  .handle-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; font-size: 24px;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+  .title-block {
+    position: absolute; bottom: 180px; left: 60px; right: 60px;
+    z-index: 2;
+  }
+  .title-line {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900; font-size: 82px;
+    text-transform: uppercase;
+    line-height: 1.0;
+    color: #fff;
+    margin: 0;
+  }
+  .title-line.green {
+    color: #25D366;
+  }
+  .subtitle {
+    margin-top: 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; font-size: 28px;
+    color: #25D366;
+    letter-spacing: 2px;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="gradient-overlay"></div>
+  <div class="header">
+    <span class="header-left">Powered by HelloGrowth</span>
+    <span class="header-right">Março 2026 ®</span>
+  </div>
+  <div class="handle-badge">
+    <div class="green-dot"></div>
+    <span class="handle-text">@hellogrowth__</span>
+  </div>
+  <div class="title-block">
+    <p class="title-line">82% DOS BRASILEIROS</p>
+    <p class="title-line">USAM WHATSAPP</p>
+    <p class="title-line">PARA FALAR COM</p>
+    <p class="title-line green">EMPRESAS</p>
+    <div class="subtitle">→ VOCÊ ESTÁ VENDENDO POR LÁ?</div>
+  </div>
+</div>
+</body>
+</html>

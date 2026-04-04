@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Card 07 - CTA</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  html, body {
+    margin: 0; padding: 0;
+    width: 1080px; height: 1350px;
+    background: #0d0d0d;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .card {
+    width: 1080px; height: 1350px;
+    background: #0d0d0d;
+    position: relative;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    padding: 80px 90px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 50%;
+    transform: translateX(-50%);
+    width: 800px; height: 800px;
+    background: radial-gradient(circle, rgba(37,211,102,0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900; font-size: 52px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1.15;
+    margin-bottom: 50px;
+    max-width: 850px;
+    position: relative; z-index: 1;
+  }
+  .cta-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; font-size: 32px;
+    color: #25D366;
+    margin-bottom: 60px;
+    position: relative; z-index: 1;
+  }
+  .divider {
+    width: 120px; height: 3px;
+    background: linear-gradient(90deg, #2D7D5F, #6CCFAA);
+    margin-bottom: 60px;
+    position: relative; z-index: 1;
+  }
+  .brand-name {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900; font-size: 42px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #2D7D5F, #6CCFAA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 20px;
+    position: relative; z-index: 1;
+  }
+  .slogan {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; font-size: 22px;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 40px;
+    position: relative; z-index: 1;
+  }
+  .source {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; font-size: 18px;
+    color: rgba(255,255,255,0.3);
+    position: relative; z-index: 1;
+    max-width: 700px;
+    line-height: 1.5;
+  }
+  .handle {
+    position: absolute; top: 40px; right: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; font-size: 22px;
+    color: rgba(255,255,255,0.35);
+    z-index: 2;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="handle">@hellogrowth__</div>
+  <div class="title">SEU WHATSAPP ESTÁ GERANDO VENDAS OU SÓ RESPONDENDO DÚVIDAS?</div>
+  <div class="cta-text">Comenta aqui 👇</div>
+  <div class="divider"></div>
+  <div class="brand-name">HELLOGROWTH</div>
+  <div class="slogan">Crescimento inteligente para o seu negócio</div>
+  <div class="source">Dados: Opinion Box, Meta Business, E-Commerce Brasil 2026</div>
+</div>
+</body>
+</html>

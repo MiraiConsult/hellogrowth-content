@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Card 03 - Circular Stats</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  html, body {
+    margin: 0; padding: 0;
+    width: 1080px; height: 1350px;
+    background: #0d0d0d;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .card {
+    width: 1080px; height: 1350px;
+    background: #0d0d0d;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    padding: 80px;
+    box-sizing: border-box;
+    gap: 50px;
+  }
+  .label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900; font-size: 24px;
+    color: #25D366;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+  }
+  .stat-row {
+    display: flex; align-items: center; gap: 40px;
+    width: 100%;
+    max-width: 800px;
+  }
+  .circle {
+    width: 180px; height: 180px;
+    border-radius: 50%;
+    border: 6px solid #25D366;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    background: rgba(37,211,102,0.05);
+    box-shadow: 0 0 30px rgba(37,211,102,0.15);
+  }
+  .circle-number {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900; font-size: 48px;
+    color: #fff;
+  }
+  .circle-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; font-size: 24px;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.5;
+    flex: 1;
+  }
+  .handle {
+    position: absolute; top: 40px; right: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; font-size: 22px;
+    color: rgba(255,255,255,0.35);
+  }
+</style>
+</head>
+<body>
+<div class="card" style="position:relative;">
+  <div class="handle">@hellogrowth__</div>
+  <div class="label">Por que funciona</div>
+  <div class="stat-row">
+    <div class="circle">
+      <span class="circle-number">88%</span>
+    </div>
+    <div class="circle-text">acham mensagens o meio mais rápido</div>
+  </div>
+  <div class="stat-row">
+    <div class="circle">
+      <span class="circle-number">82%</span>
+    </div>
+    <div class="circle-text">já usam WhatsApp com empresas</div>
+  </div>
+  <div class="stat-row">
+    <div class="circle">
+      <span class="circle-number">68%</span>
+    </div>
+    <div class="circle-text">voltam a comprar pelo mesmo canal</div>
+  </div>
+</div>
+</body>
+</html>

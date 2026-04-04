@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Card 05 - Split Comparison</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  html, body {
+    margin: 0; padding: 0;
+    width: 1080px; height: 1350px;
+    background: #0d0d0d;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .card {
+    width: 1080px; height: 1350px;
+    display: flex;
+    position: relative;
+  }
+  .half {
+    width: 538px; height: 1350px;
+    display: flex; flex-direction: column;
+    justify-content: center;
+    padding: 70px;
+    box-sizing: border-box;
+  }
+  .left {
+    background: #25D366;
+  }
+  .right {
+    background: #0d0d0d;
+  }
+  .divider {
+    position: absolute;
+    left: 538px; top: 0;
+    width: 4px; height: 1350px;
+    background: rgba(255,255,255,0.3);
+  }
+  .half-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900; font-size: 48px;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 50px;
+  }
+  .left .half-title { color: #fff; }
+  .right .half-title { color: #6CCFAA; }
+  .list-item {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; font-size: 28px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    padding-left: 24px;
+    position: relative;
+  }
+  .left .list-item {
+    color: rgba(255,255,255,0.9);
+  }
+  .left .list-item::before {
+    content: '✕';
+    position: absolute; left: -10px;
+    color: rgba(255,255,255,0.6);
+    font-weight: 700;
+  }
+  .right .list-item {
+    color: #6CCFAA;
+  }
+  .right .list-item::before {
+    content: '✓';
+    position: absolute; left: -10px;
+    color: #25D366;
+    font-weight: 700;
+  }
+  .handle {
+    position: absolute; top: 40px; right: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; font-size: 22px;
+    color: rgba(255,255,255,0.35);
+    z-index: 2;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="handle">@hellogrowth__</div>
+  <div class="half left">
+    <div class="half-title">SEM<br>WhatsApp</div>
+    <div class="list-item">Espera</div>
+    <div class="list-item">Telefone</div>
+    <div class="list-item">Email lento</div>
+  </div>
+  <div class="divider"></div>
+  <div class="half right">
+    <div class="half-title">COM<br>WhatsApp</div>
+    <div class="list-item">Resposta imediata</div>
+    <div class="list-item">Catálogo</div>
+    <div class="list-item">Pagamento no app</div>
+  </div>
+</div>
+</body>
+</html>
