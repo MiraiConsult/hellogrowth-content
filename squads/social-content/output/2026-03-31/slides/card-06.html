@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Card 06</title>
+
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{background:#0d0d0d;font-family:Arial,sans-serif;color:#fff}
+  .card{width:1080px;height:1350px;background:#0d0d0d;display:flex;flex-direction:column}
+  .ticker{height:40px;background:#0d0d0d;border-bottom:2px solid #2D7D5F;display:flex;align-items:center;justify-content:space-between;padding:0 30px;font-size:11px;font-weight:600;letter-spacing:2px;color:#6CCFAA;text-transform:uppercase}
+  .ticker .dot{display:inline-block;width:8px;height:8px;background:#3BAA7A;border-radius:50%;margin-right:8px}
+  .main{flex:1;padding:60px 70px 30px;display:flex;flex-direction:column}
+  .label{font-size:12px;font-weight:700;color:#3BAA7A;letter-spacing:3px;text-transform:uppercase;border-left:3px solid #3BAA7A;padding-left:12px;margin-bottom:20px}
+  h2{font-family:Impact, 'Arial Black';font-weight:900;font-size:58px;color:#fff;line-height:.95;text-transform:uppercase;margin-bottom:30px}
+  .gauge-wrap{flex:1;display:flex;align-items:center;justify-content:center;flex-direction:column}
+  .target{font-family:Impact, 'Arial Black';font-weight:900;font-size:40px;color:#3BAA7A;margin-top:10px;text-transform:uppercase;letter-spacing:2px}
+  .target span{color:#fff}
+  .mini-row{display:flex;gap:20px;margin-top:30px}
+  .mini{flex:1;background:#111;border-top:3px solid #fff;padding:22px 20px}
+  .mini.red{border-top-color:#FF4444}
+  .mini.yel{border-top-color:#F5B700}
+  .mini.grn{border-top-color:#3BAA7A}
+  .mini .n{font-family:Impact, 'Arial Black';font-weight:900;font-size:42px;line-height:1}
+  .mini.red .n{color:#FF4444}
+  .mini.yel .n{color:#F5B700}
+  .mini.grn .n{color:#3BAA7A}
+  .mini .l{font-family:Arial;font-size:13px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:1px;margin-top:6px}
+  .mini .d{font-family:Arial;font-size:11px;color:#666;margin-top:4px}
+  .footer{height:50px;background:#0d0d0d;border-top:2px solid #2D7D5F;display:flex;align-items:center;justify-content:space-between;padding:0 30px;font-size:11px;font-weight:600;letter-spacing:2px;color:#6CCFAA;text-transform:uppercase}
+  .page{color:#3BAA7A;font-weight:800}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="ticker">
+    <span><span class="dot"></span>REPORT 03/31 • PERFORMANCE GAUGE • TARGET</span>
+    <span>META &gt; 70</span>
+  </div>
+  <div class="main">
+    <div class="label">PERFORMANCE GAUGE</div>
+    <h2>Qual é o seu<br>NPS ideal?</h2>
+    <div class="gauge-wrap">
+      <svg width="800" height="460" viewBox="0 0 800 460">
+        <!-- red arc 0-50 -->
+        <path d="M 100 400 A 300 300 0 0 1 188 188" fill="none" stroke="#FF4444" stroke-width="60"/>
+        <!-- yellow arc 50-70 -->
+        <path d="M 188 188 A 300 300 0 0 1 400 100" fill="none" stroke="#F5B700" stroke-width="60"/>
+        <!-- green arc 70-100 -->
+        <path d="M 400 100 A 300 300 0 0 1 700 400" fill="none" stroke="#3BAA7A" stroke-width="60"/>
+        <!-- ticks -->
+        <g font-family="Inter" font-size="14" font-weight="700" fill="#999">
+          <text x="100" y="430" text-anchor="middle">0</text>
+          <text x="188" y="175" text-anchor="middle">50</text>
+          <text x="400" y="85" text-anchor="middle">70</text>
+          <text x="700" y="430" text-anchor="middle">100</text>
+        </g>
+        <!-- needle pointing at 70 -->
+        <line x1="400" y1="400" x2="400" y2="130" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="400" cy="400" r="20" fill="#0d0d0d" stroke="#3BAA7A" stroke-width="5"/>
+        <circle cx="400" cy="400" r="6" fill="#3BAA7A"/>
+        <!-- center value -->
+        <text x="400" y="360" text-anchor="middle" font-family="Inter" font-size="12" font-weight="700" fill="#666" letter-spacing="2">TARGET</text>
+      </svg>
+      <div class="target">META: NPS &gt; <span style="color:#fff">70</span> (ZONA VERDE)</div>
+    </div>
+    <div class="mini-row">
+      <div class="mini red"><div class="n">&lt;50</div><div class="l">Crítico</div><div class="d">Ação urgente</div></div>
+      <div class="mini yel"><div class="n">50-70</div><div class="l">Bom</div><div class="d">Melhorias</div></div>
+      <div class="mini grn"><div class="n">&gt;70</div><div class="l">Excelente</div><div class="d">World-class</div></div>
+    </div>
+  </div>
+  <div class="footer">
+    <span>@HELLOGROWTH__</span>
+    <span>PERFORMANCE GAUGE</span>
+    <span class="page">06/07</span>
+  </div>
+</div>
+</body>
+</html>

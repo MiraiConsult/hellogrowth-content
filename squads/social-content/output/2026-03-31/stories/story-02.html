@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Story 02</title>
+
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{background:#0d0d0d;font-family:Arial,sans-serif;color:#fff}
+  .story{width:1080px;height:1920px;background:#0d0d0d;display:flex;flex-direction:column}
+  .ticker{height:50px;background:#0d0d0d;border-bottom:2px solid #2D7D5F;display:flex;align-items:center;justify-content:space-between;padding:0 40px;font-size:13px;font-weight:600;letter-spacing:2px;color:#6CCFAA;text-transform:uppercase}
+  .ticker .dot{display:inline-block;width:10px;height:10px;background:#3BAA7A;border-radius:50%;margin-right:10px}
+  .main{flex:1;padding:100px 60px 60px;display:flex;flex-direction:column;justify-content:center}
+  .label{font-size:14px;font-weight:700;color:#3BAA7A;letter-spacing:4px;text-transform:uppercase;border-left:4px solid #3BAA7A;padding-left:16px;margin-bottom:40px}
+  .formula{font-family:Impact, 'Arial Black';font-weight:900;font-size:98px;color:#fff;line-height:.95;text-transform:uppercase;margin-bottom:60px}
+  .formula .op{color:#3BAA7A}
+  .formula .detr{color:#FF4444}
+  .formula .prom{color:#3BAA7A}
+  .bars{margin-bottom:50px}
+  .bar-label{display:flex;justify-content:space-between;margin-bottom:10px}
+  .bar-label .n{font-family:Arial;font-size:18px;font-weight:700;text-transform:uppercase;letter-spacing:1px}
+  .bar-label .v{font-family:Impact, 'Arial Black';font-weight:900;font-size:34px}
+  .bar{height:60px;background:#1a1a1a;margin-bottom:24px;position:relative;border-left:3px solid}
+  .bar .fill{height:100%}
+  .bp{border-left-color:#3BAA7A}.bp .fill{background:#3BAA7A;width:30%}
+  .bn{border-left-color:#6CCFAA}.bn .fill{background:#6CCFAA;width:40%}
+  .bd{border-left-color:#FF4444}.bd .fill{background:#FF4444;width:30%}
+  .calc-box{background:#111;border:2px solid #2D7D5F;padding:30px 36px;margin-bottom:40px}
+  .calc-box .k{font-family:Arial;font-size:12px;font-weight:700;color:#3BAA7A;letter-spacing:3px;margin-bottom:10px;text-transform:uppercase}
+  .calc-box .c{font-family:Impact, 'Arial Black';font-weight:900;font-size:42px;color:#fff;line-height:1.05}
+  .calc-box .c span{color:#3BAA7A}
+  .tip{background:#0d0d0d;border:1px dashed #3BAA7A;padding:24px 28px}
+  .tip .k{font-family:Arial;font-size:11px;font-weight:700;color:#3BAA7A;letter-spacing:3px;margin-bottom:8px;text-transform:uppercase}
+  .tip .t{font-family:Arial;font-size:20px;color:#fff;line-height:1.4;font-weight:500}
+  .tip .t strong{color:#6CCFAA}
+  .footer{height:60px;background:#0d0d0d;border-top:2px solid #2D7D5F;display:flex;align-items:center;justify-content:space-between;padding:0 40px;font-size:13px;font-weight:600;letter-spacing:2px;color:#6CCFAA;text-transform:uppercase}
+</style>
+</head>
+<body>
+<div class="story">
+  <div class="ticker">
+    <span><span class="dot"></span>REPORT 03/31 • FORMULA • QUICK TIP</span>
+    <span>NPS 101</span>
+  </div>
+  <div class="main">
+    <div class="label">A FÓRMULA</div>
+    <div class="formula">NPS <span class="op">=</span><br>% <span class="prom">Promotores</span><br><span class="op">−</span><br>% <span class="detr">Detratores</span></div>
+    <div class="bars">
+      <div class="bar-label"><div class="n" style="color:#3BAA7A">Promotores</div><div class="v" style="color:#3BAA7A">30%</div></div>
+      <div class="bar bp"><div class="fill"></div></div>
+      <div class="bar-label"><div class="n" style="color:#6CCFAA">Neutros</div><div class="v" style="color:#6CCFAA">40%</div></div>
+      <div class="bar bn"><div class="fill"></div></div>
+      <div class="bar-label"><div class="n" style="color:#FF4444">Detratores</div><div class="v" style="color:#FF4444">30%</div></div>
+      <div class="bar bd"><div class="fill"></div></div>
+    </div>
+    <div class="calc-box">
+      <div class="k">&gt; CÁLCULO</div>
+      <div class="c">30% Promotores − 30% Detratores = <span>NPS 0</span></div>
+    </div>
+    <div class="tip">
+      <div class="k">QUICK TIP</div>
+      <div class="t">Neutros <strong>não contam</strong> na fórmula — mas são seus clientes mais fáceis de virar promotores.</div>
+    </div>
+  </div>
+  <div class="footer">
+    <span>@HELLOGROWTH__</span>
+    <span>NPS FORMULA</span>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Card 01 - Cover</title>
+
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{background:#0d0d0d;font-family:Arial,sans-serif;color:#fff}
+  .card{width:1080px;height:1350px;background:#0d0d0d;position:relative;display:flex;flex-direction:column;overflow:hidden}
+  .ticker{height:40px;background:#0d0d0d;border-bottom:2px solid #2D7D5F;display:flex;align-items:center;justify-content:space-between;padding:0 30px;font-family:Arial;font-size:11px;font-weight:600;letter-spacing:2px;color:#6CCFAA;text-transform:uppercase}
+  .ticker .dot{display:inline-block;width:8px;height:8px;background:#3BAA7A;border-radius:50%;margin-right:8px;animation:pulse 2s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+  .main{flex:1;display:flex;padding:80px 70px 40px;gap:40px}
+  .left{flex:1.4}
+  .right{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:40px}
+  .label-top{font-family:Arial;font-size:13px;font-weight:700;color:#3BAA7A;letter-spacing:3px;text-transform:uppercase;margin-bottom:30px;border-left:3px solid #3BAA7A;padding-left:14px}
+  h1{font-family:Impact, 'Arial Black';font-weight:900;font-size:170px;line-height:.85;color:#fff;letter-spacing:-2px}
+  h1 .green{color:#3BAA7A}
+  h1 .year{color:#6CCFAA;font-size:110px;display:block;margin-top:10px}
+  .subtitle{font-family:Arial;font-size:22px;font-weight:400;color:#999;line-height:1.4;margin-top:50px;max-width:520px;border-top:1px solid #2D7D5F;padding-top:24px}
+  .donut-label{font-family:Arial;font-size:11px;font-weight:700;color:#6CCFAA;letter-spacing:2px;margin-top:20px;text-align:center}
+  .donut-big{font-family:Impact, 'Arial Black';font-weight:900;font-size:54px;color:#3BAA7A;text-align:center;line-height:1}
+  .donut-sub{font-family:Arial;font-size:10px;color:#666;letter-spacing:2px;text-align:center;margin-top:6px}
+  .footer{height:50px;background:#0d0d0d;border-top:2px solid #2D7D5F;display:flex;align-items:center;justify-content:space-between;padding:0 30px;font-family:Arial;font-size:11px;font-weight:600;letter-spacing:2px;color:#6CCFAA;text-transform:uppercase}
+  .footer .page{color:#3BAA7A;font-weight:800}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="ticker">
+    <span><span class="dot"></span>REPORT 03/31 • LOYALTY METRICS • EXCLUSIVE</span>
+    <span>LIVE DATA • BR</span>
+  </div>
+  <div class="main">
+    <div class="left">
+      <div class="label-top">CUSTOMER INTELLIGENCE BRIEF</div>
+      <h1>NPS<br><span class="green">DECODED</span><span class="year">2026</span></h1>
+      <p class="subtitle">How Brazilian companies measure customer loyalty (and why most fail)</p>
+    </div>
+    <div class="right">
+      <svg width="280" height="280" viewBox="0 0 280 280">
+        <circle cx="140" cy="140" r="100" fill="none" stroke="#1f1f1f" stroke-width="40"/>
+        <circle cx="140" cy="140" r="100" fill="none" stroke="#3BAA7A" stroke-width="40"
+          stroke-dasharray="188.5 628.3" stroke-dashoffset="0" transform="rotate(-90 140 140)"/>
+        <text x="140" y="135" text-anchor="middle" font-family="Barlow Condensed" font-weight="900" font-size="80" fill="#fff">30</text>
+        <text x="140" y="165" text-anchor="middle" font-family="Inter" font-weight="600" font-size="13" fill="#6CCFAA" letter-spacing="2">NPS SCORE</text>
+      </svg>
+      <div class="donut-label">BRAZIL AVG: 30</div>
+      <div class="donut-sub">SOURCE: BAIN 2025</div>
+    </div>
+  </div>
+  <div class="footer">
+    <span>@HELLOGROWTH__</span>
+    <span>SOURCE: BAIN, NUBANK, NATURA</span>
+    <span class="page">01/07</span>
+  </div>
+</div>
+</body>
+</html>

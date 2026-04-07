@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Card 03</title>
+
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{background:#0d0d0d;font-family:Arial,sans-serif;color:#fff}
+  .card{width:1080px;height:1350px;background:#0d0d0d;display:flex;flex-direction:column}
+  .ticker{height:40px;background:#0d0d0d;border-bottom:2px solid #2D7D5F;display:flex;align-items:center;justify-content:space-between;padding:0 30px;font-size:11px;font-weight:600;letter-spacing:2px;color:#6CCFAA;text-transform:uppercase}
+  .ticker .dot{display:inline-block;width:8px;height:8px;background:#3BAA7A;border-radius:50%;margin-right:8px}
+  .main{flex:1;padding:60px 70px 30px;display:flex;flex-direction:column}
+  .label{font-size:12px;font-weight:700;color:#3BAA7A;letter-spacing:3px;text-transform:uppercase;border-left:3px solid #3BAA7A;padding-left:12px;margin-bottom:20px}
+  h2{font-family:Impact, 'Arial Black';font-weight:900;font-size:64px;color:#fff;line-height:.95;text-transform:uppercase;margin-bottom:30px}
+  .row{display:flex;flex:1;gap:40px;align-items:center}
+  .donut-wrap{flex:1;display:flex;flex-direction:column;align-items:center}
+  .legend{margin-top:30px;width:100%}
+  .leg-item{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid #1f1f1f}
+  .leg-left{display:flex;align-items:center;gap:12px}
+  .swatch{width:16px;height:16px}
+  .leg-name{font-family:Arial;font-size:14px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:1px}
+  .leg-pct{font-family:Impact, 'Arial Black';font-weight:900;font-size:32px;color:#fff}
+  .right-text{flex:.9}
+  .quote-label{font-size:11px;font-weight:700;color:#3BAA7A;letter-spacing:3px;margin-bottom:14px;text-transform:uppercase}
+  .quote{font-family:Impact, 'Arial Black';font-weight:800;font-size:34px;color:#fff;line-height:1.1;border-left:3px solid #3BAA7A;padding-left:18px}
+  .quote span{color:#FF4444}
+  .footer{height:50px;background:#0d0d0d;border-top:2px solid #2D7D5F;display:flex;align-items:center;justify-content:space-between;padding:0 30px;font-size:11px;font-weight:600;letter-spacing:2px;color:#6CCFAA;text-transform:uppercase}
+  .page{color:#3BAA7A;font-weight:800}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="ticker">
+    <span><span class="dot"></span>REPORT 03/31 • SEGMENTATION • CUSTOMER MIX</span>
+    <span>n=2,500 BR</span>
+  </div>
+  <div class="main">
+    <div class="label">DISTRIBUTION ANALYSIS</div>
+    <h2>Quem são<br>seus clientes?</h2>
+    <div class="row">
+      <div class="donut-wrap">
+        <svg width="500" height="500" viewBox="0 0 500 500">
+          <circle cx="250" cy="250" r="160" fill="none" stroke="#3BAA7A" stroke-width="80"
+            stroke-dasharray="301.6 1005.3" transform="rotate(-90 250 250)"/>
+          <circle cx="250" cy="250" r="160" fill="none" stroke="#6CCFAA" stroke-width="80"
+            stroke-dasharray="402.1 1005.3" stroke-dashoffset="-301.6" transform="rotate(-90 250 250)"/>
+          <circle cx="250" cy="250" r="160" fill="none" stroke="#FF4444" stroke-width="80"
+            stroke-dasharray="301.6 1005.3" stroke-dashoffset="-703.7" transform="rotate(-90 250 250)"/>
+          <text x="250" y="240" text-anchor="middle" font-family="Inter" font-size="13" font-weight="700" fill="#666" letter-spacing="2">BRAZIL MIX</text>
+          <text x="250" y="290" text-anchor="middle" font-family="Barlow Condensed" font-size="72" font-weight="900" fill="#fff">100%</text>
+        </svg>
+        <div class="legend">
+          <div class="leg-item"><div class="leg-left"><div class="swatch" style="background:#3BAA7A"></div><div class="leg-name">Promotores</div></div><div class="leg-pct">30%</div></div>
+          <div class="leg-item"><div class="leg-left"><div class="swatch" style="background:#6CCFAA"></div><div class="leg-name">Neutros</div></div><div class="leg-pct">40%</div></div>
+          <div class="leg-item"><div class="leg-left"><div class="swatch" style="background:#FF4444"></div><div class="leg-name">Detratores</div></div><div class="leg-pct">30%</div></div>
+        </div>
+      </div>
+      <div class="right-text">
+        <div class="quote-label">MÉDIA BRASILEIRA</div>
+        <div class="quote">A maioria das empresas tem mais <span>detratores</span> do que <span style="color:#3BAA7A">promotores</span>.</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <span>@HELLOGROWTH__</span>
+    <span>DISTRIBUTION ANALYSIS</span>
+    <span class="page">03/07</span>
+  </div>
+</div>
+</body>
+</html>

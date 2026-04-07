@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Card 02</title>
+
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{background:#0d0d0d;font-family:Arial,sans-serif;color:#fff}
+  .card{width:1080px;height:1350px;background:#0d0d0d;display:flex;flex-direction:column}
+  .ticker{height:40px;background:#0d0d0d;border-bottom:2px solid #2D7D5F;display:flex;align-items:center;justify-content:space-between;padding:0 30px;font-size:11px;font-weight:600;letter-spacing:2px;color:#6CCFAA;text-transform:uppercase}
+  .ticker .dot{display:inline-block;width:8px;height:8px;background:#3BAA7A;border-radius:50%;margin-right:8px}
+  .main{flex:1;display:flex;padding:60px 60px 30px;gap:40px}
+  .left{flex:1;display:flex;flex-direction:column;justify-content:center}
+  .right{flex:1.2;display:flex;flex-direction:column;justify-content:center}
+  .label{font-size:12px;font-weight:700;color:#3BAA7A;letter-spacing:3px;text-transform:uppercase;border-left:3px solid #3BAA7A;padding-left:12px;margin-bottom:20px}
+  .bignum{font-family:Impact, 'Arial Black';font-weight:900;font-size:280px;color:#3BAA7A;line-height:.85;letter-spacing:-6px}
+  .nuname{font-family:Impact, 'Arial Black';font-weight:800;font-size:42px;color:#fff;margin-top:10px;letter-spacing:1px}
+  .nusub{font-family:Arial;font-size:13px;color:#666;letter-spacing:2px;margin-top:6px;text-transform:uppercase}
+  .chart-title{font-family:Impact, 'Arial Black';font-weight:800;font-size:30px;color:#fff;margin-bottom:24px;text-transform:uppercase;letter-spacing:1px;border-bottom:1px solid #2D7D5F;padding-bottom:12px}
+  .bar-row{display:flex;align-items:center;margin-bottom:18px;gap:12px}
+  .bar-name{font-family:Arial;font-size:13px;font-weight:700;color:#fff;width:110px;text-transform:uppercase;letter-spacing:1px}
+  .bar-track{flex:1;height:32px;background:#1a1a1a;position:relative;border-left:2px solid #2D7D5F}
+  .bar-fill{height:100%;display:flex;align-items:center;justify-content:flex-end;padding-right:10px;font-family:Arial;font-size:14px;font-weight:800;color:#0d0d0d}
+  .footer{height:50px;background:#0d0d0d;border-top:2px solid #2D7D5F;display:flex;align-items:center;justify-content:space-between;padding:0 30px;font-size:11px;font-weight:600;letter-spacing:2px;color:#6CCFAA;text-transform:uppercase}
+  .page{color:#3BAA7A;font-weight:800}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="ticker">
+    <span><span class="dot"></span>REPORT 03/31 • BENCHMARK • TOP NPS</span>
+    <span>DATA: 2025 Q4</span>
+  </div>
+  <div class="main">
+    <div class="left">
+      <div class="label">WORLD-CLASS</div>
+      <div class="bignum">+87</div>
+      <div class="nuname">NUBANK</div>
+      <div class="nusub">NPS SCORE / BR FINTECH</div>
+    </div>
+    <div class="right">
+      <div class="chart-title">RANKING NPS GLOBAL</div>
+      <div class="bar-row"><div class="bar-name">NUBANK</div><div class="bar-track"><div class="bar-fill" style="width:100%;background:#3BAA7A">87</div></div></div>
+      <div class="bar-row"><div class="bar-name">NATURA</div><div class="bar-track"><div class="bar-fill" style="width:92%;background:#6CCFAA">80</div></div></div>
+      <div class="bar-row"><div class="bar-name">APPLE</div><div class="bar-track"><div class="bar-fill" style="width:83%;background:#A0E8CC">72</div></div></div>
+      <div class="bar-row"><div class="bar-name">AMAZON</div><div class="bar-track"><div class="bar-fill" style="width:78%;background:#A0E8CC">68</div></div></div>
+      <div class="bar-row"><div class="bar-name" style="color:#FF4444">SUA EMPRESA</div><div class="bar-track" style="border-left-color:#FF4444"><div class="bar-fill" style="width:25%;background:#FF4444;color:#fff">??</div></div></div>
+    </div>
+  </div>
+  <div class="footer">
+    <span>@HELLOGROWTH__</span>
+    <span>WORLD-CLASS NPS BENCHMARK</span>
+    <span class="page">02/07</span>
+  </div>
+</div>
+</body>
+</html>
