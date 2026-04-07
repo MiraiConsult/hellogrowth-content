@@ -5,7 +5,8 @@
     "userDataDir": "_opensquad/_browser_profile",
     "launchOptions": {
       "headless": true,
-      "channel": "chrome"
+      "channel": "chrome",
+      "args": ["--no-sandbox", "--disable-dev-shm-usage"]
     }
   }
 }
