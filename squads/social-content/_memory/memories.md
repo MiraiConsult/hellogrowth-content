@@ -27,6 +27,19 @@
 - **Créditos Gamma usados:** 108 (restam 4.292)
 - **Status:** Aprovado pelo usuário para ajustes finais no Gamma
 
+### Run 2026-04-28-204139
+
+- **Tema:** Growth / Crescimento — estratégias de aquisição, retenção, vendas
+- **Notícia escolhida:** #1 — "Retenção como motor de lucro" (score 9.5, Bain/E-Commerce Brasil)
+- **Ângulo escolhido:** #4 — Dica Prática — "5 Ações de Retenção Que Custam R$0"
+- **Peças produzidas:** Carrossel Feed (7 cards), Stories (4 frames planejados)
+- **Design:** HTML/CSS → Chrome headless, estilo Dashboard/Bloomberg, Montserrat
+- **Publicação:** Via Supabase Edge Function → Instagram Graph API
+- **Post:** https://www.instagram.com/p/DXsKcSojIr9/
+- **Ciclos de revisão:** 0 (aprovado na primeira tentativa)
+- **Catbox offline:** Usou Supabase Storage como CDN alternativo
+- **Token IG:** Short-lived, expirou em horas. Precisa trocar por long-lived.
+
 ### Preferências identificadas
 
 - Diego tende a escolher ângulos provocativos/polêmicos
@@ -39,3 +52,10 @@
 - Planeja criar carrossel diariamente
 - Tem Gamma Pro (créditos ilimitados)
 - Tema core: reputação digital (alinhado com HelloGrowth)
+- Também aceita temas de Growth/Crescimento (retenção, vendas, CAC)
+- Gostou do ângulo "Dica Prática" com ações gratuitas — conteúdo acionável
+- Estilo Dashboard/Bloomberg com Montserrat é o padrão visual atual (não mais Gamma)
+- Publicação automatizada funciona via Supabase Edge Function (ig-publish) quando graph.facebook.com bloqueado pelo egress
+- Supabase Storage como CDN alternativo quando catbox.moe está offline
+- IG Business Account ID correto: 17841448421441860 (não o Page ID)
+- Precisa gerar long-lived token pra evitar expiração frequente
