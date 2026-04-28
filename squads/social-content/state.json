@@ -1,0 +1,21 @@
+{
+  "squad": "social-content",
+  "status": "running",
+  "step": { "current": 2, "total": 12, "label": "step-02-research" },
+  "agents": [
+    { "id": "researcher", "name": "Fábio Fonte", "icon": "🔍", "status": "working", "deliverTo": null, "desk": { "col": 1, "row": 1 } },
+    { "id": "instagram-creator", "name": "Iago Insta", "icon": "📱", "status": "idle", "deliverTo": null, "desk": { "col": 2, "row": 1 } },
+    { "id": "linkedin-creator", "name": "Luna LinkedIn", "icon": "💼", "status": "idle", "deliverTo": null, "desk": { "col": 3, "row": 1 } },
+    { "id": "designer", "name": "Dani Design", "icon": "🎨", "status": "idle", "deliverTo": null, "desk": { "col": 1, "row": 2 } },
+    { "id": "reviewer", "name": "Vera Veredito", "icon": "✅", "status": "idle", "deliverTo": null, "desk": { "col": 2, "row": 2 } },
+    { "id": "instagram-publisher", "name": "Pub Insta", "icon": "📤", "status": "idle", "deliverTo": null, "desk": { "col": 3, "row": 2 } }
+  ],
+  "handoff": {
+    "from": "checkpoint",
+    "to": "researcher",
+    "message": "Foco definido: Growth/Crescimento, último mês",
+    "completedAt": "2026-04-28T20:42:10Z"
+  },
+  "startedAt": "2026-04-28T20:41:39Z",
+  "updatedAt": "2026-04-28T20:42:30Z"
+}
