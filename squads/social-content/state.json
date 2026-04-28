@@ -1,21 +1,21 @@
 {
   "squad": "social-content",
   "status": "running",
-  "step": { "current": 2, "total": 12, "label": "step-02-research" },
+  "step": { "current": 8, "total": 12, "label": "step-08-design-visuals" },
   "agents": [
-    { "id": "researcher", "name": "Fábio Fonte", "icon": "🔍", "status": "working", "deliverTo": null, "desk": { "col": 1, "row": 1 } },
-    { "id": "instagram-creator", "name": "Iago Insta", "icon": "📱", "status": "idle", "deliverTo": null, "desk": { "col": 2, "row": 1 } },
+    { "id": "researcher", "name": "Fábio Fonte", "icon": "🔍", "status": "done", "deliverTo": null, "desk": { "col": 1, "row": 1 } },
+    { "id": "instagram-creator", "name": "Iago Insta", "icon": "📱", "status": "done", "deliverTo": null, "desk": { "col": 2, "row": 1 } },
     { "id": "linkedin-creator", "name": "Luna LinkedIn", "icon": "💼", "status": "idle", "deliverTo": null, "desk": { "col": 3, "row": 1 } },
-    { "id": "designer", "name": "Dani Design", "icon": "🎨", "status": "idle", "deliverTo": null, "desk": { "col": 1, "row": 2 } },
+    { "id": "designer", "name": "Dani Design", "icon": "🎨", "status": "working", "deliverTo": null, "desk": { "col": 1, "row": 2 } },
     { "id": "reviewer", "name": "Vera Veredito", "icon": "✅", "status": "idle", "deliverTo": null, "desk": { "col": 2, "row": 2 } },
     { "id": "instagram-publisher", "name": "Pub Insta", "icon": "📤", "status": "idle", "deliverTo": null, "desk": { "col": 3, "row": 2 } }
   ],
   "handoff": {
-    "from": "checkpoint",
-    "to": "researcher",
-    "message": "Foco definido: Growth/Crescimento, último mês",
-    "completedAt": "2026-04-28T20:42:10Z"
+    "from": "instagram-creator",
+    "to": "designer",
+    "message": "Conteúdo aprovado: 7 slides + 4 stories sobre retenção R$0",
+    "completedAt": "2026-04-28T20:50:00Z"
   },
   "startedAt": "2026-04-28T20:41:39Z",
-  "updatedAt": "2026-04-28T20:42:30Z"
+  "updatedAt": "2026-04-28T20:50:00Z"
 }

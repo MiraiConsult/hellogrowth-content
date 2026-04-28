@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #0d0d0d; width: 1080px; height: 1350px; overflow: hidden; }
+  .card {
+    width: 1080px; height: 1350px; background: #0d0d0d;
+    font-family: 'Montserrat', sans-serif; color: #ffffff;
+    display: flex; flex-direction: column; position: relative; overflow: hidden;
+  }
+
+  .ticker {
+    width: 100%; height: 48px; background: #0d0d0d;
+    border-bottom: 2px solid #3BAA7A;
+    display: flex; align-items: center; padding: 0 60px; gap: 24px; flex-shrink: 0;
+  }
+  .ticker-dot { width: 8px; height: 8px; border-radius: 50%; background: #3BAA7A; animation: pulse 2s ease-in-out infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+  .ticker-label { font-weight: 500; font-size: 14px; letter-spacing: 3px; text-transform: uppercase; color: #6CCFAA; }
+  .ticker-sep { color: #3BAA7A; font-size: 14px; font-weight: 500; }
+
+  .content {
+    flex: 1; display: flex; flex-direction: column;
+    padding: 60px 70px; justify-content: center;
+  }
+
+  .action-label {
+    font-weight: 500; font-size: 15px; letter-spacing: 3px;
+    text-transform: uppercase; color: #6CCFAA; margin-bottom: 12px;
+  }
+
+  .action-number {
+    font-weight: 900; font-size: 180px; color: #3BAA7A;
+    line-height: 0.85; letter-spacing: -6px; margin-bottom: 20px;
+  }
+
+  .headline {
+    font-weight: 900; font-size: 50px; color: #ffffff;
+    line-height: 1.12; margin-bottom: 36px; letter-spacing: -1px;
+  }
+
+  .body-text {
+    font-weight: 400; font-size: 27px; color: #cccccc;
+    line-height: 1.55; margin-bottom: 50px;
+  }
+  .body-text strong {
+    color: #3BAA7A; font-weight: 700;
+  }
+
+  /* NPS Scale */
+  .nps-scale {
+    display: flex; gap: 6px; justify-content: center; margin-top: 10px;
+  }
+  .nps-cell {
+    width: 80px; height: 80px; border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 900; font-size: 28px; color: #ffffff;
+  }
+  .nps-detractor { background: #FF4444; }
+  .nps-passive { background: #FF9900; }
+  .nps-promoter { background: #3BAA7A; }
+  .nps-labels {
+    display: flex; justify-content: space-between; margin-top: 14px; padding: 0 4px;
+  }
+  .nps-label-text {
+    font-weight: 500; font-size: 13px; letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .nps-label-det { color: #FF4444; }
+  .nps-label-pas { color: #FF9900; }
+  .nps-label-pro { color: #3BAA7A; }
+
+  .footer {
+    width: 100%; height: 56px; background: #0d0d0d;
+    border-top: 2px solid #3BAA7A;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 60px; flex-shrink: 0;
+  }
+  .footer-handle { font-weight: 500; font-size: 14px; letter-spacing: 2px; text-transform: uppercase; color: #6CCFAA; }
+  .footer-page { font-weight: 500; font-size: 14px; letter-spacing: 2px; color: #6CCFAA; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="ticker">
+    <div class="ticker-dot"></div>
+    <span class="ticker-label">REPORT 04/28</span>
+    <span class="ticker-sep">&#8226;</span>
+    <span class="ticker-label">A&Ccedil;&Atilde;O 02</span>
+    <span class="ticker-sep">&#8226;</span>
+    <span class="ticker-label">NPS</span>
+  </div>
+
+  <div class="content">
+    <div class="action-label">A&Ccedil;&Atilde;O DE RETEN&Ccedil;&Atilde;O</div>
+    <div class="action-number">02</div>
+    <div class="headline">PESQUISA NPS<br>TRIMESTRAL</div>
+    <div class="body-text">
+      Uma pergunta. Dez segundos.<br>
+      <strong>&ldquo;De 0 a 10, nos recomendaria?&rdquo;</strong><br><br>
+      Identifica promotores e detratores.<br>
+      Ferramenta: Google Forms. <strong>Gratuito.</strong>
+    </div>
+
+    <div class="nps-scale">
+      <div class="nps-cell nps-detractor">0</div>
+      <div class="nps-cell nps-detractor">1</div>
+      <div class="nps-cell nps-detractor">2</div>
+      <div class="nps-cell nps-detractor">3</div>
+      <div class="nps-cell nps-detractor">4</div>
+      <div class="nps-cell nps-detractor">5</div>
+      <div class="nps-cell nps-detractor">6</div>
+      <div class="nps-cell nps-passive">7</div>
+      <div class="nps-cell nps-passive">8</div>
+      <div class="nps-cell nps-promoter">9</div>
+      <div class="nps-cell nps-promoter">10</div>
+    </div>
+    <div class="nps-labels">
+      <span class="nps-label-text nps-label-det">DETRATORES (0-6)</span>
+      <span class="nps-label-text nps-label-pas">PASSIVOS (7-8)</span>
+      <span class="nps-label-text nps-label-pro">PROMOTORES (9-10)</span>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span class="footer-handle">@HELLOGROWTH__</span>
+    <span class="footer-page">04/07</span>
+  </div>
+</div>
+</body>
+</html>

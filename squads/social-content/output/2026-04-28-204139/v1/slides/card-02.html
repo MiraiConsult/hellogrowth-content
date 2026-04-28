@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #0d0d0d; width: 1080px; height: 1350px; overflow: hidden; }
+  .card {
+    width: 1080px;
+    height: 1350px;
+    background: #0d0d0d;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ticker {
+    width: 100%;
+    height: 48px;
+    background: #0d0d0d;
+    border-bottom: 2px solid #3BAA7A;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    gap: 24px;
+    flex-shrink: 0;
+  }
+  .ticker-dot {
+    width: 8px; height: 8px; border-radius: 50%; background: #3BAA7A;
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+  .ticker-label {
+    font-weight: 500; font-size: 14px; letter-spacing: 3px;
+    text-transform: uppercase; color: #6CCFAA;
+  }
+  .ticker-sep { color: #3BAA7A; font-size: 14px; font-weight: 500; }
+
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 70px;
+    justify-content: center;
+  }
+
+  .giant-number {
+    font-weight: 900;
+    font-size: 200px;
+    color: #3BAA7A;
+    line-height: 0.9;
+    letter-spacing: -8px;
+    margin-bottom: 16px;
+  }
+
+  .headline {
+    font-weight: 900;
+    font-size: 48px;
+    color: #ffffff;
+    line-height: 1.15;
+    margin-bottom: 32px;
+    letter-spacing: -1px;
+  }
+
+  .body-text {
+    font-weight: 400;
+    font-size: 27px;
+    color: #cccccc;
+    line-height: 1.55;
+    margin-bottom: 50px;
+  }
+  .body-text strong {
+    color: #3BAA7A;
+    font-weight: 700;
+  }
+
+  /* Bar chart */
+  .chart-container {
+    display: flex;
+    align-items: flex-end;
+    gap: 60px;
+    padding: 0 40px;
+    height: 260px;
+  }
+  .chart-bar-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .chart-bar {
+    width: 120px;
+    border-radius: 6px 6px 0 0;
+  }
+  .bar-acq {
+    height: 220px;
+    background: #FF4444;
+  }
+  .bar-ret {
+    height: 60px;
+    background: #3BAA7A;
+  }
+  .chart-label {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #888888;
+    text-align: center;
+  }
+  .chart-value {
+    font-weight: 900;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 4px;
+  }
+
+  .footer {
+    width: 100%;
+    height: 56px;
+    background: #0d0d0d;
+    border-top: 2px solid #3BAA7A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    flex-shrink: 0;
+  }
+  .footer-handle {
+    font-weight: 500; font-size: 14px; letter-spacing: 2px;
+    text-transform: uppercase; color: #6CCFAA;
+  }
+  .footer-page {
+    font-weight: 500; font-size: 14px; letter-spacing: 2px; color: #6CCFAA;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="ticker">
+    <div class="ticker-dot"></div>
+    <span class="ticker-label">REPORT 04/28</span>
+    <span class="ticker-sep">&#8226;</span>
+    <span class="ticker-label">CONTEXTO</span>
+    <span class="ticker-sep">&#8226;</span>
+    <span class="ticker-label">POR QUE RETEN&Ccedil;&Atilde;O?</span>
+  </div>
+
+  <div class="content">
+    <div class="giant-number">25x</div>
+    <div class="headline">Reter cliente custa at&eacute; 25x menos</div>
+    <div class="body-text">
+      Mesmo assim, <strong>80% do budget</strong> vai pra aquisi&ccedil;&atilde;o.<br>
+      Clientes recorrentes gastam <strong>67% mais</strong> a partir do 3&ordm; ano.<br>
+      CRM bem feito = <strong>25% do faturamento</strong>.
+    </div>
+
+    <div class="chart-container">
+      <div class="chart-bar-group">
+        <div class="chart-value" style="color:#FF4444">25x</div>
+        <div class="chart-bar bar-acq"></div>
+        <div class="chart-label">AQUISI&Ccedil;&Atilde;O</div>
+      </div>
+      <div class="chart-bar-group">
+        <div class="chart-value" style="color:#3BAA7A">1x</div>
+        <div class="chart-bar bar-ret"></div>
+        <div class="chart-label">RETEN&Ccedil;&Atilde;O</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span class="footer-handle">@HELLOGROWTH__</span>
+    <span class="footer-page">02/07</span>
+  </div>
+</div>
+</body>
+</html>
