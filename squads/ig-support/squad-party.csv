@@ -1,0 +1,4 @@
+id,name,title,icon,execution,path
+classifier,Clara Classificadora,Classificadora de Intenção,🧭,inline,./agents/classifier.agent.md
+responder,Rafael Resposta,Gerador de Respostas,💬,inline,./agents/responder.agent.md
+escalator,Eva Escalação,Gestora de Escalação,🚨,inline,./agents/escalator.agent.md

@@ -1,0 +1,20 @@
+name: ig-support
+title: "IG Support — Atendimento Automático via Instagram DM"
+description: "Squad de atendimento ao cliente via Instagram DM. Usa webhooks do Meta + Claude API para classificar intenção, gerar respostas automáticas e escalar casos complexos para o Slack."
+performance_mode: alta-performance
+language: "pt-BR"
+type: webhook
+
+skills:
+  - instagram-messaging
+  - claude-api
+
+data:
+  - pipeline/data/knowledge-base.md
+  - pipeline/data/response-templates.md
+  - pipeline/data/escalation-rules.md
+
+integrations:
+  - supabase-edge-function
+  - instagram-messaging-api
+  - slack-notifications
