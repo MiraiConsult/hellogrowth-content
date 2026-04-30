@@ -137,7 +137,14 @@ Deno.serve(async (req) => {
         const senderName = senderId;
 
         try {
+          console.log("Processing message:", messageText, "from:", senderId);
+          console.log("ANTHROPIC_KEY set:", !!ANTHROPIC_KEY);
+          console.log("IG_TOKEN set:", !!IG_TOKEN);
+          console.log("SUPABASE_URL:", SUPABASE_URL);
+          console.log("SUPABASE_KEY set:", !!SUPABASE_KEY);
+
           const result = await classifyAndRespond(messageText, senderName);
+          console.log("Classification result:", JSON.stringify(result));
 
           // Log
           await logToSupabase({
@@ -161,7 +168,7 @@ Deno.serve(async (req) => {
             await notifySlack(senderName, result.intent, result.confidence, messageText, result.reply);
           }
         } catch (err) {
-          console.error("Error processing message:", err);
+          console.error("Error processing message:", String(err), (err as Error)?.stack);
           await sendReply(senderId, "Oi! Recebi sua mensagem. Nosso time vai te responder em breve! 😊");
         }
       }
