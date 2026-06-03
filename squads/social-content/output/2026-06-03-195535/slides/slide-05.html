@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+  width: 1080px;
+  height: 1350px;
+  background: #0a0a0a;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  overflow: hidden;
+}
+.card {
+  width: 1080px;
+  height: 1350px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px 65px;
+}
+.bg-orb1 {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,68,68,0.2) 0%, transparent 70%);
+  top: 100px;
+  right: -100px;
+  filter: blur(90px);
+}
+.bg-orb2 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(200,40,40,0.15) 0%, transparent 70%);
+  bottom: 250px;
+  left: -50px;
+  filter: blur(70px);
+}
+.handle {
+  position: absolute;
+  top: 40px;
+  left: 65px;
+  font-weight: 500;
+  font-size: 18px;
+  color: rgba(255,255,255,0.35);
+  z-index: 10;
+}
+.content { position: relative; z-index: 5; }
+.intro {
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 45px;
+  color: rgba(255,255,255,0.5);
+}
+.big-stat {
+  font-weight: 900;
+  font-size: 160px;
+  background: linear-gradient(135deg, #FF6B6B, #FF4444, #CC2222);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+.stat-context {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1.35;
+  margin-bottom: 50px;
+}
+.stat-context .highlight {
+  color: #FF4444;
+}
+.warning-glass {
+  background: rgba(255,68,68,0.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,68,68,0.15);
+  border-radius: 20px;
+  padding: 35px 32px;
+}
+.warning-text {
+  font-weight: 400;
+  font-size: 28px;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.5;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="bg-orb1"></div>
+  <div class="bg-orb2"></div>
+  <div class="handle">@hellogrowth__</div>
+  <div class="content">
+    <div class="intro">E o outro lado?</div>
+    <div class="big-stat">57%</div>
+    <div class="stat-context">dos consumidores<br><span class="highlight">NUNCA</span> usam uma empresa<br>com menos de 4 estrelas.</div>
+    <div class="warning-glass">
+      <div class="warning-text">Se sua nota caiu, você ficou invisível para mais da metade do mercado.</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

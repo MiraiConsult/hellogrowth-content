@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+  width: 1080px;
+  height: 1350px;
+  background: #0a0a0a;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  overflow: hidden;
+}
+.card {
+  width: 1080px;
+  height: 1350px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px 65px;
+}
+.bg-orb {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(108,207,170,0.2) 0%, transparent 70%);
+  bottom: 100px;
+  right: -50px;
+  filter: blur(80px);
+}
+.handle {
+  position: absolute;
+  top: 40px;
+  left: 65px;
+  font-weight: 500;
+  font-size: 18px;
+  color: rgba(255,255,255,0.35);
+  z-index: 10;
+}
+.content { position: relative; z-index: 5; }
+.title {
+  font-weight: 900;
+  font-size: 42px;
+  margin-bottom: 50px;
+  color: rgba(255,255,255,0.85);
+}
+.calc-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 30px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+.calc-label {
+  font-weight: 400;
+  font-size: 26px;
+  color: rgba(255,255,255,0.5);
+}
+.calc-value {
+  font-weight: 700;
+  font-size: 30px;
+}
+.result-box {
+  background: rgba(108,207,170,0.08);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(108,207,170,0.2);
+  border-radius: 24px;
+  padding: 40px 35px;
+  margin-top: 20px;
+  margin-bottom: 45px;
+  text-align: center;
+}
+.result-arrow {
+  font-size: 28px;
+  color: #6CCFAA;
+  margin-bottom: 10px;
+}
+.result-value {
+  font-weight: 900;
+  font-size: 52px;
+  background: linear-gradient(135deg, #6CCFAA, #A0E8CC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.15;
+  margin-bottom: 8px;
+}
+.result-sub {
+  font-weight: 500;
+  font-size: 24px;
+  color: #6CCFAA;
+}
+.bottom {
+  font-weight: 700;
+  font-size: 30px;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.5;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="bg-orb"></div>
+  <div class="handle">@hellogrowth__</div>
+  <div class="content">
+    <div class="title">Faz a conta:</div>
+    <div class="calc-row">
+      <span class="calc-label">Faturamento anual</span>
+      <span class="calc-value">R$500k</span>
+    </div>
+    <div class="calc-row">
+      <span class="calc-label">+1 estrela no Google</span>
+      <span class="calc-value">+5% a 9%</span>
+    </div>
+    <div class="result-box">
+      <div class="result-arrow">↓</div>
+      <div class="result-value">R$25.000 a R$45.000</div>
+      <div class="result-sub">a mais por ano</div>
+    </div>
+    <div class="bottom">Sem gastar 1 real<br>em anúncio.</div>
+  </div>
+</div>
+</body>
+</html>

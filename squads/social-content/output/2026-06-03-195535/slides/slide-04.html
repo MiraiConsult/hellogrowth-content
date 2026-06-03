@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+  width: 1080px;
+  height: 1350px;
+  background: #0a0a0a;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  overflow: hidden;
+}
+.card {
+  width: 1080px;
+  height: 1350px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px 65px;
+}
+.bg-orb1 {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(59,170,122,0.25) 0%, transparent 70%);
+  top: 200px;
+  left: -100px;
+  filter: blur(90px);
+}
+.bg-orb2 {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(108,207,170,0.2) 0%, transparent 70%);
+  bottom: 150px;
+  right: -80px;
+  filter: blur(70px);
+}
+.handle {
+  position: absolute;
+  top: 40px;
+  left: 65px;
+  font-weight: 500;
+  font-size: 18px;
+  color: rgba(255,255,255,0.35);
+  z-index: 10;
+}
+.content { position: relative; z-index: 5; }
+.intro {
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 45px;
+  color: rgba(255,255,255,0.7);
+}
+.big-stat {
+  font-weight: 900;
+  font-size: 150px;
+  background: linear-gradient(135deg, #6CCFAA, #A0E8CC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+.stat-context {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+  color: rgba(255,255,255,0.9);
+}
+.detail-glass {
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 20px;
+  padding: 30px 32px;
+  margin-bottom: 45px;
+}
+.detail-text {
+  font-weight: 400;
+  font-size: 26px;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.5;
+}
+.quote-box {
+  border-left: 4px solid;
+  border-image: linear-gradient(to bottom, #6CCFAA, #3BAA7A) 1;
+  padding-left: 25px;
+}
+.quote-text {
+  font-weight: 700;
+  font-size: 30px;
+  color: #6CCFAA;
+  line-height: 1.5;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="bg-orb1"></div>
+  <div class="bg-orb2"></div>
+  <div class="handle">@hellogrowth__</div>
+  <div class="content">
+    <div class="intro">Tem mais.</div>
+    <div class="big-stat">+35%</div>
+    <div class="stat-context">de faturamento para<br>quem responde reviews.</div>
+    <div class="detail-glass">
+      <div class="detail-text">Empresas que respondem mais de 75% das avaliações faturam 35% a mais do que as que ignoram.</div>
+    </div>
+    <div class="quote-box">
+      <div class="quote-text">Responder reviews é o marketing mais barato que existe.</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
