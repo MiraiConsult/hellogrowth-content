@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+@page { size: 1080px 1350px; margin: 0; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+  width: 1080px; height: 1350px;
+  background: #004d40;
+  font-family: 'Inter', sans-serif;
+  color: #edf0ee;
+  overflow: hidden;
+  letter-spacing: -0.02em;
+}
+.card {
+  width: 1080px; height: 1350px;
+  position: relative;
+  background:
+    radial-gradient(ellipse at top right, rgba(40,174,97,0.25) 0%, transparent 55%),
+    radial-gradient(ellipse at bottom left, rgba(40,174,97,0.18) 0%, transparent 55%),
+    linear-gradient(160deg, #004d40 0%, #1b6b5b 60%, #004d40 100%);
+  padding: 100px 80px;
+}
+.noise {
+  position: absolute; inset: 0;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/></svg>");
+  opacity: 0.08; mix-blend-mode: overlay; pointer-events: none;
+}
+.handle {
+  position: absolute; top: 50px; left: 50%; transform: translateX(-50%);
+  font-size: 18px; font-weight: 500; color: rgba(237,240,238,0.4);
+  letter-spacing: 0.05em;
+}
+
+.pre-headline {
+  font-size: 46px; font-weight: 500;
+  color: #edf0ee; line-height: 1.3;
+  margin-top: 220px; margin-bottom: 30px;
+}
+.headline-mega {
+  font-size: 130px; font-weight: 900;
+  color: #bfff00; line-height: 0.95; margin-bottom: 30px;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  text-shadow: 0 0 60px rgba(191,255,0,0.25);
+}
+.sub {
+  font-size: 32px; font-weight: 500;
+  color: rgba(237,240,238,0.7);
+  line-height: 1.4;
+}
+
+.bottom-row {
+  position: absolute; bottom: 130px; left: 80px; right: 80px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.logo-symbol-only img { height: 150px; }
+.arrow-next {
+  width: 84px; height: 84px;
+  background: #bfff00;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 6px 24px rgba(191,255,0,0.30);
+}
+.arrow-next svg { width: 38px; height: 38px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="noise"></div>
+  <div class="handle">@hellogrowth__</div>
+
+  <div class="pre-headline">O Google não olha<br>só a sua nota.</div>
+  <div class="headline-mega">olha o que<br>vem junto.</div>
+  <div class="sub">E é aí que muita empresa boa<br>fica invisível pra quem busca.</div>
+
+  <div class="bottom-row">
+    <div class="logo-symbol-only">
+      <img src="assets/logo-symbol-light.svg" alt="HG">
+    </div>
+    <div class="arrow-next">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#004d40" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12"/>
+        <polyline points="12 5 19 12 12 19"/>
+      </svg>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+@page { size: 1080px 1350px; margin: 0; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+  width: 1080px; height: 1350px;
+  background: #edf0ee;
+  font-family: 'Inter', sans-serif;
+  color: #004d40;
+  overflow: hidden;
+  letter-spacing: -0.02em;
+}
+.card {
+  width: 1080px; height: 1350px;
+  position: relative;
+  background:
+    radial-gradient(ellipse 900px 700px at top, rgba(191,255,0,0.35) 0%, transparent 60%),
+    radial-gradient(ellipse 700px 800px at bottom right, rgba(40,174,97,0.30) 0%, transparent 65%),
+    radial-gradient(ellipse 700px 800px at bottom left, rgba(40,174,97,0.22) 0%, transparent 65%),
+    linear-gradient(180deg, #f7faf5 0%, #edf0ee 100%);
+  padding: 100px 80px;
+}
+.handle {
+  position: absolute; top: 40px; left: 50%; transform: translateX(-50%);
+  font-size: 18px; font-weight: 500; color: rgba(0,77,64,0.4);
+  letter-spacing: 0.05em;
+}
+
+.content {
+  margin-top: 200px;
+}
+.kicker {
+  font-size: 42px; font-weight: 600;
+  color: #1b6b5b; line-height: 1.3; margin-bottom: 14px;
+}
+.headline {
+  font-size: 120px; font-weight: 900;
+  color: #004d40; line-height: 0.92; margin-bottom: 36px;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+.pilula {
+  display: inline-block;
+  background: #004d40; color: #bfff00;
+  font-weight: 900; font-size: 50px; text-transform: uppercase;
+  padding: 18px 38px; border-radius: 100px;
+  letter-spacing: -0.025em; line-height: 1;
+  box-shadow: 0 14px 40px rgba(0,77,64,0.30);
+  margin-bottom: 38px;
+  margin-left: -38px;
+}
+.sub {
+  font-size: 30px; font-weight: 500;
+  color: #1b6b5b; line-height: 1.5;
+  max-width: 900px;
+}
+.sub strong { color: #004d40; font-weight: 800; }
+
+.bottom-row {
+  position: absolute; bottom: 150px; left: 0; right: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+.bottom-row img { height: 130px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="handle">@hellogrowth__</div>
+
+  <div class="content">
+    <div class="kicker">É esse o processo</div>
+    <div class="headline">que falta<br>na sua empresa.</div>
+    <div class="pilula">A GENTE COLOCA NO LUGAR</div>
+    <div class="sub">Coleta, recência e frequência rodando todo dia.<br><strong>Toca no link da bio</strong> e a gente conversa.</div>
+  </div>
+
+  <div class="bottom-row">
+    <img src="assets/logo-full.svg" alt="HelloGrowth">
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+@page { size: 1080px 1350px; margin: 0; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+  width: 1080px; height: 1350px;
+  background: #edf0ee;
+  font-family: 'Inter', sans-serif;
+  color: #004d40;
+  overflow: hidden;
+  letter-spacing: -0.02em;
+}
+.card {
+  width: 1080px; height: 1350px;
+  position: relative;
+  background:
+    radial-gradient(ellipse 800px 600px at top right, rgba(191,255,0,0.32) 0%, transparent 60%),
+    radial-gradient(ellipse 600px 700px at bottom left, rgba(40,174,97,0.18) 0%, transparent 65%),
+    linear-gradient(180deg, #f7faf5 0%, #edf0ee 100%);
+  padding: 100px 80px;
+}
+.handle {
+  position: absolute; top: 40px; left: 50%; transform: translateX(-50%);
+  font-size: 18px; font-weight: 500; color: rgba(0,77,64,0.4);
+  letter-spacing: 0.05em;
+}
+
+.kicker {
+  margin-top: 120px;
+  font-size: 36px; font-weight: 600;
+  color: #1b6b5b; line-height: 1.3; margin-bottom: 40px;
+}
+
+.battle {
+  display: flex; align-items: stretch; gap: 30px;
+  margin-bottom: 40px;
+}
+.col {
+  flex: 1;
+  background: rgba(255,255,255,0.7);
+  border: 3px solid rgba(40,174,97,0.25);
+  border-radius: 24px;
+  padding: 32px 28px;
+  text-align: center;
+}
+.col.winner {
+  background: #004d40;
+  border-color: #bfff00;
+  color: #edf0ee;
+  box-shadow: 0 14px 40px rgba(0,77,64,0.30);
+}
+.col-rating {
+  font-size: 90px; font-weight: 900;
+  line-height: 1; margin-bottom: 6px;
+  letter-spacing: -0.05em;
+  color: #004d40;
+}
+.col.winner .col-rating { color: #bfff00; }
+.col-stars {
+  font-size: 26px;
+  color: #28ae61;
+  margin-bottom: 18px;
+  letter-spacing: 4px;
+}
+.col-reviews {
+  font-size: 32px; font-weight: 800;
+  color: #004d40; line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+.col.winner .col-reviews { color: #edf0ee; }
+.col-note {
+  font-size: 20px; font-weight: 500;
+  color: #1b6b5b; margin-top: 8px;
+  line-height: 1.3;
+}
+.col.winner .col-note { color: rgba(237,240,238,0.65); }
+
+.vs {
+  align-self: center;
+  font-size: 38px; font-weight: 900;
+  color: #28ae61;
+  letter-spacing: -0.05em;
+}
+
+.verdict {
+  margin-top: 16px;
+  font-size: 38px; font-weight: 700;
+  color: #1b6b5b; line-height: 1.35;
+  text-align: center;
+}
+.verdict strong {
+  background: #bfff00;
+  padding: 2px 14px;
+  color: #004d40; font-weight: 900;
+}
+
+.bottom-row {
+  position: absolute; bottom: 150px; left: 80px; right: 80px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.bottom-row img { height: 90px; }
+.arrow-next {
+  width: 84px; height: 84px;
+  background: #28ae61;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 6px 24px rgba(40,174,97,0.35);
+}
+.arrow-next svg { width: 38px; height: 38px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="handle">@hellogrowth__</div>
+
+  <div class="kicker">Sabe quem o Google escolhe?</div>
+
+  <div class="battle">
+    <div class="col">
+      <div class="col-rating">4,9</div>
+      <div class="col-stars">★ ★ ★ ★ ★</div>
+      <div class="col-reviews">12 avaliações</div>
+      <div class="col-note">paradas há meses</div>
+    </div>
+    <div class="vs">VS</div>
+    <div class="col winner">
+      <div class="col-rating">4,6</div>
+      <div class="col-stars">★ ★ ★ ★ ★</div>
+      <div class="col-reviews">300 avaliações</div>
+      <div class="col-note">novas toda semana</div>
+    </div>
+  </div>
+
+  <div class="verdict">Quem aparece no topo é <strong>o de 4,6</strong>.</div>
+
+  <div class="bottom-row">
+    <img src="assets/logo-wordmark.svg" alt="HelloGrowth">
+    <div class="arrow-next">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#edf0ee" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12"/>
+        <polyline points="12 5 19 12 12 19"/>
+      </svg>
+    </div>
+  </div>
+</div>
+</body>
+</html>

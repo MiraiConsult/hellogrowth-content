@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+@page { size: 1080px 1350px; margin: 0; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+  width: 1080px; height: 1350px;
+  background: #edf0ee;
+  font-family: 'Inter', sans-serif;
+  color: #004d40;
+  overflow: hidden;
+  letter-spacing: -0.02em;
+}
+.card {
+  width: 1080px; height: 1350px;
+  position: relative;
+  background:
+    radial-gradient(ellipse 900px 700px at top left, rgba(191,255,0,0.32) 0%, transparent 60%),
+    radial-gradient(ellipse 700px 800px at bottom right, rgba(40,174,97,0.18) 0%, transparent 65%),
+    linear-gradient(180deg, #f7faf5 0%, #edf0ee 100%);
+  padding: 80px 80px;
+}
+.handle {
+  position: absolute; top: 40px; left: 50%; transform: translateX(-50%);
+  font-size: 18px; font-weight: 500; color: rgba(0,77,64,0.4);
+  letter-spacing: 0.05em;
+}
+
+.stars {
+  display: flex; gap: 12px;
+  margin-top: 110px; margin-bottom: 50px;
+  filter: drop-shadow(0 8px 18px rgba(40,174,97,0.25));
+}
+.stars svg { width: 96px; height: 96px; }
+
+.headline-mega {
+  font-size: 130px; font-weight: 900;
+  color: #004d40; line-height: 0.92; margin-bottom: 14px;
+  letter-spacing: -0.05em;
+}
+.middle {
+  font-size: 50px; font-weight: 600;
+  color: #1b6b5b; line-height: 1.2; margin-bottom: 18px;
+}
+.pilula {
+  display: inline-block;
+  background: #bfff00;
+  font-size: 44px; font-weight: 800;
+  color: #004d40; line-height: 1.1;
+  padding: 12px 26px;
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
+  box-shadow: 6px 6px 0 rgba(40,174,97,0.30);
+}
+
+.bottom-row {
+  position: absolute; bottom: 150px; left: 80px; right: 80px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.logo-full img { height: 110px; }
+.arrow-next {
+  width: 92px; height: 92px;
+  background: #28ae61;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 8px 28px rgba(40,174,97,0.40);
+}
+.arrow-next svg { width: 40px; height: 40px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="handle">@hellogrowth__</div>
+
+  <div class="stars">
+    <svg viewBox="0 0 24 24" fill="#28ae61"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
+    <svg viewBox="0 0 24 24" fill="#28ae61"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
+    <svg viewBox="0 0 24 24" fill="#28ae61"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
+    <svg viewBox="0 0 24 24" fill="#28ae61"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
+    <svg viewBox="0 0 24 24" fill="#28ae61"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
+  </div>
+
+  <div class="headline-mega">4,9 estrelas</div>
+  <div class="middle">e mesmo assim,</div>
+  <div class="pilula">perdendo pra quem tem 4,6?</div>
+
+  <div class="bottom-row">
+    <div class="logo-full">
+      <img src="assets/logo-full.svg" alt="HelloGrowth">
+    </div>
+    <div class="arrow-next">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#edf0ee" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12"/>
+        <polyline points="12 5 19 12 12 19"/>
+      </svg>
+    </div>
+  </div>
+</div>
+</body>
+</html>
