@@ -23,3 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 .env
+
+# Opensquad browser sessions (private)
+_opensquad/_browser_profile/
