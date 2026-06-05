@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+@page { size: 1080px 1350px; margin: 0; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+  width: 1080px; height: 1350px;
+  background: #004d40;
+  font-family: 'Inter', sans-serif;
+  color: #edf0ee;
+  overflow: hidden;
+  letter-spacing: -0.02em;
+}
+.card {
+  width: 1080px; height: 1350px;
+  position: relative;
+  background:
+    radial-gradient(ellipse at top right, rgba(40,174,97,0.18) 0%, transparent 50%),
+    radial-gradient(ellipse at bottom left, rgba(40,174,97,0.15) 0%, transparent 55%),
+    linear-gradient(160deg, #004d40 0%, #1b6b5b 50%, #004d40 100%);
+  padding: 100px 80px;
+}
+.handle {
+  position: absolute; top: 50px; left: 50%; transform: translateX(-50%);
+  font-size: 18px; font-weight: 500; color: rgba(237,240,238,0.4);
+  letter-spacing: 0.05em;
+}
+
+/* Diagram: quality → ??? → review */
+.flow {
+  margin-top: 110px;
+  display: flex; align-items: center; justify-content: center;
+  gap: 16px;
+}
+.flow-node {
+  flex: 1;
+  background: rgba(0,77,64,0.55);
+  border: 2px solid rgba(40,174,97,0.4);
+  border-radius: 20px;
+  padding: 22px 12px;
+  text-align: center;
+}
+.flow-node.gap {
+  background: transparent;
+  border: 3px dashed rgba(191,255,0,0.6);
+}
+.flow-icon {
+  font-size: 44px; margin-bottom: 8px;
+}
+.flow-label {
+  font-size: 22px; font-weight: 800;
+  text-transform: uppercase; letter-spacing: -0.015em;
+  color: #edf0ee;
+}
+.flow-node.gap .flow-label { color: #bfff00; }
+.flow-sub {
+  font-size: 16px; font-weight: 500;
+  color: rgba(237,240,238,0.5);
+  margin-top: 2px;
+}
+.flow-arrow {
+  font-size: 36px; color: rgba(237,240,238,0.5);
+  font-weight: 900;
+}
+
+/* Quote */
+.quote {
+  margin-top: 60px;
+  font-size: 62px; font-weight: 900;
+  color: #edf0ee; line-height: 1.05;
+  letter-spacing: -0.035em;
+}
+.quote .highlight {
+  background: #bfff00;
+  padding: 2px 16px;
+  color: #004d40;
+}
+.gut {
+  margin-top: 32px;
+  font-size: 38px; font-weight: 700;
+  color: #bfff00; line-height: 1.25;
+  letter-spacing: -0.025em;
+}
+
+.bottom-row {
+  position: absolute; bottom: 130px; left: 80px; right: 80px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.logo-symbol-only img { height: 150px; }
+.arrow-next {
+  width: 84px; height: 84px;
+  background: #bfff00;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 6px 24px rgba(191,255,0,0.30);
+}
+.arrow-next svg { width: 38px; height: 38px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="handle">@hellogrowth__</div>
+
+  <div class="flow">
+    <div class="flow-node">
+      <div class="flow-icon">⭐</div>
+      <div class="flow-label">Qualidade</div>
+      <div class="flow-sub">real do serviço</div>
+    </div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-node gap">
+      <div class="flow-icon">❓</div>
+      <div class="flow-label">Gap</div>
+      <div class="flow-sub">processo que falta</div>
+    </div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-node">
+      <div class="flow-icon">💬</div>
+      <div class="flow-label">Review</div>
+      <div class="flow-sub">no Google</div>
+    </div>
+  </div>
+
+  <div class="quote">Sua qualidade não<br>aparece no Google porque<br>não está <span class="highlight">virando review.</span></div>
+  <div class="gut">E o algoritmo só lê o que vira review.</div>
+
+  <div class="bottom-row">
+    <div class="logo-symbol-only">
+      <img src="assets/logo-symbol-light.svg" alt="HG">
+    </div>
+    <div class="arrow-next">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#004d40" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12"/>
+        <polyline points="12 5 19 12 12 19"/>
+      </svg>
+    </div>
+  </div>
+</div>
+</body>
+</html>

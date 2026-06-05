@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+@page { size: 1080px 1350px; margin: 0; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+  width: 1080px; height: 1350px;
+  background: #004d40;
+  font-family: 'Inter', sans-serif;
+  color: #edf0ee;
+  overflow: hidden;
+  letter-spacing: -0.02em;
+}
+.card {
+  width: 1080px; height: 1350px;
+  position: relative;
+  background:
+    radial-gradient(ellipse at top right, rgba(40,174,97,0.20) 0%, transparent 55%),
+    radial-gradient(ellipse at bottom left, rgba(40,174,97,0.18) 0%, transparent 55%),
+    linear-gradient(160deg, #1b6b5b 0%, #004d40 70%);
+  padding: 100px 80px;
+}
+.handle {
+  position: absolute; top: 50px; left: 50%; transform: translateX(-50%);
+  font-size: 18px; font-weight: 500; color: rgba(237,240,238,0.4);
+  letter-spacing: 0.05em;
+}
+
+.kicker {
+  font-size: 30px; font-weight: 500;
+  color: rgba(237,240,238,0.65);
+  text-transform: uppercase; letter-spacing: 0.15em;
+  margin-top: 90px; margin-bottom: 16px;
+}
+.headline {
+  font-size: 64px; font-weight: 900;
+  color: #edf0ee; line-height: 1;
+  margin-bottom: 48px;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+.headline .accent { color: #bfff00; }
+
+/* Three big factor cards */
+.factors { display: flex; flex-direction: column; gap: 18px; }
+.factor {
+  background: rgba(0,77,64,0.55);
+  border: 2px solid rgba(40,174,97,0.4);
+  border-radius: 24px;
+  padding: 26px 32px;
+  display: flex; align-items: center; gap: 26px;
+}
+.factor-icon {
+  width: 88px; height: 88px; min-width: 88px;
+  background: #bfff00;
+  border-radius: 22px;
+  display: flex; align-items: center; justify-content: center;
+}
+.factor-icon svg { width: 50px; height: 50px; }
+.factor-body { flex: 1; }
+.factor-title {
+  font-size: 36px; font-weight: 900;
+  line-height: 1.05; letter-spacing: -0.025em;
+  text-transform: uppercase;
+}
+.factor-desc {
+  font-size: 22px; font-weight: 500;
+  color: rgba(237,240,238,0.6);
+  margin-top: 6px; line-height: 1.35;
+}
+.factor-badge {
+  background: rgba(191,255,0,0.18);
+  color: #bfff00;
+  font-size: 18px; font-weight: 800;
+  padding: 8px 16px; border-radius: 50px;
+  text-transform: uppercase; letter-spacing: 0.1em;
+  min-width: 80px; text-align: center;
+}
+
+.bottom-row {
+  position: absolute; bottom: 130px; left: 80px; right: 80px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.logo-symbol-only img { height: 150px; }
+.arrow-next {
+  width: 84px; height: 84px;
+  background: #bfff00;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 6px 24px rgba(191,255,0,0.30);
+}
+.arrow-next svg { width: 38px; height: 38px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="handle">@hellogrowth__</div>
+
+  <div class="kicker">os 3 sinais que o algoritmo lê:</div>
+  <div class="headline">Volume.<br>Recência.<br><span class="accent">Frequência.</span></div>
+
+  <div class="factors">
+    <div class="factor">
+      <div class="factor-icon">
+        <svg viewBox="0 0 24 24" fill="#004d40"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
+      </div>
+      <div class="factor-body">
+        <div class="factor-title">Volume</div>
+        <div class="factor-desc">quantas reviews você acumulou no total</div>
+      </div>
+      <div class="factor-badge">+ é melhor</div>
+    </div>
+
+    <div class="factor">
+      <div class="factor-icon">
+        <svg viewBox="0 0 24 24" fill="#004d40"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-2 .9-2 2v16c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H5V8h14v13zM7 10h5v5H7z"/></svg>
+      </div>
+      <div class="factor-body">
+        <div class="factor-title">Recência</div>
+        <div class="factor-desc">se chegaram nos últimos 30 dias</div>
+      </div>
+      <div class="factor-badge">30 dias</div>
+    </div>
+
+    <div class="factor">
+      <div class="factor-icon">
+        <svg viewBox="0 0 24 24" fill="#004d40"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>
+      </div>
+      <div class="factor-body">
+        <div class="factor-title">Frequência</div>
+        <div class="factor-desc">fluxo constante, não pico isolado</div>
+      </div>
+      <div class="factor-badge">toda sem.</div>
+    </div>
+  </div>
+
+  <div class="bottom-row">
+    <div class="logo-symbol-only">
+      <img src="assets/logo-symbol-light.svg" alt="HG">
+    </div>
+    <div class="arrow-next">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#004d40" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12"/>
+        <polyline points="12 5 19 12 12 19"/>
+      </svg>
+    </div>
+  </div>
+</div>
+</body>
+</html>

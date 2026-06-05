@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+@page { size: 1080px 1350px; margin: 0; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+  width: 1080px; height: 1350px;
+  background: #004d40;
+  font-family: 'Inter', sans-serif;
+  color: #edf0ee;
+  overflow: hidden;
+  letter-spacing: -0.02em;
+}
+.card {
+  width: 1080px; height: 1350px;
+  position: relative;
+  background:
+    radial-gradient(ellipse at top right, rgba(40,174,97,0.25) 0%, transparent 55%),
+    radial-gradient(ellipse at bottom left, rgba(40,174,97,0.18) 0%, transparent 55%),
+    linear-gradient(160deg, #004d40 0%, #1b6b5b 60%, #004d40 100%);
+  padding: 100px 80px;
+}
+.handle {
+  position: absolute; top: 50px; left: 50%; transform: translateX(-50%);
+  font-size: 18px; font-weight: 500; color: rgba(237,240,238,0.4);
+  letter-spacing: 0.05em;
+}
+
+/* Magnifier with G illustration */
+.magnifier-wrap {
+  margin-top: 100px;
+  display: flex; justify-content: center;
+  filter: drop-shadow(0 14px 40px rgba(191,255,0,0.25));
+}
+.magnifier-wrap svg { width: 240px; height: 240px; }
+
+.pre {
+  margin-top: 40px;
+  font-size: 32px; font-weight: 500;
+  color: rgba(237,240,238,0.7);
+  text-align: center; line-height: 1.4;
+}
+.headline {
+  font-size: 100px; font-weight: 900;
+  color: #edf0ee; line-height: 0.95;
+  text-align: center; margin-top: 16px; margin-bottom: 24px;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+.headline .accent { color: #bfff00; }
+.sub {
+  font-size: 30px; font-weight: 500;
+  color: rgba(237,240,238,0.75);
+  text-align: center; line-height: 1.45;
+  max-width: 880px; margin: 0 auto;
+}
+.sub strong { color: #edf0ee; font-weight: 800; }
+
+.bottom-row {
+  position: absolute; bottom: 130px; left: 80px; right: 80px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.logo-symbol-only img { height: 150px; }
+.arrow-next {
+  width: 84px; height: 84px;
+  background: #bfff00;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 6px 24px rgba(191,255,0,0.30);
+}
+.arrow-next svg { width: 38px; height: 38px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="handle">@hellogrowth__</div>
+
+  <div class="magnifier-wrap">
+    <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+      <!-- lupa circle -->
+      <circle cx="100" cy="100" r="80" fill="none" stroke="#bfff00" stroke-width="14"/>
+      <!-- handle -->
+      <line x1="158" y1="158" x2="220" y2="220" stroke="#bfff00" stroke-width="16" stroke-linecap="round"/>
+      <!-- G letter inside -->
+      <text x="100" y="125" text-anchor="middle" font-family="Inter, sans-serif" font-weight="900" font-size="86" fill="#bfff00" letter-spacing="-4">G</text>
+    </svg>
+  </div>
+
+  <div class="pre">O Google não escolhe pela nota.</div>
+  <div class="headline">Escolhe pelo<br><span class="accent">conjunto.</span></div>
+  <div class="sub">Nota é <strong>1 de 3 sinais</strong> que o algoritmo lê pra montar o ranking local.</div>
+
+  <div class="bottom-row">
+    <div class="logo-symbol-only">
+      <img src="assets/logo-symbol-light.svg" alt="HG">
+    </div>
+    <div class="arrow-next">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#004d40" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12"/>
+        <polyline points="12 5 19 12 12 19"/>
+      </svg>
+    </div>
+  </div>
+</div>
+</body>
+</html>

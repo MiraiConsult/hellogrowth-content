@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+@page { size: 1080px 1350px; margin: 0; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+  width: 1080px; height: 1350px;
+  background: #edf0ee;
+  font-family: 'Inter', sans-serif;
+  color: #004d40;
+  overflow: hidden;
+  letter-spacing: -0.02em;
+}
+.card {
+  width: 1080px; height: 1350px;
+  position: relative;
+  background:
+    radial-gradient(ellipse 900px 700px at top left, rgba(191,255,0,0.32) 0%, transparent 60%),
+    radial-gradient(ellipse 700px 800px at bottom right, rgba(40,174,97,0.18) 0%, transparent 65%),
+    linear-gradient(180deg, #f7faf5 0%, #edf0ee 100%);
+  padding: 80px 80px;
+}
+.handle {
+  position: absolute; top: 40px; left: 50%; transform: translateX(-50%);
+  font-size: 18px; font-weight: 500; color: rgba(0,77,64,0.4);
+  letter-spacing: 0.05em;
+}
+
+/* Google search mockup */
+.google-search {
+  margin-top: 100px;
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 26px 32px;
+  display: flex; align-items: center; gap: 18px;
+  box-shadow: 0 14px 36px rgba(0,77,64,0.12);
+}
+.google-logo {
+  font-size: 36px; font-weight: 800; letter-spacing: -0.04em;
+}
+.google-logo .b { color: #4285F4; }
+.google-logo .r { color: #EA4335; }
+.google-logo .y { color: #FBBC04; }
+.google-logo .g { color: #34A853; }
+.search-input {
+  flex: 1;
+  font-size: 28px; font-weight: 500;
+  color: #5f6368;
+  border-left: 2px solid #e5e7eb;
+  padding-left: 18px;
+}
+.search-icon { width: 32px; height: 32px; }
+.search-icon svg { width: 100%; height: 100%; fill: #5f6368; }
+
+/* GMB results */
+.gmb-results { margin-top: 24px; }
+.gmb-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 22px 26px;
+  margin-bottom: 14px;
+  display: flex; align-items: center; gap: 18px;
+  box-shadow: 0 6px 20px rgba(0,77,64,0.08);
+  position: relative;
+}
+.gmb-card.winner {
+  background: #ffffff;
+  border: 3px solid #28ae61;
+  box-shadow: 0 12px 32px rgba(40,174,97,0.25);
+}
+.gmb-card.loser { opacity: 0.55; }
+.gmb-rank {
+  width: 50px; height: 50px;
+  background: #1b6b5b;
+  color: #edf0ee;
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 26px; font-weight: 900;
+}
+.gmb-card.winner .gmb-rank { background: #28ae61; }
+.gmb-info { flex: 1; }
+.gmb-name {
+  font-size: 26px; font-weight: 800;
+  color: #1b6b5b; line-height: 1; letter-spacing: -0.02em;
+}
+.gmb-meta {
+  display: flex; align-items: center; gap: 8px;
+  margin-top: 6px;
+  font-size: 20px; color: #5f6368; font-weight: 500;
+}
+.gmb-rating-num { font-weight: 800; color: #004d40; font-size: 22px; }
+.gmb-stars { color: #f59e0b; font-size: 18px; letter-spacing: 1px; }
+.tag-topo {
+  background: #bfff00;
+  color: #004d40;
+  font-size: 14px; font-weight: 800;
+  padding: 4px 12px; border-radius: 50px;
+  text-transform: uppercase; letter-spacing: 0.08em;
+}
+
+/* Headline */
+.headline-block { margin-top: 36px; }
+.headline-mega {
+  font-size: 88px; font-weight: 900;
+  color: #004d40; line-height: 0.92;
+  letter-spacing: -0.05em; margin-bottom: 14px;
+}
+.pilula {
+  display: inline-block;
+  background: #bfff00;
+  font-size: 36px; font-weight: 800;
+  color: #004d40; line-height: 1.1;
+  padding: 10px 22px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  box-shadow: 5px 5px 0 rgba(40,174,97,0.30);
+}
+
+.bottom-row {
+  position: absolute; bottom: 70px; left: 80px; right: 80px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.logo-full img { height: 80px; }
+.arrow-next {
+  width: 80px; height: 80px;
+  background: #28ae61;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 8px 28px rgba(40,174,97,0.40);
+}
+.arrow-next svg { width: 36px; height: 36px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="handle">@hellogrowth__</div>
+
+  <div class="google-search">
+    <div class="google-logo">
+      <span class="b">G</span><span class="r">o</span><span class="y">o</span><span class="b">g</span><span class="g">l</span><span class="r">e</span>
+    </div>
+    <div class="search-input">ortopedista em Curitiba</div>
+    <div class="search-icon">
+      <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+    </div>
+  </div>
+
+  <div class="gmb-results">
+    <div class="gmb-card winner">
+      <div class="gmb-rank">1</div>
+      <div class="gmb-info">
+        <div class="gmb-name">Clínica B</div>
+        <div class="gmb-meta">
+          <span class="gmb-rating-num">4,6</span>
+          <span class="gmb-stars">★★★★★</span>
+          <span>· 312 avaliações</span>
+          <span class="tag-topo">topo</span>
+        </div>
+      </div>
+    </div>
+    <div class="gmb-card loser">
+      <div class="gmb-rank">7</div>
+      <div class="gmb-info">
+        <div class="gmb-name">Clínica A</div>
+        <div class="gmb-meta">
+          <span class="gmb-rating-num">4,9</span>
+          <span class="gmb-stars">★★★★★</span>
+          <span>· 12 avaliações</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="headline-block">
+    <div class="headline-mega">4,9 estrelas<br>e perdendo<br>pra 4,6?</div>
+    <div class="pilula">Sim. E o Google explica.</div>
+  </div>
+
+  <div class="bottom-row">
+    <div class="logo-full">
+      <img src="assets/logo-full.svg" alt="HelloGrowth">
+    </div>
+    <div class="arrow-next">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#edf0ee" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12"/>
+        <polyline points="12 5 19 12 12 19"/>
+      </svg>
+    </div>
+  </div>
+</div>
+</body>
+</html>
