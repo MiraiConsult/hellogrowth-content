@@ -20,8 +20,7 @@ html, body {
     radial-gradient(ellipse at top right, rgba(40,174,97,0.18) 0%, transparent 50%),
     radial-gradient(ellipse at bottom left, rgba(40,174,97,0.15) 0%, transparent 55%),
     linear-gradient(160deg, #004d40 0%, #1b6b5b 50%, #004d40 100%);
-  display: flex; flex-direction: column;
-  align-items: center; padding: 90px 80px;
+  padding: 100px 80px;
 }
 .noise {
   position: absolute; inset: 0;
@@ -33,30 +32,26 @@ html, body {
   font-size: 18px; font-weight: 500; color: rgba(237,240,238,0.4);
   letter-spacing: 0.05em;
 }
-.content-wrap {
-  flex: 1; display: flex; flex-direction: column;
-  justify-content: center; align-items: center;
-}
-.icon-stars {
-  display: flex; gap: 14px; margin-bottom: 56px;
+.stars-row {
+  display: flex; gap: 14px; margin-top: 100px; margin-bottom: 50px;
   filter: drop-shadow(0 0 25px rgba(191,255,0,0.2));
 }
-.icon-stars svg { width: 100px; height: 100px; }
-.dim { opacity: 0.25; }
+.stars-row svg { width: 96px; height: 96px; }
+.star-active { fill: #bfff00; }
+.star-dim { fill: rgba(237,240,238,0.18); }
 .pre-headline {
   font-size: 32px; font-weight: 400; color: #edf0ee;
-  text-align: center; margin-bottom: 24px; line-height: 1.3;
+  margin-bottom: 16px; line-height: 1.3;
 }
-.pre-headline .accent { color: #bfff00; font-weight: 700; }
 .headline-big {
-  font-size: 200px; font-weight: 900; color: #bfff00;
-  text-align: center; line-height: 1; margin-bottom: 8px;
+  font-size: 220px; font-weight: 900;
+  color: #bfff00; line-height: 0.95; margin-bottom: 8px;
   letter-spacing: -0.06em;
   text-shadow: 0 0 60px rgba(191,255,0,0.3);
 }
 .headline {
   font-size: 56px; font-weight: 900; text-transform: uppercase;
-  text-align: center; line-height: 1.05; margin-bottom: 28px;
+  line-height: 1.05; margin-bottom: 24px;
   letter-spacing: -0.03em;
 }
 .pilula {
@@ -67,31 +62,70 @@ html, body {
   letter-spacing: -0.03em;
 }
 .logo {
-  position: absolute; bottom: 80px; left: 50%; transform: translateX(-50%);
-  font-size: 44px; font-weight: 700; letter-spacing: -0.02em;
+  position: absolute; bottom: 120px; left: 80px;
+  display: flex; align-items: center; gap: 10px;
 }
-.logo .hello { color: #edf0ee; }
-.logo .growth { color: #28ae61; }
+.logo-icon {
+  width: 38px; height: 38px;
+  background: #edf0ee;
+  border-radius: 12px 12px 12px 4px;
+}
+.logo-icon::before {
+  content: ''; display: block; width: 14px; height: 3px; background: #bfff00; border-radius: 2px;
+  margin: 17px auto;
+}
+.logo-text {
+  font-size: 40px; font-weight: 800;
+  color: #edf0ee; letter-spacing: -0.025em;
+}
+.logo-text .g-mark { position: relative; }
+.logo-text .g-mark::after {
+  content: ''; position: absolute;
+  width: 8px; height: 8px;
+  background: #bfff00;
+  top: 50%; left: 50%;
+  transform: translate(-30%, -45%) rotate(45deg);
+}
+.arrow-next {
+  position: absolute; bottom: 120px; right: 80px;
+  width: 80px; height: 80px;
+  background: #bfff00;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 6px 24px rgba(191,255,0,0.3);
+}
+.arrow-next svg { width: 36px; height: 36px; }
 </style>
 </head>
 <body>
 <div class="card">
   <div class="noise"></div>
   <div class="handle">@hellogrowth__</div>
-  <div class="content-wrap">
-    <div class="icon-stars">
-      <svg viewBox="0 0 24 24" fill="#bfff00"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
-      <svg viewBox="0 0 24 24" fill="#bfff00"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
-      <svg viewBox="0 0 24 24" fill="#bfff00"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
-      <svg class="dim" viewBox="0 0 24 24" fill="#edf0ee"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
-      <svg class="dim" viewBox="0 0 24 24" fill="#edf0ee"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
-    </div>
-    <div class="pre-headline">E o outro lado da moeda?</div>
-    <div class="headline-big">57%</div>
-    <div class="headline">NÃO COMPRAM<br>DE EMPRESA COM</div>
-    <div class="pilula">MENOS DE 4 ESTRELAS</div>
+
+  <div class="stars-row">
+    <svg class="star-active" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
+    <svg class="star-active" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
+    <svg class="star-active" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
+    <svg class="star-dim" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
+    <svg class="star-dim" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
   </div>
-  <div class="logo"><span class="hello">Hello</span><span class="growth">Growth</span></div>
+
+  <div class="pre-headline">E o outro lado da moeda?</div>
+  <div class="headline-big">57%</div>
+  <div class="headline">NÃO COMPRAM<br>DE EMPRESA COM</div>
+  <div class="pilula">MENOS DE 4 ESTRELAS</div>
+
+  <div class="logo">
+    <div class="logo-icon"></div>
+    <div class="logo-text">Hello<span class="g-mark">G</span>rowth</div>
+  </div>
+
+  <div class="arrow-next">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#004d40" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="5" y1="12" x2="19" y2="12"/>
+      <polyline points="12 5 19 12 12 19"/>
+    </svg>
+  </div>
 </div>
 </body>
 </html>

@@ -20,8 +20,7 @@ html, body {
     radial-gradient(ellipse at top right, rgba(40,174,97,0.20) 0%, transparent 55%),
     radial-gradient(ellipse at bottom left, rgba(40,174,97,0.18) 0%, transparent 55%),
     linear-gradient(160deg, #1b6b5b 0%, #004d40 70%);
-  display: flex; flex-direction: column;
-  padding: 90px 80px;
+  padding: 100px 80px;
 }
 .noise {
   position: absolute; inset: 0;
@@ -33,13 +32,9 @@ html, body {
   font-size: 18px; font-weight: 500; color: rgba(237,240,238,0.4);
   letter-spacing: 0.05em;
 }
-.content {
-  flex: 1; display: flex; flex-direction: column;
-  justify-content: center;
-}
 .pre-headline {
-  font-size: 32px; font-weight: 400; color: #edf0ee;
-  margin-bottom: 50px; line-height: 1.35;
+  font-size: 32px; font-weight: 400;
+  color: #edf0ee; margin-top: 110px; margin-bottom: 40px; line-height: 1.35;
 }
 .pre-headline .accent { color: #bfff00; font-weight: 700; }
 .calc-box {
@@ -47,7 +42,7 @@ html, body {
   border: 2px solid rgba(40,174,97,0.4);
   border-radius: 24px;
   padding: 38px 42px;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 .calc-row {
   display: flex; justify-content: space-between; align-items: baseline;
@@ -59,14 +54,14 @@ html, body {
 .calc-value { font-size: 38px; font-weight: 900; color: #edf0ee; }
 .equals {
   text-align: center;
-  font-size: 46px; color: #bfff00; margin: 16px 0;
-  font-weight: 900;
+  font-size: 56px; color: #bfff00; margin: 10px 0;
+  font-weight: 900; line-height: 1;
 }
 .result-pilula {
   display: block; text-align: center;
   background: #bfff00; color: #004d40;
-  font-weight: 900; font-size: 64px;
-  padding: 22px 40px; border-radius: 100px;
+  font-weight: 900; font-size: 70px;
+  padding: 24px 40px; border-radius: 100px;
   letter-spacing: -0.035em; line-height: 1;
   text-transform: uppercase;
   box-shadow: 0 0 60px rgba(191,255,0,0.3);
@@ -77,34 +72,73 @@ html, body {
 }
 .sub .accent { color: #bfff00; }
 .logo {
-  position: absolute; bottom: 80px; left: 50%; transform: translateX(-50%);
-  font-size: 44px; font-weight: 700; letter-spacing: -0.02em;
+  position: absolute; bottom: 120px; left: 80px;
+  display: flex; align-items: center; gap: 10px;
 }
-.logo .hello { color: #edf0ee; }
-.logo .growth { color: #28ae61; }
+.logo-icon {
+  width: 38px; height: 38px;
+  background: #edf0ee;
+  border-radius: 12px 12px 12px 4px;
+}
+.logo-icon::before {
+  content: ''; display: block; width: 14px; height: 3px; background: #bfff00; border-radius: 2px;
+  margin: 17px auto;
+}
+.logo-text {
+  font-size: 40px; font-weight: 800;
+  color: #edf0ee; letter-spacing: -0.025em;
+}
+.logo-text .g-mark { position: relative; }
+.logo-text .g-mark::after {
+  content: ''; position: absolute;
+  width: 8px; height: 8px;
+  background: #bfff00;
+  top: 50%; left: 50%;
+  transform: translate(-30%, -45%) rotate(45deg);
+}
+.arrow-next {
+  position: absolute; bottom: 120px; right: 80px;
+  width: 80px; height: 80px;
+  background: #bfff00;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 6px 24px rgba(191,255,0,0.3);
+}
+.arrow-next svg { width: 36px; height: 36px; }
 </style>
 </head>
 <body>
 <div class="card">
   <div class="noise"></div>
   <div class="handle">@hellogrowth__</div>
-  <div class="content">
-    <div class="pre-headline">Empresa que fatura <span class="accent">R$500k/ano</span>?<br>Faz a conta:</div>
-    <div class="calc-box">
-      <div class="calc-row">
-        <span class="calc-label">Faturamento anual</span>
-        <span class="calc-value">R$500.000</span>
-      </div>
-      <div class="calc-row">
-        <span class="calc-label">+1 estrela no Google</span>
-        <span class="calc-value">+5 a 9%</span>
-      </div>
+
+  <div class="pre-headline">Empresa que fatura <span class="accent">R$500k/ano</span>?<br>Faz a conta:</div>
+
+  <div class="calc-box">
+    <div class="calc-row">
+      <span class="calc-label">Faturamento anual</span>
+      <span class="calc-value">R$500.000</span>
     </div>
-    <div class="equals">↓</div>
-    <div class="result-pilula">R$25K A R$45K/ANO</div>
-    <div class="sub">Sem gastar <span class="accent">1 real</span> em anúncio.</div>
+    <div class="calc-row">
+      <span class="calc-label">+1 estrela no Google</span>
+      <span class="calc-value">+5 a 9%</span>
+    </div>
   </div>
-  <div class="logo"><span class="hello">Hello</span><span class="growth">Growth</span></div>
+  <div class="equals">↓</div>
+  <div class="result-pilula">R$25K A R$45K/ANO</div>
+  <div class="sub">Sem gastar <span class="accent">1 real</span> em anúncio.</div>
+
+  <div class="logo">
+    <div class="logo-icon"></div>
+    <div class="logo-text">Hello<span class="g-mark">G</span>rowth</div>
+  </div>
+
+  <div class="arrow-next">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#004d40" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="5" y1="12" x2="19" y2="12"/>
+      <polyline points="12 5 19 12 12 19"/>
+    </svg>
+  </div>
 </div>
 </body>
 </html>
