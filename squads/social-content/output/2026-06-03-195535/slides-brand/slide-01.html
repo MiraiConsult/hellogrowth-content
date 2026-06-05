@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+  width: 1080px; height: 1350px;
+  background: #004d40;
+  font-family: 'Inter', sans-serif;
+  color: #edf0ee;
+  overflow: hidden;
+  letter-spacing: -0.02em;
+}
+.card {
+  width: 1080px; height: 1350px;
+  position: relative;
+  background:
+    radial-gradient(ellipse at top right, rgba(40,174,97,0.25) 0%, transparent 50%),
+    radial-gradient(ellipse at bottom left, rgba(40,174,97,0.20) 0%, transparent 55%),
+    linear-gradient(160deg, #004d40 0%, #1b6b5b 60%, #004d40 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 90px 80px;
+}
+.noise {
+  position: absolute; inset: 0;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/></svg>");
+  opacity: 0.08; mix-blend-mode: overlay; pointer-events: none;
+}
+.icon-stars {
+  display: flex; gap: 14px; margin-bottom: 60px;
+  filter: drop-shadow(0 0 25px rgba(191,255,0,0.35));
+}
+.icon-stars svg { width: 110px; height: 110px; }
+.pre-headline {
+  font-size: 32px; font-weight: 400; color: #edf0ee;
+  text-align: center; margin-bottom: 22px; line-height: 1.3;
+}
+.pre-headline .accent { color: #bfff00; font-weight: 700; }
+.headline {
+  font-size: 96px; font-weight: 900; text-transform: uppercase;
+  text-align: center; line-height: 0.98; margin-bottom: 22px;
+  letter-spacing: -0.035em;
+}
+.pilula {
+  display: inline-block;
+  background: #bfff00; color: #004d40;
+  font-weight: 900; font-size: 56px; text-transform: uppercase;
+  padding: 14px 38px; border-radius: 100px;
+  letter-spacing: -0.025em;
+}
+.sub {
+  font-size: 26px; font-weight: 500; color: rgba(237,240,238,0.75);
+  text-align: center; margin-top: 32px;
+}
+.logo {
+  position: absolute; bottom: 80px; left: 50%; transform: translateX(-50%);
+  font-size: 44px; font-weight: 700; letter-spacing: -0.02em;
+}
+.logo .hello { color: #edf0ee; }
+.logo .growth { color: #28ae61; }
+.handle {
+  position: absolute; top: 50px; left: 50%; transform: translateX(-50%);
+  font-size: 18px; font-weight: 500; color: rgba(237,240,238,0.4);
+  letter-spacing: 0.05em;
+}
+.content-wrap {
+  flex: 1; display: flex; flex-direction: column;
+  justify-content: center; align-items: center;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="noise"></div>
+  <div class="handle">@hellogrowth__</div>
+  <div class="content-wrap">
+    <div class="icon-stars">
+      <svg viewBox="0 0 24 24" fill="#bfff00"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
+      <svg viewBox="0 0 24 24" fill="#bfff00"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
+      <svg viewBox="0 0 24 24" fill="#bfff00"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
+      <svg viewBox="0 0 24 24" fill="#bfff00"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
+      <svg viewBox="0 0 24 24" fill="#28ae61"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
+    </div>
+    <div class="pre-headline">Harvard descobriu: <span class="accent">1 estrela</span> a mais vale</div>
+    <div class="headline">+R$45 MIL<br>POR ANO</div>
+    <div class="pilula">É CONTA DE PADARIA</div>
+    <div class="sub">No seu negócio. Sem 1 real em anúncio.</div>
+  </div>
+  <div class="logo"><span class="hello">Hello</span><span class="growth">Growth</span></div>
+</div>
+</body>
+</html>

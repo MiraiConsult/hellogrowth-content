@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+  width: 1080px; height: 1350px;
+  background: #004d40;
+  font-family: 'Inter', sans-serif;
+  color: #edf0ee;
+  overflow: hidden;
+  letter-spacing: -0.02em;
+}
+.card {
+  width: 1080px; height: 1350px;
+  position: relative;
+  background:
+    radial-gradient(ellipse at top right, rgba(40,174,97,0.20) 0%, transparent 55%),
+    radial-gradient(ellipse at bottom left, rgba(40,174,97,0.18) 0%, transparent 55%),
+    linear-gradient(160deg, #1b6b5b 0%, #004d40 70%);
+  display: flex; flex-direction: column;
+  padding: 90px 80px;
+}
+.noise {
+  position: absolute; inset: 0;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/></svg>");
+  opacity: 0.08; mix-blend-mode: overlay; pointer-events: none;
+}
+.handle {
+  position: absolute; top: 50px; left: 50%; transform: translateX(-50%);
+  font-size: 18px; font-weight: 500; color: rgba(237,240,238,0.4);
+  letter-spacing: 0.05em;
+}
+.content {
+  flex: 1; display: flex; flex-direction: column;
+  justify-content: center;
+}
+.pre-headline {
+  font-size: 32px; font-weight: 400; color: #edf0ee;
+  margin-bottom: 50px; line-height: 1.35;
+}
+.pre-headline .accent { color: #bfff00; font-weight: 700; }
+.calc-box {
+  background: rgba(0,77,64,0.5);
+  border: 2px solid rgba(40,174,97,0.4);
+  border-radius: 24px;
+  padding: 38px 42px;
+  margin-bottom: 30px;
+}
+.calc-row {
+  display: flex; justify-content: space-between; align-items: baseline;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(237,240,238,0.1);
+}
+.calc-row:last-child { border-bottom: none; }
+.calc-label { font-size: 26px; font-weight: 500; color: rgba(237,240,238,0.7); }
+.calc-value { font-size: 38px; font-weight: 900; color: #edf0ee; }
+.equals {
+  text-align: center;
+  font-size: 46px; color: #bfff00; margin: 16px 0;
+  font-weight: 900;
+}
+.result-pilula {
+  display: block; text-align: center;
+  background: #bfff00; color: #004d40;
+  font-weight: 900; font-size: 64px;
+  padding: 22px 40px; border-radius: 100px;
+  letter-spacing: -0.035em; line-height: 1;
+  text-transform: uppercase;
+  box-shadow: 0 0 60px rgba(191,255,0,0.3);
+}
+.sub {
+  font-size: 30px; font-weight: 700; color: #edf0ee;
+  text-align: center; margin-top: 36px;
+}
+.sub .accent { color: #bfff00; }
+.logo {
+  position: absolute; bottom: 80px; left: 50%; transform: translateX(-50%);
+  font-size: 44px; font-weight: 700; letter-spacing: -0.02em;
+}
+.logo .hello { color: #edf0ee; }
+.logo .growth { color: #28ae61; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="noise"></div>
+  <div class="handle">@hellogrowth__</div>
+  <div class="content">
+    <div class="pre-headline">Empresa que fatura <span class="accent">R$500k/ano</span>?<br>Faz a conta:</div>
+    <div class="calc-box">
+      <div class="calc-row">
+        <span class="calc-label">Faturamento anual</span>
+        <span class="calc-value">R$500.000</span>
+      </div>
+      <div class="calc-row">
+        <span class="calc-label">+1 estrela no Google</span>
+        <span class="calc-value">+5 a 9%</span>
+      </div>
+    </div>
+    <div class="equals">↓</div>
+    <div class="result-pilula">R$25K A R$45K/ANO</div>
+    <div class="sub">Sem gastar <span class="accent">1 real</span> em anúncio.</div>
+  </div>
+  <div class="logo"><span class="hello">Hello</span><span class="growth">Growth</span></div>
+</div>
+</body>
+</html>

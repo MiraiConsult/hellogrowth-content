@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+  width: 1080px; height: 1350px;
+  background: #004d40;
+  font-family: 'Inter', sans-serif;
+  color: #edf0ee;
+  overflow: hidden;
+  letter-spacing: -0.02em;
+}
+.card {
+  width: 1080px; height: 1350px;
+  position: relative;
+  background:
+    radial-gradient(ellipse at top right, rgba(40,174,97,0.18) 0%, transparent 50%),
+    radial-gradient(ellipse at bottom left, rgba(40,174,97,0.15) 0%, transparent 55%),
+    linear-gradient(160deg, #004d40 0%, #1b6b5b 50%, #004d40 100%);
+  display: flex; flex-direction: column;
+  align-items: center; padding: 90px 80px;
+}
+.noise {
+  position: absolute; inset: 0;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/></svg>");
+  opacity: 0.08; mix-blend-mode: overlay; pointer-events: none;
+}
+.handle {
+  position: absolute; top: 50px; left: 50%; transform: translateX(-50%);
+  font-size: 18px; font-weight: 500; color: rgba(237,240,238,0.4);
+  letter-spacing: 0.05em;
+}
+.content-wrap {
+  flex: 1; display: flex; flex-direction: column;
+  justify-content: center; align-items: center;
+}
+.icon-stars {
+  display: flex; gap: 14px; margin-bottom: 56px;
+  filter: drop-shadow(0 0 25px rgba(191,255,0,0.2));
+}
+.icon-stars svg { width: 100px; height: 100px; }
+.dim { opacity: 0.25; }
+.pre-headline {
+  font-size: 32px; font-weight: 400; color: #edf0ee;
+  text-align: center; margin-bottom: 24px; line-height: 1.3;
+}
+.pre-headline .accent { color: #bfff00; font-weight: 700; }
+.headline-big {
+  font-size: 200px; font-weight: 900; color: #bfff00;
+  text-align: center; line-height: 1; margin-bottom: 8px;
+  letter-spacing: -0.06em;
+  text-shadow: 0 0 60px rgba(191,255,0,0.3);
+}
+.headline {
+  font-size: 56px; font-weight: 900; text-transform: uppercase;
+  text-align: center; line-height: 1.05; margin-bottom: 28px;
+  letter-spacing: -0.03em;
+}
+.pilula {
+  display: inline-block;
+  background: #bfff00; color: #004d40;
+  font-weight: 900; font-size: 44px; text-transform: uppercase;
+  padding: 14px 38px; border-radius: 100px;
+  letter-spacing: -0.03em;
+}
+.logo {
+  position: absolute; bottom: 80px; left: 50%; transform: translateX(-50%);
+  font-size: 44px; font-weight: 700; letter-spacing: -0.02em;
+}
+.logo .hello { color: #edf0ee; }
+.logo .growth { color: #28ae61; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="noise"></div>
+  <div class="handle">@hellogrowth__</div>
+  <div class="content-wrap">
+    <div class="icon-stars">
+      <svg viewBox="0 0 24 24" fill="#bfff00"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
+      <svg viewBox="0 0 24 24" fill="#bfff00"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
+      <svg viewBox="0 0 24 24" fill="#bfff00"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
+      <svg class="dim" viewBox="0 0 24 24" fill="#edf0ee"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
+      <svg class="dim" viewBox="0 0 24 24" fill="#edf0ee"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
+    </div>
+    <div class="pre-headline">E o outro lado da moeda?</div>
+    <div class="headline-big">57%</div>
+    <div class="headline">NÃO COMPRAM<br>DE EMPRESA COM</div>
+    <div class="pilula">MENOS DE 4 ESTRELAS</div>
+  </div>
+  <div class="logo"><span class="hello">Hello</span><span class="growth">Growth</span></div>
+</div>
+</body>
+</html>

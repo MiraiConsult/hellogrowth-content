@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+  width: 1080px; height: 1350px;
+  background: #004d40;
+  font-family: 'Inter', sans-serif;
+  color: #edf0ee;
+  overflow: hidden;
+  letter-spacing: -0.02em;
+}
+.card {
+  width: 1080px; height: 1350px;
+  position: relative;
+  background:
+    radial-gradient(ellipse at top left, rgba(40,174,97,0.20) 0%, transparent 55%),
+    radial-gradient(ellipse at bottom right, rgba(40,174,97,0.18) 0%, transparent 50%),
+    linear-gradient(180deg, #1b6b5b 0%, #004d40 100%);
+  display: flex; flex-direction: column;
+  padding: 90px 80px;
+}
+.noise {
+  position: absolute; inset: 0;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/></svg>");
+  opacity: 0.08; mix-blend-mode: overlay; pointer-events: none;
+}
+.handle {
+  position: absolute; top: 50px; left: 50%; transform: translateX(-50%);
+  font-size: 18px; font-weight: 500; color: rgba(237,240,238,0.4);
+  letter-spacing: 0.05em;
+}
+.content {
+  flex: 1; display: flex; flex-direction: column;
+  justify-content: center;
+}
+.pre-headline {
+  font-size: 32px; font-weight: 400; color: #edf0ee;
+  text-align: center; margin-bottom: 16px;
+}
+.headline {
+  font-size: 64px; font-weight: 900; text-transform: uppercase;
+  text-align: center; line-height: 1; margin-bottom: 50px;
+  letter-spacing: -0.035em;
+}
+.headline .pilula {
+  display: inline-block;
+  background: #bfff00; color: #004d40;
+  padding: 8px 28px; border-radius: 100px;
+  margin-top: 12px;
+}
+.checklist { display: flex; flex-direction: column; gap: 22px; }
+.check-item {
+  display: flex; align-items: center; gap: 24px;
+  background: rgba(0,77,64,0.5);
+  border: 2px solid rgba(40,174,97,0.35);
+  border-radius: 20px;
+  padding: 28px 32px;
+}
+.check-box {
+  width: 64px; height: 64px; min-width: 64px;
+  background: #bfff00; border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+}
+.check-box svg { width: 36px; height: 36px; }
+.check-text {
+  font-size: 32px; font-weight: 800; line-height: 1.2;
+  text-transform: uppercase; letter-spacing: -0.025em;
+}
+.check-sub {
+  font-size: 22px; font-weight: 500;
+  color: rgba(237,240,238,0.6); margin-top: 4px;
+  text-transform: none; letter-spacing: 0;
+}
+.logo {
+  position: absolute; bottom: 80px; left: 50%; transform: translateX(-50%);
+  font-size: 44px; font-weight: 700; letter-spacing: -0.02em;
+}
+.logo .hello { color: #edf0ee; }
+.logo .growth { color: #28ae61; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="noise"></div>
+  <div class="handle">@hellogrowth__</div>
+  <div class="content">
+    <div class="pre-headline">3 ações que custam R$0:</div>
+    <div class="headline">VALEM <span class="pilula">R$45 MIL</span><br>NO FIM DO ANO</div>
+    <div class="checklist">
+      <div class="check-item">
+        <div class="check-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#004d40" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div>
+          <div class="check-text">Peça avaliação</div>
+          <div class="check-sub">após cada entrega</div>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#004d40" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div>
+          <div class="check-text">Responda 100%</div>
+          <div class="check-sub">em até 24 horas</div>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#004d40" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div>
+          <div class="check-text">Monitore sua nota</div>
+          <div class="check-sub">toda semana</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="logo"><span class="hello">Hello</span><span class="growth">Growth</span></div>
+</div>
+</body>
+</html>
