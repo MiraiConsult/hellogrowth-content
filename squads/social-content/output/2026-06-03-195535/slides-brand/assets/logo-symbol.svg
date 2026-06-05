@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 220" fill="none">
+  <!-- Chat bubble with H inside -->
+  <path d="M 18 18 L 122 18 Q 132 18 132 28 L 132 156 Q 132 166 122 166 L 60 166 L 28 200 L 40 166 L 28 166 Q 18 166 18 156 L 18 28 Q 18 18 28 18 Z"
+        fill="#ffffff" stroke="#28ae61" stroke-width="9" stroke-linejoin="round"/>
+  <path d="M 38 44 L 60 44 L 60 84 L 90 84 L 90 44 L 112 44 L 112 142 L 90 142 L 90 104 L 60 104 L 60 142 L 38 142 Z"
+        fill="#1b6b5b"/>
+
+  <!-- G + arrow group -->
+  <g transform="translate(160, 30)">
+    <!-- G shape: a 'C' rotated + small inner crossbar -->
+    <!-- Outer ring stroke (G body) -->
+    <path d="M 130 75
+             A 60 60 0 1 1 70 15"
+          stroke="#28ae61" stroke-width="22" fill="none" stroke-linecap="butt"/>
+    <!-- Closing arc bottom right -->
+    <path d="M 70 135 A 60 60 0 0 0 130 75"
+          stroke="#28ae61" stroke-width="22" fill="none" stroke-linecap="butt"/>
+    <!-- G inner crossbar (the horizontal stem that defines G) -->
+    <rect x="90" y="64" width="42" height="22" fill="#28ae61"/>
+
+    <!-- Arrow shaft rising from G upper area to top right -->
+    <path d="M 75 60 L 140 -5" stroke="#28ae61" stroke-width="22" stroke-linecap="butt"/>
+    <!-- Arrow head right-angle -->
+    <path d="M 110 -5 L 140 -5 L 140 25" stroke="#28ae61" stroke-width="22" fill="none" stroke-linejoin="miter" stroke-linecap="butt"/>
+
+    <!-- Star at arrow tip -->
+    <path d="M 150 -30 L 155 -15 L 171 -15 L 158 -5 L 163 11 L 150 1 L 137 11 L 142 -5 L 129 -15 L 145 -15 Z"
+          fill="#bfff00"/>
+  </g>
+</svg>

@@ -20,25 +20,26 @@ html, body {
     radial-gradient(ellipse 900px 700px at top, rgba(191,255,0,0.35) 0%, transparent 60%),
     radial-gradient(ellipse 700px 800px at bottom right, rgba(40,174,97,0.30) 0%, transparent 65%),
     radial-gradient(ellipse 700px 800px at bottom left, rgba(40,174,97,0.22) 0%, transparent 65%),
-    linear-gradient(180deg, #f5f8f3 0%, #edf0ee 100%);
+    linear-gradient(180deg, #f7faf5 0%, #edf0ee 100%);
   padding: 100px 80px;
 }
 .handle {
-  position: absolute; top: 50px; left: 50%; transform: translateX(-50%);
+  position: absolute; top: 40px; left: 50%; transform: translateX(-50%);
   font-size: 18px; font-weight: 500; color: rgba(0,77,64,0.4);
   letter-spacing: 0.05em;
 }
+
 .content {
-  margin-top: 220px;
+  margin-top: 200px;
 }
 .kicker {
-  font-size: 38px; font-weight: 600;
+  font-size: 42px; font-weight: 600;
   color: #1b6b5b; line-height: 1.3; margin-bottom: 14px;
 }
 .headline {
-  font-size: 110px; font-weight: 900;
-  color: #004d40; line-height: 0.95; margin-bottom: 30px;
-  letter-spacing: -0.045em;
+  font-size: 140px; font-weight: 900;
+  color: #004d40; line-height: 0.92; margin-bottom: 36px;
+  letter-spacing: -0.05em;
 }
 .pilula {
   display: inline-block;
@@ -46,49 +47,32 @@ html, body {
   font-weight: 900; font-size: 50px; text-transform: uppercase;
   padding: 18px 38px; border-radius: 100px;
   letter-spacing: -0.025em; line-height: 1;
-  box-shadow: 0 12px 40px rgba(0,77,64,0.25);
-  margin-bottom: 36px;
+  box-shadow: 0 14px 40px rgba(0,77,64,0.30);
+  margin-bottom: 38px;
 }
 .sub {
-  font-size: 28px; font-weight: 500;
+  font-size: 30px; font-weight: 500;
   color: #1b6b5b; line-height: 1.5;
   max-width: 850px;
 }
 .sub strong { color: #004d40; font-weight: 800; }
-.logo-big {
-  position: absolute; bottom: 120px; left: 80px;
-  display: flex; align-items: center; gap: 14px;
+
+/* Big full signature at bottom */
+.bottom-row {
+  position: absolute; bottom: 80px; left: 80px; right: 80px;
+  display: flex; align-items: center; justify-content: space-between;
 }
-.logo-big .logo-icon {
-  width: 56px; height: 56px;
-  background: #1b6b5b;
-  border-radius: 16px 16px 16px 6px;
+.logo-full {
+  display: flex; align-items: center; gap: 22px;
 }
-.logo-big .logo-icon::before {
-  content: ''; display: block; width: 22px; height: 4px; background: #bfff00; border-radius: 3px;
-  margin: 26px auto;
+.logo-full img { height: 110px; }
+.logo-wordmark-big {
+  font-family: 'Inter', sans-serif;
+  font-weight: 900; font-size: 80px;
+  line-height: 1; letter-spacing: -0.045em;
 }
-.logo-big .logo-text {
-  font-size: 56px; font-weight: 800;
-  color: #1b6b5b; letter-spacing: -0.025em;
-}
-.logo-big .logo-text .g-mark { position: relative; }
-.logo-big .logo-text .g-mark::after {
-  content: ''; position: absolute;
-  width: 12px; height: 12px;
-  background: #bfff00;
-  top: 50%; left: 50%;
-  transform: translate(-30%, -45%) rotate(45deg);
-}
-.arrow-back {
-  position: absolute; bottom: 120px; right: 80px;
-  width: 100px; height: 100px;
-  background: #28ae61;
-  border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 6px 24px rgba(40,174,97,0.4);
-}
-.arrow-back svg { width: 44px; height: 44px; }
+.logo-wordmark-big .hello { color: #1b6b5b; }
+.logo-wordmark-big .growth { color: #28ae61; }
 </style>
 </head>
 <body>
@@ -99,18 +83,14 @@ html, body {
     <div class="kicker">Quanto vale 1 estrela</div>
     <div class="headline">pro seu<br>negócio?</div>
     <div class="pilula">VAMOS DESCOBRIR JUNTOS</div>
-    <div class="sub">Reputação é a infraestrutura que faz vender.<br><strong>Toca no link da bio</strong> e a gente conversa.</div>
+    <div class="sub">Reputação é infraestrutura de venda.<br><strong>Toca no link da bio</strong> e a gente conversa.</div>
   </div>
 
-  <div class="logo-big">
-    <div class="logo-icon"></div>
-    <div class="logo-text">Hello<span class="g-mark">G</span>rowth</div>
-  </div>
-
-  <div class="arrow-back">
-    <svg viewBox="0 0 24 24" fill="none" stroke="#edf0ee" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M21 10H7.83l3.58-3.59L10 5l-6 6 6 6 1.41-1.41L7.83 12H21z" fill="#edf0ee" stroke="none"/>
-    </svg>
+  <div class="bottom-row">
+    <div class="logo-full">
+      <img src="assets/logo-symbol.svg" alt="HG">
+      <div class="logo-wordmark-big"><span class="hello">Hello</span><span class="growth">Growth</span></div>
+    </div>
   </div>
 </div>
 </body>

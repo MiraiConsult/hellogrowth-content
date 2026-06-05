@@ -32,26 +32,34 @@ html, body {
   font-size: 18px; font-weight: 500; color: rgba(237,240,238,0.4);
   letter-spacing: 0.05em;
 }
-.pre-headline {
-  font-size: 32px; font-weight: 400;
-  color: #edf0ee; margin-top: 110px; margin-bottom: 40px; line-height: 1.35;
+
+.kicker {
+  font-size: 30px; font-weight: 500; color: rgba(237,240,238,0.65);
+  text-transform: uppercase; letter-spacing: 0.15em;
+  margin-top: 90px; margin-bottom: 14px;
 }
-.pre-headline .accent { color: #bfff00; font-weight: 700; }
+.title {
+  font-size: 60px; font-weight: 900;
+  color: #edf0ee; line-height: 1.05; margin-bottom: 50px;
+  letter-spacing: -0.04em;
+}
+.title .accent { color: #bfff00; }
+
 .calc-box {
   background: rgba(0,77,64,0.5);
   border: 2px solid rgba(40,174,97,0.4);
   border-radius: 24px;
   padding: 38px 42px;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 .calc-row {
   display: flex; justify-content: space-between; align-items: baseline;
-  padding: 18px 0;
+  padding: 20px 0;
   border-bottom: 1px solid rgba(237,240,238,0.1);
 }
 .calc-row:last-child { border-bottom: none; }
-.calc-label { font-size: 26px; font-weight: 500; color: rgba(237,240,238,0.7); }
-.calc-value { font-size: 38px; font-weight: 900; color: #edf0ee; }
+.calc-label { font-size: 28px; font-weight: 500; color: rgba(237,240,238,0.7); }
+.calc-value { font-size: 40px; font-weight: 900; color: #edf0ee; }
 .equals {
   text-align: center;
   font-size: 56px; color: #bfff00; margin: 10px 0;
@@ -60,51 +68,31 @@ html, body {
 .result-pilula {
   display: block; text-align: center;
   background: #bfff00; color: #004d40;
-  font-weight: 900; font-size: 70px;
+  font-weight: 900; font-size: 80px;
   padding: 24px 40px; border-radius: 100px;
-  letter-spacing: -0.035em; line-height: 1;
+  letter-spacing: -0.04em; line-height: 1;
   text-transform: uppercase;
-  box-shadow: 0 0 60px rgba(191,255,0,0.3);
+  box-shadow: 0 12px 50px rgba(191,255,0,0.3);
 }
 .sub {
   font-size: 30px; font-weight: 700; color: #edf0ee;
-  text-align: center; margin-top: 36px;
+  text-align: center; margin-top: 30px;
 }
 .sub .accent { color: #bfff00; }
-.logo {
-  position: absolute; bottom: 120px; left: 80px;
-  display: flex; align-items: center; gap: 10px;
+
+.bottom-row {
+  position: absolute; bottom: 75px; left: 80px; right: 80px;
+  display: flex; align-items: center; justify-content: space-between;
 }
-.logo-icon {
-  width: 38px; height: 38px;
-  background: #edf0ee;
-  border-radius: 12px 12px 12px 4px;
-}
-.logo-icon::before {
-  content: ''; display: block; width: 14px; height: 3px; background: #bfff00; border-radius: 2px;
-  margin: 17px auto;
-}
-.logo-text {
-  font-size: 40px; font-weight: 800;
-  color: #edf0ee; letter-spacing: -0.025em;
-}
-.logo-text .g-mark { position: relative; }
-.logo-text .g-mark::after {
-  content: ''; position: absolute;
-  width: 8px; height: 8px;
-  background: #bfff00;
-  top: 50%; left: 50%;
-  transform: translate(-30%, -45%) rotate(45deg);
-}
+.logo-symbol-only img { height: 72px; }
 .arrow-next {
-  position: absolute; bottom: 120px; right: 80px;
-  width: 80px; height: 80px;
+  width: 84px; height: 84px;
   background: #bfff00;
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 6px 24px rgba(191,255,0,0.3);
+  box-shadow: 0 6px 24px rgba(191,255,0,0.30);
 }
-.arrow-next svg { width: 36px; height: 36px; }
+.arrow-next svg { width: 38px; height: 38px; }
 </style>
 </head>
 <body>
@@ -112,7 +100,8 @@ html, body {
   <div class="noise"></div>
   <div class="handle">@hellogrowth__</div>
 
-  <div class="pre-headline">Empresa que fatura <span class="accent">R$500k/ano</span>?<br>Faz a conta:</div>
+  <div class="kicker">faz a conta</div>
+  <div class="title">Empresa que fatura<br><span class="accent">R$500k/ano</span> ganha:</div>
 
   <div class="calc-box">
     <div class="calc-row">
@@ -125,19 +114,19 @@ html, body {
     </div>
   </div>
   <div class="equals">↓</div>
-  <div class="result-pilula">R$25K A R$45K/ANO</div>
+  <div class="result-pilula">+R$25K a R$45K</div>
   <div class="sub">Sem gastar <span class="accent">1 real</span> em anúncio.</div>
 
-  <div class="logo">
-    <div class="logo-icon"></div>
-    <div class="logo-text">Hello<span class="g-mark">G</span>rowth</div>
-  </div>
-
-  <div class="arrow-next">
-    <svg viewBox="0 0 24 24" fill="none" stroke="#004d40" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-      <line x1="5" y1="12" x2="19" y2="12"/>
-      <polyline points="12 5 19 12 12 19"/>
-    </svg>
+  <div class="bottom-row">
+    <div class="logo-symbol-only">
+      <img src="assets/logo-symbol.svg" alt="HG">
+    </div>
+    <div class="arrow-next">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#004d40" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12"/>
+        <polyline points="12 5 19 12 12 19"/>
+      </svg>
+    </div>
   </div>
 </div>
 </body>

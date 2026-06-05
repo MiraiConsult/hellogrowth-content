@@ -32,79 +32,61 @@ html, body {
   font-size: 18px; font-weight: 500; color: rgba(237,240,238,0.4);
   letter-spacing: 0.05em;
 }
-.pre-headline {
-  font-size: 30px; font-weight: 400;
-  color: rgba(237,240,238,0.7);
-  margin-top: 100px; margin-bottom: 14px;
+
+.kicker {
+  font-size: 30px; font-weight: 500; color: rgba(237,240,238,0.65);
+  text-transform: uppercase; letter-spacing: 0.15em;
+  margin-top: 90px; margin-bottom: 14px;
 }
 .headline {
-  font-size: 64px; font-weight: 900; text-transform: uppercase;
-  line-height: 1; margin-bottom: 50px;
-  letter-spacing: -0.035em;
+  font-size: 72px; font-weight: 900; text-transform: uppercase;
+  line-height: 0.98; margin-bottom: 56px;
+  letter-spacing: -0.04em;
 }
 .headline .pilula-inline {
   display: inline-block;
   background: #bfff00; color: #004d40;
-  padding: 4px 22px; line-height: 1.1;
+  padding: 4px 24px; line-height: 1.1;
 }
+
 .checklist { display: flex; flex-direction: column; gap: 22px; }
 .check-item {
-  display: flex; align-items: center; gap: 24px;
+  display: flex; align-items: center; gap: 26px;
   background: rgba(0,77,64,0.5);
   border: 2px solid rgba(40,174,97,0.35);
   border-radius: 20px;
-  padding: 28px 32px;
+  padding: 30px 34px;
 }
 .check-num {
-  width: 64px; height: 64px; min-width: 64px;
+  width: 70px; height: 70px; min-width: 70px;
   background: #bfff00; border-radius: 16px;
   display: flex; align-items: center; justify-content: center;
-  font-size: 34px; font-weight: 900; color: #004d40;
+  font-size: 38px; font-weight: 900; color: #004d40;
   letter-spacing: -0.03em;
 }
 .check-text {
-  font-size: 32px; font-weight: 800; line-height: 1.2;
+  font-size: 34px; font-weight: 800; line-height: 1.2;
   text-transform: uppercase; letter-spacing: -0.025em;
 }
 .check-sub {
-  font-size: 22px; font-weight: 500;
+  font-size: 24px; font-weight: 500;
   color: rgba(237,240,238,0.6); margin-top: 4px;
   text-transform: none; letter-spacing: 0;
 }
-.logo {
-  position: absolute; bottom: 120px; left: 80px;
-  display: flex; align-items: center; gap: 10px;
+
+.bottom-row {
+  position: absolute; bottom: 75px; left: 80px; right: 80px;
+  display: flex; align-items: center; justify-content: space-between;
 }
-.logo-icon {
-  width: 38px; height: 38px;
-  background: #edf0ee;
-  border-radius: 12px 12px 12px 4px;
-}
-.logo-icon::before {
-  content: ''; display: block; width: 14px; height: 3px; background: #bfff00; border-radius: 2px;
-  margin: 17px auto;
-}
-.logo-text {
-  font-size: 40px; font-weight: 800;
-  color: #edf0ee; letter-spacing: -0.025em;
-}
-.logo-text .g-mark { position: relative; }
-.logo-text .g-mark::after {
-  content: ''; position: absolute;
-  width: 8px; height: 8px;
-  background: #bfff00;
-  top: 50%; left: 50%;
-  transform: translate(-30%, -45%) rotate(45deg);
-}
+.logo-symbol-only img { height: 72px; }
 .arrow-next {
-  position: absolute; bottom: 120px; right: 80px;
-  width: 80px; height: 80px;
+  width: 84px; height: 84px;
   background: #bfff00;
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 6px 24px rgba(191,255,0,0.3);
+  box-shadow: 0 6px 24px rgba(191,255,0,0.30);
 }
-.arrow-next svg { width: 36px; height: 36px; }
+.arrow-next svg { width: 38px; height: 38px; }
 </style>
 </head>
 <body>
@@ -112,7 +94,7 @@ html, body {
   <div class="noise"></div>
   <div class="handle">@hellogrowth__</div>
 
-  <div class="pre-headline">3 ações que custam R$0:</div>
+  <div class="kicker">3 ações que custam R$0:</div>
   <div class="headline">VALEM <span class="pilula-inline">R$45 MIL</span><br>NO FIM DO ANO</div>
 
   <div class="checklist">
@@ -120,35 +102,35 @@ html, body {
       <div class="check-num">1</div>
       <div>
         <div class="check-text">Peça avaliação</div>
-        <div class="check-sub">após cada entrega</div>
+        <div class="check-sub">após cada entrega ao cliente</div>
       </div>
     </div>
     <div class="check-item">
       <div class="check-num">2</div>
       <div>
         <div class="check-text">Responda 100%</div>
-        <div class="check-sub">em até 24 horas</div>
+        <div class="check-sub">das reviews em até 24 horas</div>
       </div>
     </div>
     <div class="check-item">
       <div class="check-num">3</div>
       <div>
         <div class="check-text">Monitore sua nota</div>
-        <div class="check-sub">toda semana</div>
+        <div class="check-sub">toda semana, sem exceção</div>
       </div>
     </div>
   </div>
 
-  <div class="logo">
-    <div class="logo-icon"></div>
-    <div class="logo-text">Hello<span class="g-mark">G</span>rowth</div>
-  </div>
-
-  <div class="arrow-next">
-    <svg viewBox="0 0 24 24" fill="none" stroke="#004d40" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-      <line x1="5" y1="12" x2="19" y2="12"/>
-      <polyline points="12 5 19 12 12 19"/>
-    </svg>
+  <div class="bottom-row">
+    <div class="logo-symbol-only">
+      <img src="assets/logo-symbol.svg" alt="HG">
+    </div>
+    <div class="arrow-next">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#004d40" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12"/>
+        <polyline points="12 5 19 12 12 19"/>
+      </svg>
+    </div>
   </div>
 </div>
 </body>

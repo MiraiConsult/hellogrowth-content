@@ -32,69 +32,51 @@ html, body {
   font-size: 18px; font-weight: 500; color: rgba(237,240,238,0.4);
   letter-spacing: 0.05em;
 }
+
 .stars-row {
-  display: flex; gap: 14px; margin-top: 100px; margin-bottom: 50px;
+  display: flex; gap: 16px; margin-top: 100px; margin-bottom: 56px;
   filter: drop-shadow(0 0 25px rgba(191,255,0,0.2));
 }
-.stars-row svg { width: 96px; height: 96px; }
+.stars-row svg { width: 108px; height: 108px; }
 .star-active { fill: #bfff00; }
 .star-dim { fill: rgba(237,240,238,0.18); }
+
 .pre-headline {
-  font-size: 32px; font-weight: 400; color: #edf0ee;
+  font-size: 34px; font-weight: 400; color: #edf0ee;
   margin-bottom: 16px; line-height: 1.3;
 }
 .headline-big {
-  font-size: 220px; font-weight: 900;
+  font-size: 260px; font-weight: 900;
   color: #bfff00; line-height: 0.95; margin-bottom: 8px;
   letter-spacing: -0.06em;
   text-shadow: 0 0 60px rgba(191,255,0,0.3);
 }
 .headline {
-  font-size: 56px; font-weight: 900; text-transform: uppercase;
-  line-height: 1.05; margin-bottom: 24px;
-  letter-spacing: -0.03em;
+  font-size: 58px; font-weight: 900; text-transform: uppercase;
+  line-height: 1.05; margin-bottom: 28px;
+  letter-spacing: -0.035em;
 }
 .pilula {
   display: inline-block;
   background: #bfff00; color: #004d40;
-  font-weight: 900; font-size: 44px; text-transform: uppercase;
+  font-weight: 900; font-size: 48px; text-transform: uppercase;
   padding: 14px 38px; border-radius: 100px;
   letter-spacing: -0.03em;
 }
-.logo {
-  position: absolute; bottom: 120px; left: 80px;
-  display: flex; align-items: center; gap: 10px;
+
+.bottom-row {
+  position: absolute; bottom: 75px; left: 80px; right: 80px;
+  display: flex; align-items: center; justify-content: space-between;
 }
-.logo-icon {
-  width: 38px; height: 38px;
-  background: #edf0ee;
-  border-radius: 12px 12px 12px 4px;
-}
-.logo-icon::before {
-  content: ''; display: block; width: 14px; height: 3px; background: #bfff00; border-radius: 2px;
-  margin: 17px auto;
-}
-.logo-text {
-  font-size: 40px; font-weight: 800;
-  color: #edf0ee; letter-spacing: -0.025em;
-}
-.logo-text .g-mark { position: relative; }
-.logo-text .g-mark::after {
-  content: ''; position: absolute;
-  width: 8px; height: 8px;
-  background: #bfff00;
-  top: 50%; left: 50%;
-  transform: translate(-30%, -45%) rotate(45deg);
-}
+.logo-symbol-only img { height: 72px; }
 .arrow-next {
-  position: absolute; bottom: 120px; right: 80px;
-  width: 80px; height: 80px;
+  width: 84px; height: 84px;
   background: #bfff00;
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 6px 24px rgba(191,255,0,0.3);
+  box-shadow: 0 6px 24px rgba(191,255,0,0.30);
 }
-.arrow-next svg { width: 36px; height: 36px; }
+.arrow-next svg { width: 38px; height: 38px; }
 </style>
 </head>
 <body>
@@ -115,16 +97,16 @@ html, body {
   <div class="headline">NÃO COMPRAM<br>DE EMPRESA COM</div>
   <div class="pilula">MENOS DE 4 ESTRELAS</div>
 
-  <div class="logo">
-    <div class="logo-icon"></div>
-    <div class="logo-text">Hello<span class="g-mark">G</span>rowth</div>
-  </div>
-
-  <div class="arrow-next">
-    <svg viewBox="0 0 24 24" fill="none" stroke="#004d40" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-      <line x1="5" y1="12" x2="19" y2="12"/>
-      <polyline points="12 5 19 12 12 19"/>
-    </svg>
+  <div class="bottom-row">
+    <div class="logo-symbol-only">
+      <img src="assets/logo-symbol.svg" alt="HG">
+    </div>
+    <div class="arrow-next">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#004d40" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12"/>
+        <polyline points="12 5 19 12 12 19"/>
+      </svg>
+    </div>
   </div>
 </div>
 </body>
