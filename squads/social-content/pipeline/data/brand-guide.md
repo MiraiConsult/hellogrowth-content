@@ -269,6 +269,7 @@ Não usar `radial-gradient` simples. O fundo correto são **elipses sólidas com
 7. Linhas de texto desbalanceadas (uma longa, outra curta pela metade)
 8. "Google" como texto plain — sempre usar logo colorido
 9. Rodapé encostando na borda inferior — mínimo 130px do bottom
+13. Gradient overlay chegando a 100% no bottom — NUNCA criar barra sólida no final do card. Máximo 92% de opacidade
 10. Mesmo elemento visual repetido em múltiplos cards (ex: estrelas em 2 cards)
 11. Texto branco puro `#ffffff` — usar `#edf0ed`
 12. Pílula highlight em `#bfff00` no card 3 — usar `#28ae61` (verde médio)
