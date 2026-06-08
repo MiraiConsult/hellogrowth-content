@@ -29,48 +29,46 @@ html, body {
   letter-spacing: 0.05em;
 }
 
-/* Google logo inline */
-.g-logo {
-  font-size: inherit; font-weight: 700; letter-spacing: -0.02em;
+/* Google logo inline, same size as surrounding text */
+.g-logo-inline {
+  font-weight: 700; letter-spacing: -0.02em;
   display: inline;
 }
-.g-logo .b { color: #4285F4; }
-.g-logo .r { color: #EA4335; }
-.g-logo .y { color: #FBBC04; }
-.g-logo .g { color: #34A853; }
+.g-logo-inline .b { color: #4285F4; }
+.g-logo-inline .r { color: #EA4335; }
+.g-logo-inline .y { color: #FBBC04; }
+.g-logo-inline .g { color: #34A853; }
 
 .headline {
   margin-top: 140px;
-  font-size: 60px; font-weight: 900;
-  color: #edf0ee; line-height: 1.15;
+  font-size: 58px; font-weight: 900;
+  color: #edf0ee; line-height: 1.2;
   letter-spacing: -0.04em;
-  margin-bottom: 16px;
+  margin-bottom: 0;
 }
-.highlight-line {
-  display: block;
-  margin-top: 14px;
-}
-.highlight-line .hl {
+.highlight-block {
+  display: inline-block;
   background: #bfff00; color: #004d40;
-  padding: 6px 18px;
-  font-weight: 900;
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
+  padding: 8px 18px;
+  font-weight: 900; font-size: 58px;
+  letter-spacing: -0.04em;
+  line-height: 1.2;
+  margin-top: 22px;
 }
 .closer {
-  margin-top: 40px;
+  margin-top: 36px;
   font-size: 44px; font-weight: 700;
   color: #bfff00; line-height: 1.2;
   letter-spacing: -0.03em;
 }
 
 .cta-section {
-  margin-top: 56px;
+  margin-top: 60px;
 }
 .cta-text {
   font-size: 30px; font-weight: 500;
   color: rgba(237,240,238,0.7);
-  line-height: 1.45;
+  line-height: 1.5;
   margin-bottom: 30px;
 }
 .cta-text strong { color: #edf0ee; font-weight: 800; }
@@ -96,9 +94,10 @@ html, body {
   <div class="handle">@hellogrowth__</div>
 
   <div class="headline">
-    Sua qualidade não aparece<br>
-    no <span class="g-logo"><span class="b">G</span><span class="r">o</span><span class="y">o</span><span class="b">g</span><span class="g">l</span><span class="r">e</span></span> porque ela não está
-    <span class="highlight-line"><span class="hl">virando avaliação.</span></span>
+    Sua qualidade não aparece no<br>
+    <span class="g-logo-inline"><span class="b">G</span><span class="r">o</span><span class="y">o</span><span class="b">g</span><span class="g">l</span><span class="r">e</span></span>
+    porque ela não está<br>
+    <span class="highlight-block">virando avaliação.</span>
   </div>
   <div class="closer">É esse processo que falta.</div>
 

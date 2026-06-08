@@ -29,42 +29,62 @@ html, body {
   letter-spacing: 0.05em;
 }
 
-/* Stars row */
-.stars {
-  display: flex; gap: 14px;
-  margin-top: 120px; margin-bottom: 50px;
-  filter: drop-shadow(0 0 22px rgba(191,255,0,0.35));
+/* Google search bar element as decorative anchor */
+.google-bar {
+  margin-top: 100px;
+  display: inline-flex; align-items: center; gap: 14px;
+  background: rgba(255,255,255,0.12);
+  border: 2px solid rgba(255,255,255,0.18);
+  border-radius: 50px;
+  padding: 14px 28px;
+  margin-bottom: 56px;
 }
-.stars svg { width: 100px; height: 100px; }
+.g-logo {
+  font-size: 28px; font-weight: 700; letter-spacing: -0.02em;
+}
+.g-logo .b { color: #4285F4; }
+.g-logo .r { color: #EA4335; }
+.g-logo .y { color: #FBBC04; }
+.g-logo .g { color: #34A853; }
+.g-search-text {
+  font-size: 22px; font-weight: 500;
+  color: rgba(237,240,238,0.5);
+}
 
-/* Headline */
-.line1 {
-  font-size: 130px; font-weight: 900;
-  color: #bfff00; line-height: 0.9;
-  letter-spacing: -0.055em;
-  text-shadow: 0 0 60px rgba(191,255,0,0.25);
+/* Main content */
+.pre {
+  font-size: 44px; font-weight: 600;
+  color: rgba(237,240,238,0.8);
+  line-height: 1.2; margin-bottom: 14px;
 }
-.line2 {
-  font-size: 56px; font-weight: 800;
-  color: #edf0ee; line-height: 1.15;
-  margin-top: 16px; letter-spacing: -0.035em;
+.headline {
+  font-size: 160px; font-weight: 900;
+  color: #bfff00; line-height: 0.88;
+  letter-spacing: -0.06em;
+  text-shadow: 0 0 80px rgba(191,255,0,0.3);
+  margin-bottom: 20px;
 }
-.line3 {
-  font-size: 100px; font-weight: 900;
+.mid {
+  font-size: 52px; font-weight: 700;
+  color: #edf0ee; line-height: 1.1;
+  letter-spacing: -0.035em;
+  margin-bottom: 8px;
+}
+.closer {
+  font-size: 86px; font-weight: 900;
   color: #edf0ee; line-height: 0.95;
-  margin-top: 8px; letter-spacing: -0.05em;
+  letter-spacing: -0.05em;
   text-transform: uppercase;
 }
-.line3 .accent {
-  background: #bfff00; color: #004d40;
-  padding: 0 16px;
+.closer .num {
+  color: #bfff00;
 }
 
 .bottom-row {
   position: absolute; bottom: 130px; left: 80px; right: 80px;
   display: flex; align-items: center; justify-content: space-between;
 }
-.logo-symbol-only img { height: 130px; }
+.logo-full img { height: 110px; }
 .arrow-next {
   width: 84px; height: 84px;
   background: #bfff00;
@@ -79,21 +99,19 @@ html, body {
 <div class="card">
   <div class="handle">@hellogrowth__</div>
 
-  <div class="stars">
-    <svg viewBox="0 0 24 24" fill="#bfff00"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
-    <svg viewBox="0 0 24 24" fill="#bfff00"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
-    <svg viewBox="0 0 24 24" fill="#bfff00"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
-    <svg viewBox="0 0 24 24" fill="#bfff00"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
-    <svg viewBox="0 0 24 24" fill="#28ae61"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
+  <div class="google-bar">
+    <div class="g-logo"><span class="b">G</span><span class="r">o</span><span class="y">o</span><span class="b">g</span><span class="g">l</span><span class="r">e</span></div>
+    <div class="g-search-text">dentista perto de mim</div>
   </div>
 
-  <div class="line1">4,9 estrelas</div>
-  <div class="line2">e mesmo assim</div>
-  <div class="line3">perdendo pra<br>quem tem <span class="accent">4,6?</span></div>
+  <div class="pre">Você tem nota</div>
+  <div class="headline">4,9</div>
+  <div class="mid">e mesmo assim está</div>
+  <div class="closer">perdendo pra<br>quem tem <span class="num">4,6.</span></div>
 
   <div class="bottom-row">
-    <div class="logo-symbol-only">
-      <img src="assets/logo-symbol-light.svg" alt="HG">
+    <div class="logo-full">
+      <img src="assets/logo-full-light.svg" alt="HelloGrowth">
     </div>
     <div class="arrow-next">
       <svg viewBox="0 0 24 24" fill="none" stroke="#004d40" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
