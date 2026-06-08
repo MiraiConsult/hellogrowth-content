@@ -8,9 +8,9 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html, body {
   width: 1080px; height: 1350px;
-  background: #004d40;
+  background: #edf0ee;
   font-family: 'Inter', sans-serif;
-  color: #edf0ee;
+  color: #004d40;
   overflow: hidden;
   letter-spacing: -0.02em;
 }
@@ -18,58 +18,90 @@ html, body {
   width: 1080px; height: 1350px;
   position: relative;
   background:
-    radial-gradient(ellipse at top right, rgba(40,174,97,0.25) 0%, transparent 55%),
-    radial-gradient(ellipse at bottom left, rgba(40,174,97,0.18) 0%, transparent 55%),
-    linear-gradient(160deg, #004d40 0%, #1b6b5b 60%, #004d40 100%);
-  padding: 100px 80px;
+    radial-gradient(ellipse 900px 700px at top left, rgba(191,255,0,0.30) 0%, transparent 60%),
+    radial-gradient(ellipse 700px 800px at bottom right, rgba(40,174,97,0.18) 0%, transparent 65%),
+    linear-gradient(180deg, #f7faf5 0%, #edf0ee 100%);
+  padding: 80px 80px;
 }
 .handle {
-  position: absolute; top: 50px; left: 50%; transform: translateX(-50%);
-  font-size: 18px; font-weight: 500; color: rgba(237,240,238,0.4);
+  position: absolute; top: 40px; left: 50%; transform: translateX(-50%);
+  font-size: 18px; font-weight: 500; color: rgba(0,77,64,0.4);
   letter-spacing: 0.05em;
 }
 
-/* Magnifier with G illustration */
-.magnifier-wrap {
-  margin-top: 100px;
-  display: flex; justify-content: center;
-  filter: drop-shadow(0 14px 40px rgba(191,255,0,0.25));
+.intro {
+  margin-top: 110px;
+  font-size: 48px; font-weight: 800;
+  color: #004d40; line-height: 1.15;
+  letter-spacing: -0.035em;
+  margin-bottom: 36px;
 }
-.magnifier-wrap svg { width: 240px; height: 240px; }
+.body-text {
+  font-size: 36px; font-weight: 500;
+  color: #1b6b5b; line-height: 1.45;
+  margin-bottom: 44px;
+}
+.body-text .accent {
+  background: #bfff00;
+  padding: 2px 12px;
+  font-weight: 800; color: #004d40;
+}
 
-.pre {
-  margin-top: 40px;
-  font-size: 32px; font-weight: 500;
-  color: rgba(237,240,238,0.7);
-  text-align: center; line-height: 1.4;
+/* Comparativo visual inline */
+.compare-row {
+  display: flex; gap: 24px;
 }
-.headline {
-  font-size: 100px; font-weight: 900;
-  color: #edf0ee; line-height: 0.95;
-  text-align: center; margin-top: 16px; margin-bottom: 24px;
-  letter-spacing: -0.05em;
-  text-transform: uppercase;
+.compare-box {
+  flex: 1;
+  border-radius: 24px;
+  padding: 30px 24px;
+  text-align: center;
 }
-.headline .accent { color: #bfff00; }
-.sub {
-  font-size: 30px; font-weight: 500;
-  color: rgba(237,240,238,0.75);
-  text-align: center; line-height: 1.45;
-  max-width: 880px; margin: 0 auto;
+.compare-box.loser {
+  background: rgba(0,77,64,0.06);
+  border: 2px solid rgba(0,77,64,0.12);
 }
-.sub strong { color: #edf0ee; font-weight: 800; }
+.compare-box.winner {
+  background: #004d40;
+  color: #edf0ee;
+  box-shadow: 0 14px 40px rgba(0,77,64,0.30);
+}
+.compare-rating {
+  font-size: 72px; font-weight: 900;
+  line-height: 1; letter-spacing: -0.04em;
+  margin-bottom: 8px;
+}
+.compare-box.winner .compare-rating { color: #bfff00; }
+.compare-reviews {
+  font-size: 24px; font-weight: 700;
+  line-height: 1.2;
+}
+.compare-note {
+  font-size: 18px; font-weight: 500;
+  margin-top: 8px; opacity: 0.6;
+}
+.compare-box.winner .compare-note { opacity: 0.7; }
+.compare-label {
+  margin-top: 12px;
+  font-size: 16px; font-weight: 800;
+  text-transform: uppercase; letter-spacing: 0.12em;
+}
+.compare-box.winner .compare-label {
+  background: #bfff00; color: #004d40;
+  display: inline-block; padding: 4px 12px; border-radius: 50px;
+}
 
 .bottom-row {
   position: absolute; bottom: 130px; left: 80px; right: 80px;
   display: flex; align-items: center; justify-content: space-between;
 }
-.logo-symbol-only img { height: 150px; }
+.bottom-row img { height: 90px; }
 .arrow-next {
   width: 84px; height: 84px;
-  background: #bfff00;
+  background: #28ae61;
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 6px 24px rgba(191,255,0,0.30);
+  box-shadow: 0 6px 24px rgba(40,174,97,0.35);
 }
 .arrow-next svg { width: 38px; height: 38px; }
 </style>
@@ -78,27 +110,29 @@ html, body {
 <div class="card">
   <div class="handle">@hellogrowth__</div>
 
-  <div class="magnifier-wrap">
-    <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
-      <!-- lupa circle -->
-      <circle cx="100" cy="100" r="80" fill="none" stroke="#bfff00" stroke-width="14"/>
-      <!-- handle -->
-      <line x1="158" y1="158" x2="220" y2="220" stroke="#bfff00" stroke-width="16" stroke-linecap="round"/>
-      <!-- G letter inside -->
-      <text x="100" y="125" text-anchor="middle" font-family="Inter, sans-serif" font-weight="900" font-size="86" fill="#bfff00" letter-spacing="-4">G</text>
-    </svg>
+  <div class="intro">O Google não olha<br>só a nota.</div>
+
+  <div class="body-text">Olha <span class="accent">quantas avaliações</span> você tem, se são <span class="accent">recentes</span> e se chegam <span class="accent">toda semana</span>.</div>
+
+  <div class="compare-row">
+    <div class="compare-box loser">
+      <div class="compare-rating">4,9</div>
+      <div class="compare-reviews">12 avaliações</div>
+      <div class="compare-note">paradas há meses</div>
+      <div class="compare-label">não aparece</div>
+    </div>
+    <div class="compare-box winner">
+      <div class="compare-rating">4,6</div>
+      <div class="compare-reviews">300 avaliações</div>
+      <div class="compare-note">atualizadas sempre</div>
+      <div class="compare-label">topo do Google</div>
+    </div>
   </div>
 
-  <div class="pre">O Google não escolhe pela nota.</div>
-  <div class="headline">Escolhe pelo<br><span class="accent">conjunto.</span></div>
-  <div class="sub">Nota é <strong>1 de 3 sinais</strong> que o algoritmo lê pra montar o ranking local.</div>
-
   <div class="bottom-row">
-    <div class="logo-symbol-only">
-      <img src="assets/logo-symbol-light.svg" alt="HG">
-    </div>
+    <img src="assets/logo-wordmark.svg" alt="HelloGrowth">
     <div class="arrow-next">
-      <svg viewBox="0 0 24 24" fill="none" stroke="#004d40" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#edf0ee" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
         <line x1="5" y1="12" x2="19" y2="12"/>
         <polyline points="12 5 19 12 12 19"/>
       </svg>

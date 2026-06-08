@@ -18,135 +18,74 @@ html, body {
   width: 1080px; height: 1350px;
   position: relative;
   background:
-    radial-gradient(ellipse at top right, rgba(40,174,97,0.20) 0%, transparent 55%),
-    radial-gradient(ellipse at bottom left, rgba(40,174,97,0.18) 0%, transparent 55%),
-    linear-gradient(160deg, #1b6b5b 0%, #004d40 70%);
-  padding: 100px 80px;
+    radial-gradient(ellipse at top right, rgba(40,174,97,0.22) 0%, transparent 55%),
+    radial-gradient(ellipse at bottom left, rgba(191,255,0,0.10) 0%, transparent 55%),
+    linear-gradient(160deg, #004d40 0%, #1b6b5b 50%, #004d40 100%);
+  padding: 80px 80px;
 }
 .handle {
-  position: absolute; top: 50px; left: 50%; transform: translateX(-50%);
+  position: absolute; top: 40px; left: 50%; transform: translateX(-50%);
   font-size: 18px; font-weight: 500; color: rgba(237,240,238,0.4);
   letter-spacing: 0.05em;
 }
 
-.kicker {
-  font-size: 30px; font-weight: 500;
-  color: rgba(237,240,238,0.65);
-  text-transform: uppercase; letter-spacing: 0.15em;
-  margin-top: 90px; margin-bottom: 16px;
-}
 .headline {
-  font-size: 64px; font-weight: 900;
-  color: #edf0ee; line-height: 1;
-  margin-bottom: 48px;
+  margin-top: 160px;
+  font-size: 62px; font-weight: 900;
+  color: #edf0ee; line-height: 1.05;
   letter-spacing: -0.04em;
-  text-transform: uppercase;
+  margin-bottom: 18px;
 }
-.headline .accent { color: #bfff00; }
+.headline .highlight {
+  background: #bfff00; color: #004d40;
+  padding: 2px 16px;
+}
+.body-text {
+  font-size: 44px; font-weight: 700;
+  color: #bfff00; line-height: 1.2;
+  letter-spacing: -0.03em;
+  margin-bottom: 60px;
+}
 
-/* Three big factor cards */
-.factors { display: flex; flex-direction: column; gap: 18px; }
-.factor {
-  background: rgba(0,77,64,0.55);
-  border: 2px solid rgba(40,174,97,0.4);
-  border-radius: 24px;
-  padding: 26px 32px;
-  display: flex; align-items: center; gap: 26px;
+/* CTA section */
+.cta-text {
+  font-size: 34px; font-weight: 500;
+  color: rgba(237,240,238,0.75);
+  line-height: 1.45;
+  margin-bottom: 38px;
 }
-.factor-icon {
-  width: 88px; height: 88px; min-width: 88px;
-  background: #bfff00;
-  border-radius: 22px;
-  display: flex; align-items: center; justify-content: center;
+.cta-text strong {
+  color: #edf0ee; font-weight: 800;
 }
-.factor-icon svg { width: 50px; height: 50px; }
-.factor-body { flex: 1; }
-.factor-title {
-  font-size: 36px; font-weight: 900;
-  line-height: 1.05; letter-spacing: -0.025em;
+.cta-pill {
+  display: inline-block;
+  background: #bfff00; color: #004d40;
+  font-weight: 900; font-size: 40px;
   text-transform: uppercase;
-}
-.factor-desc {
-  font-size: 22px; font-weight: 500;
-  color: rgba(237,240,238,0.6);
-  margin-top: 6px; line-height: 1.35;
-}
-.factor-badge {
-  background: rgba(191,255,0,0.18);
-  color: #bfff00;
-  font-size: 18px; font-weight: 800;
-  padding: 8px 16px; border-radius: 50px;
-  text-transform: uppercase; letter-spacing: 0.1em;
-  min-width: 80px; text-align: center;
+  padding: 18px 38px; border-radius: 100px;
+  letter-spacing: -0.02em;
+  box-shadow: 0 12px 36px rgba(191,255,0,0.30);
 }
 
 .bottom-row {
-  position: absolute; bottom: 130px; left: 80px; right: 80px;
-  display: flex; align-items: center; justify-content: space-between;
-}
-.logo-symbol-only img { height: 150px; }
-.arrow-next {
-  width: 84px; height: 84px;
-  background: #bfff00;
-  border-radius: 50%;
+  position: absolute; bottom: 130px; left: 0; right: 0;
   display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 6px 24px rgba(191,255,0,0.30);
 }
-.arrow-next svg { width: 38px; height: 38px; }
+.bottom-row img { height: 110px; }
 </style>
 </head>
 <body>
 <div class="card">
   <div class="handle">@hellogrowth__</div>
 
-  <div class="kicker">os 3 sinais que o algoritmo lê:</div>
-  <div class="headline">Volume.<br>Recência.<br><span class="accent">Frequência.</span></div>
+  <div class="headline">Sua qualidade não aparece no Google porque ela não está <span class="highlight">virando avaliação.</span></div>
+  <div class="body-text">É esse processo que falta.</div>
 
-  <div class="factors">
-    <div class="factor">
-      <div class="factor-icon">
-        <svg viewBox="0 0 24 24" fill="#004d40"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
-      </div>
-      <div class="factor-body">
-        <div class="factor-title">Volume</div>
-        <div class="factor-desc">quantas reviews você acumulou no total</div>
-      </div>
-      <div class="factor-badge">+ é melhor</div>
-    </div>
-
-    <div class="factor">
-      <div class="factor-icon">
-        <svg viewBox="0 0 24 24" fill="#004d40"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-2 .9-2 2v16c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H5V8h14v13zM7 10h5v5H7z"/></svg>
-      </div>
-      <div class="factor-body">
-        <div class="factor-title">Recência</div>
-        <div class="factor-desc">se chegaram nos últimos 30 dias</div>
-      </div>
-      <div class="factor-badge">30 dias</div>
-    </div>
-
-    <div class="factor">
-      <div class="factor-icon">
-        <svg viewBox="0 0 24 24" fill="#004d40"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>
-      </div>
-      <div class="factor-body">
-        <div class="factor-title">Frequência</div>
-        <div class="factor-desc">fluxo constante, não pico isolado</div>
-      </div>
-      <div class="factor-badge">toda sem.</div>
-    </div>
-  </div>
+  <div class="cta-text">Coleta automática. Recência. Frequência.<br><strong>A gente monta esse processo pra você.</strong></div>
+  <div class="cta-pill">LINK NA BIO</div>
 
   <div class="bottom-row">
-    <div class="logo-symbol-only">
-      <img src="assets/logo-symbol-light.svg" alt="HG">
-    </div>
-    <div class="arrow-next">
-      <svg viewBox="0 0 24 24" fill="none" stroke="#004d40" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-        <line x1="5" y1="12" x2="19" y2="12"/>
-        <polyline points="12 5 19 12 12 19"/>
-      </svg>
-    </div>
+    <img src="assets/logo-full-light.svg" alt="HelloGrowth">
   </div>
 </div>
 </body>

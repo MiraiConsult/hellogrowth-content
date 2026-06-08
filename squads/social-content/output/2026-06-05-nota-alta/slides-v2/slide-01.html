@@ -18,8 +18,8 @@ html, body {
   width: 1080px; height: 1350px;
   position: relative;
   background:
-    radial-gradient(ellipse at top right, rgba(40,174,97,0.22) 0%, transparent 55%),
-    radial-gradient(ellipse at bottom left, rgba(191,255,0,0.10) 0%, transparent 55%),
+    radial-gradient(ellipse at top right, rgba(40,174,97,0.25) 0%, transparent 55%),
+    radial-gradient(ellipse at bottom left, rgba(191,255,0,0.12) 0%, transparent 55%),
     linear-gradient(160deg, #004d40 0%, #1b6b5b 60%, #004d40 100%);
   padding: 80px 80px;
 }
@@ -29,141 +29,42 @@ html, body {
   letter-spacing: 0.05em;
 }
 
-/* Phone mockup */
-.phone-wrap {
-  margin: 80px auto 0;
-  width: 460px;
-  background: #ffffff;
-  border-radius: 38px;
-  padding: 24px 22px;
-  box-shadow:
-    0 30px 80px rgba(0,0,0,0.45),
-    0 0 0 8px rgba(255,255,255,0.05);
-  position: relative;
-  transform: rotate(-2.5deg);
+/* Stars row */
+.stars {
+  display: flex; gap: 14px;
+  margin-top: 120px; margin-bottom: 50px;
+  filter: drop-shadow(0 0 22px rgba(191,255,0,0.35));
 }
-.phone-notch {
-  position: absolute; top: 16px; left: 50%; transform: translateX(-50%);
-  width: 110px; height: 8px;
-  background: #1f2937; border-radius: 50px;
-}
-.phone-status {
-  display: flex; justify-content: space-between; align-items: center;
-  margin-top: 14px; margin-bottom: 18px;
-  font-size: 16px; font-weight: 700; color: #1f2937;
-}
-.battery {
-  display: inline-block;
-  width: 26px; height: 12px;
-  border: 2px solid #1f2937;
-  border-radius: 3px;
-  position: relative;
-}
-.battery::before {
-  content: '';
-  position: absolute; right: -4px; top: 3px;
-  width: 2px; height: 4px;
-  background: #1f2937; border-radius: 1px;
-}
-.battery::after {
-  content: '';
-  position: absolute; left: 1px; top: 1px;
-  width: 18px; height: 6px;
-  background: #28ae61;
-  border-radius: 1px;
-}
+.stars svg { width: 100px; height: 100px; }
 
-/* Google search bar */
-.google-bar {
-  display: flex; align-items: center; gap: 12px;
-  background: #f1f3f4;
-  border-radius: 50px;
-  padding: 12px 18px;
-  margin-bottom: 16px;
-}
-.g-logo {
-  font-size: 22px; font-weight: 700; letter-spacing: -0.02em;
-}
-.g-logo .b { color: #4285F4; }
-.g-logo .r { color: #EA4335; }
-.g-logo .y { color: #FBBC04; }
-.g-logo .g { color: #34A853; }
-.search-text {
-  flex: 1;
-  font-size: 17px; font-weight: 500;
-  color: #202124;
-}
-.search-mic { color: #4285F4; font-weight: 700; }
-
-/* GMB result card (single) */
-.gmb-single {
-  background: #ffffff;
-  border: 2px solid #28ae61;
-  border-radius: 18px;
-  padding: 18px 18px;
-  display: flex; align-items: center; gap: 14px;
-  box-shadow: 0 12px 28px rgba(40,174,97,0.18);
-  position: relative;
-}
-.tag-1st {
-  position: absolute; top: -10px; right: 16px;
-  background: #bfff00;
-  color: #004d40;
-  font-size: 11px; font-weight: 800;
-  padding: 4px 10px; border-radius: 50px;
-  text-transform: uppercase; letter-spacing: 0.1em;
-}
-.gmb-photo {
-  width: 56px; height: 56px; min-width: 56px;
-  background: linear-gradient(135deg, #6dd4a8, #28ae61);
-  border-radius: 12px;
-  display: flex; align-items: center; justify-content: center;
-  color: white; font-weight: 900; font-size: 22px;
-}
-.gmb-content { flex: 1; }
-.gmb-name-sm {
-  font-size: 17px; font-weight: 800;
-  color: #202124; letter-spacing: -0.015em;
-  line-height: 1;
-}
-.gmb-meta-sm {
-  display: flex; align-items: center; gap: 6px;
-  margin-top: 6px;
-  font-size: 13px; color: #5f6368; font-weight: 500;
-}
-.gmb-rate-sm { font-weight: 800; color: #202124; font-size: 14px; }
-.gmb-stars-sm { color: #f59e0b; letter-spacing: 1px; font-size: 12px; }
-
-/* Headline below phone */
-.headline-block {
-  margin-top: 56px;
-  display: flex; flex-direction: column; align-items: flex-start;
-}
-.kicker {
-  font-size: 28px; font-weight: 500;
-  color: rgba(237,240,238,0.65);
-  margin-bottom: 8px;
-}
-.headline-big {
-  font-size: 110px; font-weight: 900;
+/* Headline */
+.line1 {
+  font-size: 130px; font-weight: 900;
   color: #bfff00; line-height: 0.9;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.055em;
   text-shadow: 0 0 60px rgba(191,255,0,0.25);
-  margin-bottom: 14px;
+}
+.line2 {
+  font-size: 56px; font-weight: 800;
+  color: #edf0ee; line-height: 1.15;
+  margin-top: 16px; letter-spacing: -0.035em;
+}
+.line3 {
+  font-size: 100px; font-weight: 900;
+  color: #edf0ee; line-height: 0.95;
+  margin-top: 8px; letter-spacing: -0.05em;
   text-transform: uppercase;
 }
-.headline-big .small { font-size: 56px; color: #edf0ee; }
-.gut {
-  font-size: 34px; font-weight: 700;
-  color: #edf0ee; line-height: 1.2;
-  letter-spacing: -0.025em;
+.line3 .accent {
+  background: #bfff00; color: #004d40;
+  padding: 0 16px;
 }
 
 .bottom-row {
   position: absolute; bottom: 130px; left: 80px; right: 80px;
   display: flex; align-items: center; justify-content: space-between;
 }
-.logo-symbol-only img { height: 110px; }
+.logo-full img { height: 110px; }
 .arrow-next {
   width: 84px; height: 84px;
   background: #bfff00;
@@ -178,42 +79,21 @@ html, body {
 <div class="card">
   <div class="handle">@hellogrowth__</div>
 
-  <div class="phone-wrap">
-    <div class="phone-notch"></div>
-    <div class="phone-status">
-      <span>9:41</span>
-      <span class="battery"></span>
-    </div>
-    <div class="google-bar">
-      <div class="g-logo">
-        <span class="b">G</span><span class="r">o</span><span class="y">o</span><span class="b">g</span><span class="g">l</span><span class="r">e</span>
-      </div>
-      <div class="search-text">dentista em curitiba</div>
-      <span class="search-mic">🔍</span>
-    </div>
-    <div class="gmb-single">
-      <div class="tag-1st">topo</div>
-      <div class="gmb-photo">S</div>
-      <div class="gmb-content">
-        <div class="gmb-name-sm">Clínica Sorrir Odonto</div>
-        <div class="gmb-meta-sm">
-          <span class="gmb-rate-sm">4,6</span>
-          <span class="gmb-stars-sm">★★★★★</span>
-          <span>· 312 avaliações</span>
-        </div>
-      </div>
-    </div>
+  <div class="stars">
+    <svg viewBox="0 0 24 24" fill="#bfff00"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
+    <svg viewBox="0 0 24 24" fill="#bfff00"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
+    <svg viewBox="0 0 24 24" fill="#bfff00"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
+    <svg viewBox="0 0 24 24" fill="#bfff00"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
+    <svg viewBox="0 0 24 24" fill="#28ae61"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.851 1.417 8.265L12 19.771l-7.417 4.093L6 15.599 0 9.748l8.332-1.73z"/></svg>
   </div>
 
-  <div class="headline-block">
-    <div class="kicker">você tem</div>
-    <div class="headline-big">4,9<span class="small"> ★</span></div>
-    <div class="gut">e perdeu pra quem tem 4,6.</div>
-  </div>
+  <div class="line1">4,9 estrelas</div>
+  <div class="line2">e mesmo assim</div>
+  <div class="line3">perdendo pra<br>quem tem <span class="accent">4,6?</span></div>
 
   <div class="bottom-row">
-    <div class="logo-symbol-only">
-      <img src="assets/logo-symbol-light.svg" alt="HG">
+    <div class="logo-full">
+      <img src="assets/logo-full-light.svg" alt="HelloGrowth">
     </div>
     <div class="arrow-next">
       <svg viewBox="0 0 24 24" fill="none" stroke="#004d40" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
