@@ -29,32 +29,43 @@ html, body {
   letter-spacing: 0.05em;
 }
 
-/* Google logo inline, same size as surrounding text */
-.g-logo-inline {
-  font-weight: 700; letter-spacing: -0.02em;
-  display: inline;
+/* Google logo in white pill */
+.g-pill {
+  display: inline-flex; align-items: center;
+  background: rgba(255,255,255,0.92);
+  border-radius: 50px;
+  padding: 6px 18px;
+  vertical-align: baseline;
 }
-.g-logo-inline .b { color: #4285F4; }
-.g-logo-inline .r { color: #EA4335; }
-.g-logo-inline .y { color: #FBBC04; }
-.g-logo-inline .g { color: #34A853; }
+.g-pill .b { color: #4285F4; }
+.g-pill .r { color: #EA4335; }
+.g-pill .y { color: #FBBC04; }
+.g-pill .g { color: #34A853; }
+.g-pill span { font-weight: 700; letter-spacing: -0.02em; }
 
+/* Content card for readability */
+.content-card {
+  margin-top: 100px;
+  background: rgba(255,255,255,0.10);
+  border: 2px solid rgba(255,255,255,0.12);
+  border-radius: 32px;
+  padding: 50px 50px 56px;
+}
 .headline {
-  margin-top: 140px;
-  font-size: 58px; font-weight: 900;
-  color: #edf0ee; line-height: 1.2;
-  letter-spacing: -0.04em;
-  margin-bottom: 0;
+  font-size: 54px; font-weight: 900;
+  color: #edf0ee; line-height: 1.25;
+  letter-spacing: -0.035em;
 }
 .highlight-block {
   display: inline-block;
   background: #bfff00; color: #004d40;
   padding: 8px 18px;
-  font-weight: 900; font-size: 58px;
-  letter-spacing: -0.04em;
+  font-weight: 900; font-size: 54px;
+  letter-spacing: -0.035em;
   line-height: 1.2;
-  margin-top: 22px;
+  margin-top: 18px;
 }
+
 .closer {
   margin-top: 36px;
   font-size: 44px; font-weight: 700;
@@ -62,14 +73,11 @@ html, body {
   letter-spacing: -0.03em;
 }
 
-.cta-section {
-  margin-top: 60px;
-}
+.cta-section { margin-top: 50px; }
 .cta-text {
   font-size: 30px; font-weight: 500;
   color: rgba(237,240,238,0.7);
-  line-height: 1.5;
-  margin-bottom: 30px;
+  line-height: 1.5; margin-bottom: 30px;
 }
 .cta-text strong { color: #edf0ee; font-weight: 800; }
 .cta-pill {
@@ -93,12 +101,15 @@ html, body {
 <div class="card">
   <div class="handle">@hellogrowth__</div>
 
-  <div class="headline">
-    Sua qualidade não aparece no<br>
-    <span class="g-logo-inline"><span class="b">G</span><span class="r">o</span><span class="y">o</span><span class="b">g</span><span class="g">l</span><span class="r">e</span></span>
-    porque ela não está<br>
-    <span class="highlight-block">virando avaliação.</span>
+  <div class="content-card">
+    <div class="headline">
+      Sua qualidade não aparece<br>
+      no <span class="g-pill"><span class="b">G</span><span class="r">o</span><span class="y">o</span><span class="b">g</span><span class="g">l</span><span class="r">e</span></span> porque<br>
+      ela não está<br>
+      <span class="highlight-block">virando avaliação.</span>
+    </div>
   </div>
+
   <div class="closer">É esse processo que falta.</div>
 
   <div class="cta-section">
