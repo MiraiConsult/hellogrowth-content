@@ -26,3 +26,4 @@ dist-ssr
 
 # Opensquad browser sessions (private)
 _opensquad/_browser_profile/
+__pycache__/
