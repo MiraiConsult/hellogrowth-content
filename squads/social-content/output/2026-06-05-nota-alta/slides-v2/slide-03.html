@@ -29,40 +29,57 @@ html, body {
   letter-spacing: 0.05em;
 }
 
+/* Google logo inline */
+.g-logo {
+  font-size: inherit; font-weight: 700; letter-spacing: -0.02em;
+  display: inline;
+}
+.g-logo .b { color: #4285F4; }
+.g-logo .r { color: #EA4335; }
+.g-logo .y { color: #FBBC04; }
+.g-logo .g { color: #34A853; }
+
 .headline {
-  margin-top: 160px;
-  font-size: 62px; font-weight: 900;
-  color: #edf0ee; line-height: 1.05;
+  margin-top: 140px;
+  font-size: 60px; font-weight: 900;
+  color: #edf0ee; line-height: 1.15;
   letter-spacing: -0.04em;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
-.headline .highlight {
+.highlight-line {
+  display: block;
+  margin-top: 14px;
+}
+.highlight-line .hl {
   background: #bfff00; color: #004d40;
-  padding: 2px 16px;
+  padding: 6px 18px;
+  font-weight: 900;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
-.body-text {
+.closer {
+  margin-top: 40px;
   font-size: 44px; font-weight: 700;
   color: #bfff00; line-height: 1.2;
   letter-spacing: -0.03em;
-  margin-bottom: 60px;
 }
 
-/* CTA section */
+.cta-section {
+  margin-top: 56px;
+}
 .cta-text {
-  font-size: 34px; font-weight: 500;
-  color: rgba(237,240,238,0.75);
+  font-size: 30px; font-weight: 500;
+  color: rgba(237,240,238,0.7);
   line-height: 1.45;
-  margin-bottom: 38px;
+  margin-bottom: 30px;
 }
-.cta-text strong {
-  color: #edf0ee; font-weight: 800;
-}
+.cta-text strong { color: #edf0ee; font-weight: 800; }
 .cta-pill {
   display: inline-block;
   background: #bfff00; color: #004d40;
-  font-weight: 900; font-size: 40px;
+  font-weight: 900; font-size: 36px;
   text-transform: uppercase;
-  padding: 18px 38px; border-radius: 100px;
+  padding: 16px 34px; border-radius: 100px;
   letter-spacing: -0.02em;
   box-shadow: 0 12px 36px rgba(191,255,0,0.30);
 }
@@ -78,11 +95,17 @@ html, body {
 <div class="card">
   <div class="handle">@hellogrowth__</div>
 
-  <div class="headline">Sua qualidade não aparece no Google porque ela não está <span class="highlight">virando avaliação.</span></div>
-  <div class="body-text">É esse processo que falta.</div>
+  <div class="headline">
+    Sua qualidade não aparece<br>
+    no <span class="g-logo"><span class="b">G</span><span class="r">o</span><span class="y">o</span><span class="b">g</span><span class="g">l</span><span class="r">e</span></span> porque ela não está
+    <span class="highlight-line"><span class="hl">virando avaliação.</span></span>
+  </div>
+  <div class="closer">É esse processo que falta.</div>
 
-  <div class="cta-text">Coleta automática. Recência. Frequência.<br><strong>A gente monta esse processo pra você.</strong></div>
-  <div class="cta-pill">LINK NA BIO</div>
+  <div class="cta-section">
+    <div class="cta-text">Coleta automática. Recência. Frequência.<br><strong>A gente monta esse processo pra você.</strong></div>
+    <div class="cta-pill">LINK NA BIO</div>
+  </div>
 
   <div class="bottom-row">
     <img src="assets/logo-full-light.svg" alt="HelloGrowth">

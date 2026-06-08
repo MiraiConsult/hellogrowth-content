@@ -29,25 +29,35 @@ html, body {
   letter-spacing: 0.05em;
 }
 
+/* Google logo inline */
+.g-logo {
+  font-size: 36px; font-weight: 700; letter-spacing: -0.02em;
+  display: inline;
+}
+.g-logo .b { color: #4285F4; }
+.g-logo .r { color: #EA4335; }
+.g-logo .y { color: #FBBC04; }
+.g-logo .g { color: #34A853; }
+
 .intro {
-  margin-top: 110px;
+  margin-top: 100px;
   font-size: 48px; font-weight: 800;
-  color: #004d40; line-height: 1.15;
+  color: #004d40; line-height: 1.2;
   letter-spacing: -0.035em;
   margin-bottom: 36px;
 }
+
 .body-text {
-  font-size: 36px; font-weight: 500;
-  color: #1b6b5b; line-height: 1.45;
+  font-size: 34px; font-weight: 500;
+  color: #1b6b5b; line-height: 1.55;
   margin-bottom: 44px;
 }
 .body-text .accent {
   background: #bfff00;
-  padding: 2px 12px;
+  padding: 2px 10px;
   font-weight: 800; color: #004d40;
 }
 
-/* Comparativo visual inline */
 .compare-row {
   display: flex; gap: 24px;
 }
@@ -72,14 +82,8 @@ html, body {
   margin-bottom: 8px;
 }
 .compare-box.winner .compare-rating { color: #bfff00; }
-.compare-reviews {
-  font-size: 24px; font-weight: 700;
-  line-height: 1.2;
-}
-.compare-note {
-  font-size: 18px; font-weight: 500;
-  margin-top: 8px; opacity: 0.6;
-}
+.compare-reviews { font-size: 24px; font-weight: 700; line-height: 1.2; }
+.compare-note { font-size: 18px; font-weight: 500; margin-top: 8px; opacity: 0.6; }
 .compare-box.winner .compare-note { opacity: 0.7; }
 .compare-label {
   margin-top: 12px;
@@ -95,7 +99,7 @@ html, body {
   position: absolute; bottom: 130px; left: 80px; right: 80px;
   display: flex; align-items: center; justify-content: space-between;
 }
-.bottom-row img { height: 90px; }
+.bottom-row img { height: 120px; }
 .arrow-next {
   width: 84px; height: 84px;
   background: #28ae61;
@@ -110,9 +114,9 @@ html, body {
 <div class="card">
   <div class="handle">@hellogrowth__</div>
 
-  <div class="intro">O Google não olha<br>só a nota.</div>
+  <div class="intro">O <span class="g-logo"><span class="b">G</span><span class="r">o</span><span class="y">o</span><span class="b">g</span><span class="g">l</span><span class="r">e</span></span> não olha<br>só a nota.</div>
 
-  <div class="body-text">Olha <span class="accent">quantas avaliações</span> você tem, se são <span class="accent">recentes</span> e se chegam <span class="accent">toda semana</span>.</div>
+  <div class="body-text">Olha <span class="accent">quantas avaliações</span> você tem,<br>se são <span class="accent">recentes</span> e se chegam<br><span class="accent">toda semana</span>.</div>
 
   <div class="compare-row">
     <div class="compare-box loser">
@@ -130,7 +134,7 @@ html, body {
   </div>
 
   <div class="bottom-row">
-    <img src="assets/logo-wordmark.svg" alt="HelloGrowth">
+    <img src="assets/logo-symbol.svg" alt="HG">
     <div class="arrow-next">
       <svg viewBox="0 0 24 24" fill="none" stroke="#edf0ee" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
         <line x1="5" y1="12" x2="19" y2="12"/>
