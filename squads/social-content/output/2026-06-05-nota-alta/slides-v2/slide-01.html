@@ -21,9 +21,6 @@ html, body {
     radial-gradient(ellipse at top right, rgba(40,174,97,0.25) 0%, transparent 55%),
     radial-gradient(ellipse at bottom left, rgba(191,255,0,0.12) 0%, transparent 55%),
     linear-gradient(160deg, #004d40 0%, #1b6b5b 60%, #004d40 100%);
-  padding: 80px 80px;
-  display: flex; flex-direction: column;
-  justify-content: center;
 }
 .handle {
   position: absolute; top: 40px; left: 50%; transform: translateX(-50%);
@@ -31,55 +28,83 @@ html, body {
   letter-spacing: 0.05em;
 }
 
+/* Glass overlay behind text block */
+.glass {
+  position: absolute;
+  top: 300px; left: 50px; right: 50px;
+  height: 580px;
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 32px;
+}
+
 .line1 {
-  font-size: 140px; font-weight: 900;
-  color: #bfff00; line-height: 0.92;
+  position: absolute;
+  left: 80px; top: 352px;
+  font-size: 115px; font-weight: 900;
+  color: #bfff00; line-height: 1;
   letter-spacing: -0.055em;
-  text-shadow: 0 0 60px rgba(191,255,0,0.25);
+  text-shadow: 0 0 60px rgba(191,255,0,0.2);
 }
 .line2 {
-  font-size: 48px; font-weight: 600;
-  color: rgba(237,240,238,0.75); line-height: 1.2;
-  margin-top: 20px; letter-spacing: -0.03em;
+  position: absolute;
+  left: 80px; top: 490px;
+  font-size: 58px; font-weight: 600;
+  color: rgba(237,240,238,0.65);
+  letter-spacing: -0.03em;
 }
 .line3 {
-  font-size: 100px; font-weight: 900;
-  color: #edf0ee; line-height: 0.95;
-  margin-top: 16px; letter-spacing: -0.05em;
+  position: absolute;
+  left: 80px; top: 560px;
+  font-size: 118px; font-weight: 900;
+  color: #edf0ee; line-height: 1.05;
+  letter-spacing: -0.05em;
   text-transform: uppercase;
 }
 .line3 .num { color: #bfff00; }
 
-.bottom-row {
-  position: absolute; bottom: 130px; left: 80px; right: 80px;
-  display: flex; align-items: center; justify-content: space-between;
+.logo-wrap {
+  position: absolute; left: 33px; top: 1074px;
 }
-.bottom-row img { height: 130px; }
-.arrow-next {
+.logo-wrap img { height: 164px; }
+.arrow-wrap {
+  position: absolute; right: 38px; top: 1058px;
+}
+.arrow-circle {
+  width: 168px; height: 168px;
+  display: flex; align-items: center; justify-content: center;
+}
+.arrow-inner {
   width: 84px; height: 84px;
-  background: #bfff00;
+  background: #28ae61;
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 6px 24px rgba(191,255,0,0.30);
 }
-.arrow-next svg { width: 38px; height: 38px; }
+.arrow-inner svg { width: 36px; height: 36px; }
 </style>
 </head>
 <body>
 <div class="card">
   <div class="handle">@hellogrowth__</div>
+  <div class="glass"></div>
 
-  <div class="line1">4,9 estrelas</div>
+  <div class="line1">tem 4,9 estrelas</div>
   <div class="line2">e mesmo assim perdendo</div>
-  <div class="line3">pra quem<br>tem <span class="num">4,6?</span></div>
+  <div class="line3">PRA QUEM<br>TEM <span class="num">4,6?</span></div>
 
-  <div class="bottom-row">
+  <div class="logo-wrap">
     <img src="assets/logo-symbol-light.svg" alt="HG">
-    <div class="arrow-next">
-      <svg viewBox="0 0 24 24" fill="none" stroke="#004d40" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-        <line x1="5" y1="12" x2="19" y2="12"/>
-        <polyline points="12 5 19 12 12 19"/>
-      </svg>
+  </div>
+  <div class="arrow-wrap">
+    <div class="arrow-circle">
+      <div class="arrow-inner">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#edf0ee" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"/>
+          <polyline points="12 5 19 12 12 19"/>
+        </svg>
+      </div>
     </div>
   </div>
 </div>

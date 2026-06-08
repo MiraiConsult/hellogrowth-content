@@ -21,7 +21,6 @@ html, body {
     radial-gradient(ellipse 900px 700px at top left, rgba(191,255,0,0.30) 0%, transparent 60%),
     radial-gradient(ellipse 700px 800px at bottom right, rgba(40,174,97,0.18) 0%, transparent 65%),
     linear-gradient(180deg, #f7faf5 0%, #edf0ee 100%);
-  padding: 80px 80px;
 }
 .handle {
   position: absolute; top: 40px; left: 50%; transform: translateX(-50%);
@@ -29,102 +28,149 @@ html, body {
   letter-spacing: 0.05em;
 }
 
-.g-logo-big {
-  font-weight: 700; letter-spacing: -0.02em; display: inline;
+/* Glass behind text area */
+.glass-text {
+  position: absolute;
+  top: 268px; left: 60px; right: 60px;
+  height: 280px;
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 28px;
 }
-.g-logo-big .b { color: #4285F4; }
-.g-logo-big .r { color: #EA4335; }
-.g-logo-big .y { color: #FBBC04; }
-.g-logo-big .g { color: #34A853; }
+
+/* Glass behind compare */
+.glass-compare {
+  position: absolute;
+  top: 530px; left: 60px; right: 60px;
+  height: 410px;
+  background: rgba(255,255,255,0.45);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 28px;
+}
+
+.g-logo { font-weight: 700; letter-spacing: -0.02em; display: inline; }
+.g-logo .b { color: #4285F4; }
+.g-logo .r { color: #EA4335; }
+.g-logo .y { color: #FBBC04; }
+.g-logo .g { color: #34A853; }
 
 .intro {
-  margin-top: 110px;
+  position: absolute;
+  left: 92px; top: 308px;
   font-size: 52px; font-weight: 800;
   color: #004d40; line-height: 1.15;
   letter-spacing: -0.035em;
-  margin-bottom: 36px;
 }
 .body-text {
+  position: absolute;
+  left: 92px; top: 406px;
+  width: 880px;
   font-size: 38px; font-weight: 500;
   color: #1b6b5b; line-height: 1.5;
-  margin-bottom: 44px;
 }
 .body-text .accent {
-  background: #bfff00;
-  padding: 2px 10px;
   font-weight: 800; color: #004d40;
 }
 
-.compare-row { display: flex; gap: 24px; }
+/* Compare boxes */
+.compare-row {
+  position: absolute;
+  left: 92px; top: 562px;
+  display: flex; gap: 24px;
+}
 .compare-box {
-  flex: 1; border-radius: 24px;
-  padding: 30px 24px; text-align: center;
+  width: 436px; height: 354px;
+  border-radius: 24px;
+  padding: 37px 24px;
+  text-align: center;
 }
 .compare-box.loser {
   background: rgba(0,77,64,0.06);
   border: 2px solid rgba(0,77,64,0.12);
 }
 .compare-box.winner {
-  background: #004d40; color: #edf0ee;
+  background: #004d40;
+  color: #edf0ee;
   box-shadow: 0 14px 40px rgba(0,77,64,0.30);
 }
 .compare-rating {
-  font-size: 72px; font-weight: 900;
-  line-height: 1; letter-spacing: -0.04em; margin-bottom: 8px;
+  font-size: 103px; font-weight: 900;
+  line-height: 1; letter-spacing: -0.04em;
+  margin-bottom: 10px;
 }
 .compare-box.winner .compare-rating { color: #bfff00; }
-.compare-reviews { font-size: 24px; font-weight: 700; line-height: 1.2; }
-.compare-note { font-size: 18px; font-weight: 500; margin-top: 8px; opacity: 0.6; }
-.compare-box.winner .compare-note { opacity: 0.7; }
-.compare-label {
-  margin-top: 12px; font-size: 16px; font-weight: 800;
-  text-transform: uppercase; letter-spacing: 0.12em;
+.compare-reviews { font-size: 22px; font-weight: 600; line-height: 1.5; }
+.compare-badge {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 22px; font-weight: 600;
+  padding: 5px 24px; border-radius: 50px;
 }
-.compare-box.winner .compare-label {
+.compare-box.loser .compare-badge {
+  background: #edf0ee; color: #004d40;
+}
+.compare-box.winner .compare-badge {
   background: #bfff00; color: #004d40;
-  display: inline-block; padding: 4px 12px; border-radius: 50px;
+  font-weight: 800; font-size: 18px;
+  letter-spacing: 0.12em;
 }
 
-.bottom-row {
-  position: absolute; bottom: 130px; left: 80px; right: 80px;
-  display: flex; align-items: center; justify-content: space-between;
+/* Google text inline */
+.google-inline {
+  position: absolute;
+  left: 140px; top: 308px;
+  font-size: 52px; font-weight: 700;
 }
-.bottom-row img { height: 120px; }
-.arrow-next {
+
+.logo-wrap {
+  position: absolute; left: 44px; top: 1075px;
+}
+.logo-wrap img { height: 165px; }
+.arrow-wrap {
+  position: absolute; right: 38px; top: 1066px;
+}
+.arrow-inner {
   width: 84px; height: 84px;
-  background: #28ae61; border-radius: 50%;
+  background: #28ae61;
+  border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 6px 24px rgba(40,174,97,0.35);
+  margin-top: 42px; margin-left: 42px;
 }
-.arrow-next svg { width: 38px; height: 38px; }
+.arrow-inner svg { width: 36px; height: 36px; }
 </style>
 </head>
 <body>
 <div class="card">
   <div class="handle">@hellogrowth__</div>
+  <div class="glass-text"></div>
+  <div class="glass-compare"></div>
 
-  <div class="intro">O <span class="g-logo-big"><span class="b">G</span><span class="r">o</span><span class="y">o</span><span class="b">g</span><span class="g">l</span><span class="r">e</span></span> não olha só a nota.</div>
+  <div class="intro">O <span class="g-logo"><span class="b">G</span><span class="r">o</span><span class="y">o</span><span class="b">g</span><span class="g">l</span><span class="r">e</span></span> não olha só a nota.</div>
 
-  <div class="body-text">Olha <span class="accent">quantas avaliações</span> você tem,<br>se são <span class="accent">recentes</span> e se chegam <span class="accent">toda semana</span>.</div>
+  <div class="body-text">Olha <span class="accent">quantas avaliações</span> você tem, se são <span class="accent">recentes</span> e se chegam <span class="accent">toda semana</span>.</div>
 
   <div class="compare-row">
     <div class="compare-box loser">
       <div class="compare-rating">4,9</div>
-      <div class="compare-reviews">12 avaliações</div>
-      <div class="compare-note">paradas há meses</div>
-      <div class="compare-label">não aparece</div>
+      <div class="compare-reviews">12 avaliações<br>paradas há meses</div>
+      <div class="compare-badge">NÃO APARECE</div>
     </div>
     <div class="compare-box winner">
       <div class="compare-rating">4,6</div>
-      <div class="compare-reviews">300 avaliações</div>
-      <div class="compare-note">atualizadas sempre</div>
-      <div class="compare-label">topo do Google</div>
+      <div class="compare-reviews">300 avaliações<br>atualizadas sempre</div>
+      <div class="compare-badge">TOPO DO GOOGLE</div>
     </div>
   </div>
 
-  <div class="bottom-row">
+  <div class="logo-wrap">
     <img src="assets/logo-symbol.svg" alt="HG">
-    <div class="arrow-next">
+  </div>
+  <div class="arrow-wrap">
+    <div class="arrow-inner">
       <svg viewBox="0 0 24 24" fill="none" stroke="#edf0ee" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
         <line x1="5" y1="12" x2="19" y2="12"/>
         <polyline points="12 5 19 12 12 19"/>
