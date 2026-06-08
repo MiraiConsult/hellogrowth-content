@@ -1,8 +1,8 @@
 # Brand Guide Visual — HelloGrowth
 
 **Cliente:** HelloGrowth — "Mais reputação. Mais confiança. Mais vendas!"
-**Atualizado em:** 2026-06-05
-**Referência original:** Canva carrossel HelloGrowth + capas aprovadas pelo cliente
+**Atualizado em:** 2026-06-08
+**Referência original:** Figma editado pelo cliente (Nota Alta V8) + Canva capas aprovadas
 
 ---
 
@@ -194,20 +194,93 @@ Setas, formas em Z, traços diagonais em `#bfff00` ou `#28ae61` nos cantos (5-8%
 
 ---
 
-## Anti-patterns (NUNCA fazer)
+## Padrões Visuais Aprovados (Figma V8 — Jun/2026)
 
-1. Fundo preto, cinza ou branco — sempre verde escuro
-2. Tipografia Montserrat, Roboto, Poppins — sempre Inter
-3. Glassmorphism / blur translúcido
-4. Múltiplas pílulas no mesmo slide
-5. Pílula em outra cor que não `#bfff00`
-6. Logo sem split de cor (Hello branco / Growth verde)
-7. Foto de pessoa como elemento central
-8. Headline em sentence-case nas capas
-9. Cor de destaque que não seja lima neon
-10. Texto branco puro `#ffffff` (usar `#edf0ee`)
+Extraído do Figma editado pelo cliente. Usar como referência exata.
+
+### Fundo — Orbs de luz com blur 500px
+
+Não usar `radial-gradient` simples. O fundo correto são **elipses sólidas com LAYER_BLUR 500px** sobre base `#004d40`:
+
+**Fundo escuro (cards 1, 3):**
+- Base: `#004d40`
+- Orb top-left: `#1d884a` (555x529px, blur 500px, posição -80,-66)
+- Orb mid-right: `#1d884a` (556x562px, blur 500px, posição 713,295)
+- Orb bottom-left: `#116836` (626x600px, blur 500px, posição -239,857)
+
+**Fundo claro (card 2):**
+- Base: `#edf0ed` com overlay de orbs a 50% opacidade
+- Orbs: `#28ae61` (50%) nas mesmas posições + orb `#bfff00` (20%) extra
+
+### Tipografia — Hierarquia de 3 níveis
+
+| Nível | Font | Size | Weight | Cor | Exemplo |
+|-------|------|------|--------|-----|---------|
+| Headline principal | Inter | 114-132px | Black (900) | `#bfff00` ou `#edf0ed` | "tem 4,9 estrelas", "PRA QUEM" |
+| Texto médio | Inter | 52-58px | Semi Bold-Extra Bold | `#edf0ed` 65% ou `#004d40` | "e mesmo assim perdendo" |
+| Corpo | Inter | 30-38px | Medium (500) | `#1b6b5b` ou `#edf0ed` 70% | textos explicativos |
+
+**Regras de texto:**
+- Quebra de linhas SEMPRE balanceada (larguras semelhantes entre linhas)
+- "Google" sempre com logo colorido (Azul/Vermelho/Amarelo/Verde), dentro de pílula branca 60% quando fundo escuro
+- Highlight verde `#28ae61` (NÃO `#bfff00`) com radius 25px para "virando avaliação" no card 3
+- Nunca sobrepor texto com highlight — dar margin-top extra (18-22px)
+
+### Glass Cards
+
+- **Fundo escuro:** `rgba(255,255,255,0.10)`, border `rgba(255,255,255,0.12)`, radius 32px
+- Sem backdrop-filter no Figma (o blur vem dos orbs de fundo, não do glass)
+- Glass é sutil — apenas delimita a área de texto
+
+### Comparativo Visual (cards tipo 4,9 vs 4,6)
+
+- Dois boxes lado a lado: `436x354px`, gap `24px`
+- **Loser:** fill `rgba(0,77,64,0.06)`, border `rgba(0,77,64,0.12)`, radius `24px`
+- **Winner:** fill `#004d40` sólido, rating em `#bfff00`, badge `#bfff00` com radius `63px`
+- Nota gigante: `103px Inter Black`
+
+### Rodapé — Logo + Seta
+
+| Card | Logo usado | Posição | Seta |
+|------|-----------|---------|------|
+| Capa | Símbolo light | x:33 y:1074 (205x164px) | Componente seta x:874 y:1058 |
+| Corpo | Símbolo normal | x:44 y:1075 (206x165px) | Ellipse #28ae61 84px x:916 y:1108 |
+| CTA (último) | Wordmark light | x:364 y:1129 (352x72px) centralizadoipo | Sem seta |
+
+**Regra:** nunca usar logo full (assinatura completa) em todos os cards. Variar entre símbolo e wordmark. Assinatura completa = último card ou CTA apenas.
+
+### Handle @hellogrowth__
+
+- Sempre no topo, centralizado
+- Inter Medium 18px
+- `#edf0ed` no escuro, `#004d40` no claro
+- Posição: x:472 y:40
 
 ---
 
-*Brand Guide Visual v1.0 — HelloGrowth 2026*
+## Anti-patterns (NUNCA fazer)
+
+1. Fundo preto, cinza ou branco — sempre verde escuro `#004d40` ou claro `#edf0ed`
+2. Tipografia Montserrat, Roboto, Poppins — sempre Inter
+3. Elementos tortos/rotacionados
+4. Múltiplos tamanhos de fonte sem hierarquia clara (máx 3 níveis)
+5. Logo inteira (assinatura) em todos os cards — variar
+6. Highlight lima `#bfff00` sobrepondo texto — dar espaçamento extra
+7. Linhas de texto desbalanceadas (uma longa, outra curta pela metade)
+8. "Google" como texto plain — sempre usar logo colorido
+9. Rodapé encostando na borda inferior — mínimo 130px do bottom
+10. Mesmo elemento visual repetido em múltiplos cards (ex: estrelas em 2 cards)
+11. Texto branco puro `#ffffff` — usar `#edf0ed`
+12. Pílula highlight em `#bfff00` no card 3 — usar `#28ae61` (verde médio)
+
+---
+
+## Arquivo Figma de Referência
+
+**URL:** https://www.figma.com/design/jICwoeq77RK4xQMfPwsr0u
+**Conteúdo:** 3 cards do carrossel "Nota Alta" (4,9 vs 4,6) — editado e aprovado pelo cliente
+
+---
+
+*Brand Guide Visual v2.0 — HelloGrowth Jun/2026*
 *Squad: Social Content*
