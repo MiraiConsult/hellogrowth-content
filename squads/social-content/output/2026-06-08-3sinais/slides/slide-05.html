@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+@page { size: 1080px 1350px; margin: 0; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1350px; background: #004d40; font-family: 'Inter', sans-serif; color: #edf0ed; overflow: hidden; letter-spacing: -0.02em; }
+.card { width: 1080px; height: 1350px; position: relative; }
+.bg { position: absolute; inset: 0; background: #004d40; }
+.orb { position: absolute; border-radius: 50%; }
+.orb1 { width: 555px; height: 529px; left: -80px; top: -66px; background: #1d884a; filter: blur(250px); }
+.orb2 { width: 556px; height: 562px; left: 713px; top: 295px; background: #1d884a; filter: blur(250px); }
+.orb3 { width: 626px; height: 600px; left: -239px; top: 857px; background: #116836; filter: blur(250px); }
+.handle { position: absolute; top: 40px; left: 50%; transform: translateX(-50%); font-size: 18px; font-weight: 500; color: rgba(237,240,237,0.4); letter-spacing: 0.05em; }
+
+.glass {
+  position: absolute;
+  left: 60px; top: 180px; right: 60px;
+  height: 520px;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 32px;
+}
+
+.headline {
+  position: absolute; left: 92px; top: 220px;
+  width: 860px;
+  font-size: 56px; font-weight: 900;
+  color: #edf0ed; line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+.hl-block {
+  display: inline-block;
+  background: #28ae61;
+  padding: 8px 18px;
+  border-radius: 25px;
+  margin-top: 18px;
+}
+.hl-block span {
+  font-size: 56px; font-weight: 900;
+  color: #f5f5f5; letter-spacing: -0.035em;
+}
+
+.closer {
+  position: absolute; left: 92px; top: 750px;
+  font-size: 44px; font-weight: 700;
+  color: #bfff00; letter-spacing: -0.03em;
+}
+.cta-text {
+  position: absolute; left: 92px; top: 820px;
+  width: 860px;
+  font-size: 34px; font-weight: 500;
+  color: rgba(237,240,237,0.7);
+  line-height: 1.45;
+}
+.cta-text strong { color: #edf0ed; font-weight: 800; }
+
+.logo-wrap { position: absolute; left: 364px; top: 1129px; }
+.logo-wrap img { height: 72px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="bg"></div>
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+  <div class="handle">@hellogrowth__</div>
+  <div class="glass"></div>
+
+  <div class="headline">
+    Atender todo mundo na mesma<br>
+    ordem é tratar quem vai marcar<br>
+    igual a quem nunca ia.<br>
+    <span class="hl-block"><span>Dá pra saber antes.</span></span>
+  </div>
+
+  <div class="closer">A HelloGrowth te ajuda a priorizar.</div>
+  <div class="cta-text">Qualifique antes de gastar tempo.<br><strong>Link na bio.</strong></div>
+
+  <div class="logo-wrap"><img src="assets/logo-full-light.svg" alt="HelloGrowth"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+@page { size: 1080px 1350px; margin: 0; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1350px; background: #edf0ed; font-family: 'Inter', sans-serif; color: #004d40; overflow: hidden; letter-spacing: -0.02em; }
+.card { width: 1080px; height: 1350px; position: relative; background: linear-gradient(180deg, #f7faf5 0%, #edf0ed 100%); }
+.orb { position: absolute; border-radius: 50%; }
+.orb1 { width: 626px; height: 600px; left: -86px; top: 187px; background: rgba(191,255,0,0.2); filter: blur(250px); }
+.orb2 { width: 556px; height: 562px; left: 717px; top: 191px; background: rgba(40,174,97,0.25); filter: blur(250px); }
+.handle { position: absolute; top: 40px; left: 50%; transform: translateX(-50%); font-size: 18px; font-weight: 500; color: rgba(0,77,64,0.4); letter-spacing: 0.05em; }
+
+.glass {
+  position: absolute;
+  left: 60px; top: 200px; right: 60px;
+  height: 760px;
+  background: rgba(255,255,255,0.55);
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 32px;
+}
+
+.num {
+  position: absolute; left: 92px; top: 240px;
+  font-size: 180px; font-weight: 900;
+  color: #28ae61; line-height: 1;
+  letter-spacing: -0.06em;
+}
+.headline {
+  position: absolute; left: 92px; top: 430px;
+  width: 860px;
+  font-size: 64px; font-weight: 900;
+  color: #004d40; line-height: 1.1;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+.detail {
+  position: absolute; left: 92px; top: 660px;
+  width: 860px;
+  font-size: 38px; font-weight: 500;
+  color: #1b6b5b; line-height: 1.4;
+}
+
+.logo-wrap { position: absolute; left: 44px; top: 1075px; }
+.logo-wrap img { height: 165px; }
+.arrow-wrap { position: absolute; right: 80px; bottom: 130px; }
+.arrow-circle { width: 84px; height: 84px; background: #28ae61; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.arrow-circle svg { width: 36px; height: 36px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="handle">@hellogrowth__</div>
+  <div class="glass"></div>
+
+  <div class="num">3.</div>
+  <div class="headline">VEIO DA<br>PROMOÇÃO.</div>
+  <div class="detail">Não da dor que você trata.<br>Veio pelo preço, não pela solução.</div>
+
+  <div class="logo-wrap"><img src="assets/logo-symbol.svg" alt="HG"></div>
+  <div class="arrow-wrap">
+    <div class="arrow-circle">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#edf0ed" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </div>
+  </div>
+</div>
+</body>
+</html>

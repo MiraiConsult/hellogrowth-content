@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+@page { size: 1080px 1350px; margin: 0; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1350px; background: #004d40; font-family: 'Inter', sans-serif; color: #edf0ed; overflow: hidden; letter-spacing: -0.02em; }
+.card { width: 1080px; height: 1350px; position: relative; }
+.bg { position: absolute; inset: 0; background: #004d40; }
+.orb { position: absolute; border-radius: 50%; }
+.orb1 { width: 555px; height: 529px; left: -80px; top: -66px; background: #1d884a; filter: blur(250px); }
+.orb2 { width: 556px; height: 562px; left: 713px; top: 295px; background: #1d884a; filter: blur(250px); }
+.orb3 { width: 626px; height: 600px; left: -239px; top: 857px; background: #116836; filter: blur(250px); }
+.handle { position: absolute; top: 40px; left: 50%; transform: translateX(-50%); font-size: 18px; font-weight: 500; color: rgba(237,240,237,0.4); letter-spacing: 0.05em; }
+
+.glass {
+  position: absolute;
+  left: 60px; top: 200px; right: 60px;
+  height: 760px;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 32px;
+}
+
+.num {
+  position: absolute; left: 92px; top: 240px;
+  font-size: 180px; font-weight: 900;
+  color: #bfff00; line-height: 1;
+  letter-spacing: -0.06em;
+}
+.headline {
+  position: absolute; left: 92px; top: 430px;
+  width: 860px;
+  font-size: 64px; font-weight: 900;
+  color: #edf0ed; line-height: 1.1;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+.detail {
+  position: absolute; left: 92px; top: 680px;
+  width: 860px;
+  font-size: 38px; font-weight: 500;
+  color: rgba(237,240,237,0.65);
+  line-height: 1.4;
+}
+
+.logo-wrap { position: absolute; left: 33px; top: 1074px; }
+.logo-wrap img { height: 164px; }
+.arrow-wrap { position: absolute; right: 80px; bottom: 130px; }
+.arrow-circle { width: 84px; height: 84px; background: #bfff00; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.arrow-circle svg { width: 36px; height: 36px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="bg"></div>
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+  <div class="handle">@hellogrowth__</div>
+  <div class="glass"></div>
+
+  <div class="num">2.</div>
+  <div class="headline">SOME QUANDO<br>VOCÊ CHAMA.</div>
+  <div class="detail">Quer resolver tudo no chat.<br>Nunca marca a avaliação.</div>
+
+  <div class="logo-wrap"><img src="assets/logo-symbol-light.svg" alt="HG"></div>
+  <div class="arrow-wrap">
+    <div class="arrow-circle">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#004d40" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </div>
+  </div>
+</div>
+</body>
+</html>
