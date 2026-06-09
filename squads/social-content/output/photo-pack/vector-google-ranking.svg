@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 340" fill="none">
+  <!-- Google search bar -->
+  <rect x="0" y="0" width="920" height="70" rx="35" fill="#ffffff" stroke="#e0e0e0" stroke-width="2"/>
+  <text x="28" y="44" font-family="Product Sans, Inter, sans-serif" font-weight="700" font-size="28">
+    <tspan fill="#4285F4">G</tspan><tspan fill="#EA4335">o</tspan><tspan fill="#FBBC04">o</tspan><tspan fill="#4285F4">g</tspan><tspan fill="#34A853">l</tspan><tspan fill="#EA4335">e</tspan>
+  </text>
+  <text x="140" y="44" font-family="Inter, sans-serif" font-weight="400" font-size="24" fill="#5f6368">dentista em Curitiba</text>
+  <!-- Search icon -->
+  <circle cx="870" cy="35" r="14" fill="none" stroke="#5f6368" stroke-width="2.5"/>
+  <line x1="880" y1="45" x2="890" y2="55" stroke="#5f6368" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Result 1: Winner (4,6) -->
+  <rect x="0" y="90" width="920" height="110" rx="18" fill="#ffffff" stroke="#28ae61" stroke-width="3"/>
+  <!-- Rank badge -->
+  <rect x="24" y="115" width="40" height="40" rx="10" fill="#28ae61"/>
+  <text x="37" y="143" font-family="Inter, sans-serif" font-weight="900" font-size="22" fill="#ffffff" text-anchor="middle">1</text>
+  <!-- Clinic info -->
+  <text x="80" y="133" font-family="Inter, sans-serif" font-weight="800" font-size="26" fill="#202124">Clínica Sorrir Odonto</text>
+  <text x="80" y="168" font-family="Inter, sans-serif" font-weight="800" font-size="22" fill="#202124">4,6</text>
+  <!-- Stars -->
+  <text x="122" y="168" font-family="sans-serif" font-size="18" fill="#f59e0b">★ ★ ★ ★ ★</text>
+  <text x="268" y="168" font-family="Inter, sans-serif" font-weight="500" font-size="20" fill="#5f6368">· 312 avaliações</text>
+  <!-- TOPO badge -->
+  <rect x="470" y="150" width="80" height="28" rx="14" fill="#bfff00"/>
+  <text x="488" y="169" font-family="Inter, sans-serif" font-weight="800" font-size="14" fill="#004d40" letter-spacing="1">TOPO</text>
+
+  <!-- Result 2: Loser (4,9) -->
+  <rect x="0" y="220" width="920" height="110" rx="18" fill="#ffffff" stroke="#e8e8e8" stroke-width="2" opacity="0.6"/>
+  <!-- Rank badge -->
+  <rect x="24" y="245" width="40" height="40" rx="10" fill="#9ca3af"/>
+  <text x="37" y="273" font-family="Inter, sans-serif" font-weight="900" font-size="22" fill="#ffffff" text-anchor="middle">7</text>
+  <!-- Clinic info -->
+  <text x="80" y="263" font-family="Inter, sans-serif" font-weight="800" font-size="26" fill="#202124" opacity="0.5">Odonto Premium</text>
+  <text x="80" y="298" font-family="Inter, sans-serif" font-weight="800" font-size="22" fill="#202124" opacity="0.5">4,9</text>
+  <!-- Stars dim -->
+  <text x="122" y="298" font-family="sans-serif" font-size="18" fill="#f59e0b" opacity="0.4">★ ★ ★ ★ ★</text>
+  <text x="268" y="298" font-family="Inter, sans-serif" font-weight="500" font-size="20" fill="#5f6368" opacity="0.4">· 12 avaliações</text>
+</svg>
