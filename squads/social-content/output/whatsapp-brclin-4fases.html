@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+@page { size: 1080px 1080px; margin: 0; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1080px; background: #0a5e4d; font-family: 'Inter', sans-serif; color: #edf0ed; overflow: hidden; }
+.card { width: 1080px; height: 1080px; position: relative; }
+.orb { position: absolute; border-radius: 50%; }
+.orb1 { width: 500px; height: 480px; left: -80px; top: -60px; background: #1d884a; filter: blur(200px); }
+.orb2 { width: 500px; height: 500px; left: 650px; top: 250px; background: #1d884a; filter: blur(200px); }
+.orb3 { width: 500px; height: 480px; left: -180px; top: 650px; background: #116836; filter: blur(200px); }
+
+.handle { position: absolute; top: 36px; left: 50%; transform: translateX(-50%); font-size: 18px; font-weight: 500; color: rgba(237,240,237,0.4); letter-spacing: 0.05em; }
+
+.content { position: absolute; left: 70px; right: 70px; top: 100px; }
+
+.eyebrow {
+  display: inline-block;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 50px;
+  padding: 8px 20px;
+  font-size: 18px; font-weight: 600;
+  color: rgba(237,240,237,0.7);
+  letter-spacing: 0.05em;
+  margin-bottom: 28px;
+}
+
+.headline {
+  font-size: 60px; font-weight: 900;
+  color: #edf0ed; line-height: 1.05;
+  letter-spacing: -0.04em;
+  margin-bottom: 10px;
+}
+.headline .accent { color: #bfff00; }
+
+.sub {
+  font-size: 30px; font-weight: 500;
+  color: rgba(237,240,237,0.65);
+  line-height: 1.35;
+  margin-bottom: 36px;
+}
+
+/* 4 phase mini cards */
+.phases {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 14px;
+}
+.phase {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 18px;
+  padding: 20px 22px;
+  display: flex; align-items: flex-start; gap: 14px;
+}
+.phase-num {
+  width: 44px; height: 44px; min-width: 44px;
+  background: #bfff00; border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px; font-weight: 900; color: #004d40;
+}
+.phase-title {
+  font-size: 24px; font-weight: 800;
+  color: #edf0ed; letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+.phase-desc {
+  font-size: 17px; font-weight: 500;
+  color: rgba(237,240,237,0.55);
+  margin-top: 4px; line-height: 1.3;
+}
+
+.logo-wrap { position: absolute; left: 70px; bottom: 50px; }
+.logo-wrap img { height: 72px; }
+.tag-hg {
+  position: absolute; right: 70px; bottom: 60px;
+  font-size: 20px; font-weight: 600;
+  color: rgba(237,240,237,0.4);
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+
+  <div class="content">
+    <div class="eyebrow">💡 Pra clínicas que querem crescer com processo</div>
+
+    <div class="headline">Da agenda cheia à<br><span class="accent">indicação automática.</span></div>
+    <div class="sub">4 etapas que separam a clínica que<br>depende de sorte da que cresce todo mês.</div>
+
+    <div class="phases">
+      <div class="phase">
+        <div class="phase-num">1</div>
+        <div>
+          <div class="phase-title">Qualificação</div>
+          <div class="phase-desc">Filtrar quem vale<br>seu tempo</div>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-num">2</div>
+        <div>
+          <div class="phase-title">Anamnese</div>
+          <div class="phase-desc">Confirmar se fez<br>sentido de fato</div>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-num">3</div>
+        <div>
+          <div class="phase-title">Categorização</div>
+          <div class="phase-desc">Saber quem é quem<br>na sua base</div>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-num">4</div>
+        <div>
+          <div class="phase-title">Pós-venda</div>
+          <div class="phase-desc">Transformar paciente<br>em indicação</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="logo-wrap">
+    <img src="/home/user/hellogrowth-content/squads/social-content/output/2026-06-08-3sinais/slides/assets/logo-symbol-light.svg" alt="HG">
+  </div>
+  <div class="tag-hg">hellogrowth.site</div>
+</div>
+</body>
+</html>
