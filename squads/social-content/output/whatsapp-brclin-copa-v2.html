@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+@page { size: 1080px 1080px; margin: 0; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1080px; background: #004d40; font-family: 'Inter', sans-serif; color: #edf0ed; overflow: hidden; }
+.card { width: 1080px; height: 1080px; position: relative; }
+
+.bg-photo {
+  position: absolute; inset: 0;
+  background: url('photo-copa-stadium.png') center center / cover no-repeat;
+}
+.overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,77,64,0.15) 0%,
+    rgba(0,77,64,0.3) 30%,
+    rgba(0,77,64,0.7) 55%,
+    rgba(0,77,64,0.92) 75%,
+    rgba(0,77,64,0.92) 100%
+  );
+}
+
+.content {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  padding: 0 70px 70px;
+  z-index: 2;
+}
+
+.headline {
+  font-size: 56px; font-weight: 900;
+  color: #edf0ed; line-height: 1.05;
+  letter-spacing: -0.04em;
+  margin-bottom: 14px;
+}
+.headline .accent { color: #bfff00; }
+
+.sub {
+  font-size: 28px; font-weight: 500;
+  color: rgba(237,240,237,0.7);
+  line-height: 1.35;
+  margin-bottom: 24px;
+}
+
+.cta-line {
+  font-size: 26px; font-weight: 700;
+  color: #bfff00; line-height: 1.3;
+}
+
+.logo-wrap {
+  position: absolute; right: 70px; bottom: 70px; z-index: 2;
+}
+.logo-wrap img { height: 64px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="bg-photo"></div>
+  <div class="overlay"></div>
+
+  <div class="content">
+    <div class="headline">Você torce pro 1º lugar.<br>Mas sabe em que posição<br><span class="accent">sua clínica aparece?</span></div>
+    <div class="sub">Nota 5,0 não garante o topo.<br>O Google olha volume, recência e frequência.</div>
+    <div class="cta-line">Quer saber sua posição real? Chama a gente.</div>
+  </div>
+
+  <div class="logo-wrap">
+    <img src="/home/user/hellogrowth-content/squads/social-content/output/2026-06-08-3sinais/slides/assets/logo-symbol-light.svg" alt="HG">
+  </div>
+</div>
+</body>
+</html>
