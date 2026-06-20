@@ -1,0 +1,22 @@
+name: kaivaa-content
+title: "Kaivaa Content — Produção de Conteúdo para Redes Sociais"
+description: "Squad de produção de conteúdo para Instagram (Feed, Stories) e LinkedIn, com pesquisa, criação por plataforma, design visual via HTML/CSS + Playwright, e revisão de qualidade. Duplicado do squad social-content."
+performance_mode: alta-performance
+language: "pt-BR"
+
+skills:
+  - web_search
+  - web_fetch
+
+data:
+  - pipeline/data/research-brief.md
+  - pipeline/data/domain-framework.md
+  - pipeline/data/quality-criteria.md
+  - pipeline/data/output-examples.md
+  - pipeline/data/anti-patterns.md
+  - pipeline/data/tone-of-voice.md
+
+formats:
+  - instagram-feed
+  - instagram-stories
+  - linkedin-post
