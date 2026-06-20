@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1350px; background: #1d1c1a; overflow: hidden; }
+body {
+  font-family: 'Inter', sans-serif;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  position: relative;
+  padding: 80px 80px 120px;
+}
+.orb {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, #d9a93f 0%, transparent 70%);
+  filter: blur(150px); opacity: 0.12;
+}
+.content { position: relative; z-index: 1; text-align: center; }
+.label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600; font-size: 22px;
+  text-transform: uppercase; letter-spacing: 0.12em;
+  color: rgba(239,237,235,0.5);
+  margin-bottom: 20px;
+}
+.headline {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 800; font-size: 50px;
+  color: #efedeb; line-height: 1.15;
+  margin-bottom: 50px;
+}
+.gauges {
+  display: flex; gap: 60px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.gauge {
+  text-align: center;
+}
+.gauge-circle {
+  width: 220px; height: 220px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 16px;
+  position: relative;
+}
+.gauge-circle::before {
+  content: '';
+  position: absolute; inset: 0;
+  border-radius: 50%;
+  border: 6px solid rgba(107,104,98,0.3);
+}
+.gauge.low .gauge-circle { border: 6px solid #6b6862; }
+.gauge.high .gauge-circle { border: 6px solid #ffde43; box-shadow: 0 0 40px rgba(255,222,67,0.2); }
+.gauge-value {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 800; font-size: 52px;
+}
+.gauge.low .gauge-value { color: #6b6862; }
+.gauge.high .gauge-value { color: #ffde43; }
+.gauge-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500; font-size: 22px;
+  color: rgba(239,237,235,0.6);
+}
+.vs {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 800; font-size: 36px;
+  color: rgba(239,237,235,0.3);
+  align-self: center;
+  margin-top: -30px;
+}
+.body-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; font-size: 28px;
+  color: rgba(239,237,235,0.75);
+  line-height: 1.5; max-width: 800px;
+}
+.body-text strong { color: #efedeb; font-weight: 600; }
+.logo {
+  position: absolute; bottom: 50px; left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 700; font-size: 36px; color: #ffde43;
+}
+</style>
+</head>
+<body>
+<div class="orb"></div>
+<div class="content">
+  <div class="label">Satisfação do cliente (CSAT)</div>
+  <div class="headline">Velocidade no atendimento<br>não é luxo — é a base de tudo.</div>
+  <div class="gauges">
+    <div class="gauge low">
+      <div class="gauge-circle">
+        <div class="gauge-value">30-50%</div>
+      </div>
+      <div class="gauge-label">Resposta lenta</div>
+    </div>
+    <div class="vs">→</div>
+    <div class="gauge high">
+      <div class="gauge-circle">
+        <div class="gauge-value">80-95%</div>
+      </div>
+      <div class="gauge-label">Resposta rápida</div>
+    </div>
+  </div>
+  <div class="body-text">Clientes que recebem resposta rápida avaliam melhor, <strong>voltam a comprar</strong> e <strong>indicam mais</strong>.</div>
+</div>
+<div class="logo">Kaivaa</div>
+</body>
+</html>

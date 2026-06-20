@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1350px; background: #292824; overflow: hidden; }
+body {
+  font-family: 'Inter', sans-serif;
+  display: flex; flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding: 80px 80px 120px;
+}
+.bar { position: absolute; left: 0; top: 120px; bottom: 120px; width: 8px; background: #ffde43; }
+.pill {
+  display: inline-block;
+  background: #ffde43; color: #1d1c1a;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 800; font-size: 60px;
+  padding: 10px 36px; border-radius: 100px;
+  margin-bottom: 30px;
+}
+.headline {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 800; font-size: 52px;
+  color: #efedeb; line-height: 1.15;
+  margin-bottom: 40px; max-width: 850px;
+}
+.headline em {
+  font-style: normal; color: #ffde43;
+}
+.body-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; font-size: 30px;
+  color: rgba(239, 237, 235, 0.8);
+  line-height: 1.5; max-width: 850px;
+}
+.body-text strong { color: #efedeb; font-weight: 600; }
+.logo {
+  position: absolute; bottom: 50px; left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 700; font-size: 36px; color: #ffde43;
+}
+</style>
+</head>
+<body>
+<div class="bar"></div>
+<div>
+  <div class="pill">21x</div>
+  <div class="headline">Leads respondidos em até <em>5 minutos</em> têm 21x mais chance de virar cliente.</div>
+  <div class="body-text">Uma pesquisa com <strong>180 negócios brasileiros</strong> mostrou que o tempo de resposta é o fator #1 na decisão de compra por mensagem. <strong>Não é o preço. Não é o produto. É quem responde primeiro.</strong></div>
+</div>
+<div class="logo">Kaivaa</div>
+</body>
+</html>
