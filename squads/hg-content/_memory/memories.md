@@ -1,4 +1,4 @@
-# Squad Memory — social-content
+# Squad Memory — hg-content
 
 > Este arquivo é atualizado automaticamente após cada execução do pipeline.
 > Contém aprendizados, preferências do usuário e padrões identificados.
