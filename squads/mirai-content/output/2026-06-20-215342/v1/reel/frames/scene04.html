@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;background:#0f0e0d;overflow:hidden}
+body{display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;padding:80px 60px}
+.orb{position:absolute;top:30%;left:50%;transform:translate(-50%,-50%);width:700px;height:700px;background:radial-gradient(circle,#00c46a 0%,transparent 55%);filter:blur(180px);opacity:0.08}
+.label{font-family:'Inter';font-weight:600;font-size:22px;text-transform:uppercase;letter-spacing:0.12em;color:rgba(239,237,235,0.35);margin-bottom:20px;position:relative;z-index:1}
+.headline{font-family:'Space Grotesk';font-weight:700;font-size:52px;color:#efedeb;text-align:center;line-height:1.15;margin-bottom:60px;position:relative;z-index:1}
+.headline em{font-style:normal;color:#00c46a}
+.row{display:flex;align-items:center;gap:20px;width:100%;max-width:880px;margin-bottom:24px;position:relative;z-index:1}
+.row-label{font-family:'Inter';font-weight:500;font-size:22px;color:rgba(239,237,235,0.5);width:220px;text-align:right;flex-shrink:0}
+.row-bar-bg{flex:1;height:56px;background:rgba(239,237,235,0.05);border-radius:14px;position:relative;overflow:hidden}
+.row-bar{height:100%;border-radius:14px;display:flex;align-items:center;justify-content:flex-end;padding-right:18px}
+.row-bar.g{background:linear-gradient(90deg,#00c46a,#83e509)}
+.row-val{font-family:'Space Grotesk';font-weight:700;font-size:22px;color:#0f0e0d}
+.foot{font-family:'Inter';font-weight:500;font-size:28px;color:rgba(239,237,235,0.5);text-align:center;margin-top:40px;position:relative;z-index:1;line-height:1.5}
+.foot strong{color:#efedeb;font-weight:700}
+.logo{position:absolute;bottom:80px;font-family:'Space Grotesk';font-weight:700;font-size:44px;z-index:1}
+.logo .mir{color:#efedeb}.logo .ai{color:#00c46a}
+</style></head><body>
+<div class="orb"></div>
+<div class="label">Enquanto isso, quem executa...</div>
+<div class="headline">O <em>ROI</em> de quem automatiza</div>
+<div class="row"><div class="row-label">Custos</div><div class="row-bar-bg"><div class="row-bar g" style="width:75%"><span class="row-val">-22%</span></div></div></div>
+<div class="row"><div class="row-label">Produtividade</div><div class="row-bar-bg"><div class="row-bar g" style="width:92%"><span class="row-val">+74%</span></div></div></div>
+<div class="row"><div class="row-label">Receita PMEs</div><div class="row-bar-bg"><div class="row-bar g" style="width:65%"><span class="row-val">+20%</span></div></div></div>
+<div class="row"><div class="row-label">ROI 1º ano</div><div class="row-bar-bg"><div class="row-bar g" style="width:95%"><span class="row-val">200-400%</span></div></div></div>
+<div class="foot">Payback típico: <strong>3 a 6 meses</strong></div>
+<div class="logo"><span class="mir">Mir</span><span class="ai">AI</span></div>
+</body></html>
