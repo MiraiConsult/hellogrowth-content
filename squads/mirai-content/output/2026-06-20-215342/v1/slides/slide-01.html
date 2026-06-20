@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1350px; background: #1d1c1a; overflow: hidden; }
+body { font-family: 'Inter', sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; padding: 80px 80px 100px; }
+.orb1 { position: absolute; top: -120px; right: -80px; width: 500px; height: 500px; background: radial-gradient(circle, #00c46a 0%, transparent 70%); filter: blur(140px); opacity: 0.2; }
+.orb2 { position: absolute; bottom: -80px; left: -100px; width: 400px; height: 400px; background: radial-gradient(circle, #83e509 0%, transparent 70%); filter: blur(120px); opacity: 0.12; }
+.grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(0,196,106,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(0,196,106,0.03) 1px, transparent 1px); background-size: 40px 40px; }
+.content { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; height: 100%; }
+.tag { font-family: 'Inter'; font-weight: 600; font-size: 20px; text-transform: uppercase; letter-spacing: 0.15em; color: #00c46a; margin-bottom: 40px; }
+.number { font-family: 'Space Grotesk'; font-weight: 700; font-size: 200px; color: #83e509; line-height: 0.85; letter-spacing: -0.03em; }
+.vs { font-family: 'Space Grotesk'; font-weight: 700; font-size: 80px; color: rgba(239,237,235,0.3); margin: 10px 0; }
+.number2 { font-family: 'Space Grotesk'; font-weight: 700; font-size: 140px; color: #6b7a70; line-height: 0.85; letter-spacing: -0.02em; }
+.subtitle { font-family: 'Inter'; font-weight: 500; font-size: 30px; color: rgba(239,237,235,0.6); margin-top: 40px; line-height: 1.4; max-width: 700px; }
+.swipe { position: absolute; bottom: 140px; right: 80px; font-family: 'Inter'; font-weight: 500; font-size: 22px; color: rgba(239,237,235,0.4); }
+.logo { position: absolute; bottom: 55px; left: 50%; transform: translateX(-50%); font-family: 'Space Grotesk'; font-weight: 700; font-size: 40px; }
+.logo .mir { color: #efedeb; }
+.logo .ai { color: #00c46a; }
+</style>
+</head>
+<body>
+<div class="orb1"></div><div class="orb2"></div><div class="grid"></div>
+<div class="content">
+  <div class="tag">Pesquisa ABES · Jun 2026</div>
+  <div class="number">53%</div>
+  <div class="vs">vs</div>
+  <div class="number2">&lt;40%</div>
+  <div class="subtitle">Priorizam IA. Mas não conseguem executar.</div>
+</div>
+<div class="swipe">desliza →</div>
+<div class="logo"><span class="mir">Mir</span><span class="ai">AI</span></div>
+</body>
+</html>

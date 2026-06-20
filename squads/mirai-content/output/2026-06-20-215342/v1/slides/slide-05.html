@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1350px; background: #1d1c1a; overflow: hidden; }
+body { font-family: 'Inter', sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; padding: 80px 70px 120px; }
+.orb { position: absolute; top: 40%; left: 50%; transform: translate(-50%,-50%); width: 600px; height: 600px; background: radial-gradient(circle, #00c46a 0%, transparent 60%); filter: blur(160px); opacity: 0.1; }
+.headline { position: relative; z-index: 1; font-family: 'Space Grotesk'; font-weight: 700; font-size: 48px; color: #efedeb; text-align: center; line-height: 1.15; margin-bottom: 50px; }
+.headline em { font-style: normal; color: #83e509; }
+.rows { position: relative; z-index: 1; width: 100%; max-width: 880px; }
+.row { display: flex; align-items: center; margin-bottom: 20px; }
+.row-label { font-family: 'Inter'; font-weight: 500; font-size: 22px; color: rgba(239,237,235,0.6); width: 200px; text-align: right; padding-right: 24px; flex-shrink: 0; }
+.row-bar-bg { flex: 1; height: 48px; background: rgba(239,237,235,0.06); border-radius: 12px; position: relative; overflow: hidden; }
+.row-bar { height: 100%; border-radius: 12px; display: flex; align-items: center; justify-content: flex-end; padding-right: 16px; }
+.row-bar.green { background: linear-gradient(90deg, #00c46a, #83e509); }
+.row-bar.gray { background: rgba(107,122,112,0.4); }
+.row-value { font-family: 'Space Grotesk'; font-weight: 700; font-size: 20px; color: #1d1c1a; }
+.row-value.light { color: rgba(239,237,235,0.7); }
+.body-text { position: relative; z-index: 1; font-family: 'Inter'; font-weight: 400; font-size: 26px; color: rgba(239,237,235,0.65); text-align: center; line-height: 1.5; max-width: 800px; margin-top: 40px; }
+.body-text strong { color: #efedeb; font-weight: 600; }
+.logo { position: absolute; bottom: 50px; left: 50%; transform: translateX(-50%); font-family: 'Space Grotesk'; font-weight: 700; font-size: 36px; }
+.logo .mir { color: #efedeb; } .logo .ai { color: #00c46a; }
+</style>
+</head>
+<body>
+<div class="orb"></div>
+<div class="headline">O <em>ROI</em> de quem automatiza</div>
+<div class="rows">
+  <div class="row">
+    <div class="row-label">Custos operacionais</div>
+    <div class="row-bar-bg"><div class="row-bar green" style="width:78%"><span class="row-value">-22%</span></div></div>
+  </div>
+  <div class="row">
+    <div class="row-label">Produtividade</div>
+    <div class="row-bar-bg"><div class="row-bar green" style="width:92%"><span class="row-value">+74%</span></div></div>
+  </div>
+  <div class="row">
+    <div class="row-label">Receita (67% PMEs)</div>
+    <div class="row-bar-bg"><div class="row-bar green" style="width:70%"><span class="row-value">+20%</span></div></div>
+  </div>
+  <div class="row">
+    <div class="row-label">ROI no 1º ano</div>
+    <div class="row-bar-bg"><div class="row-bar green" style="width:95%"><span class="row-value">200-400%</span></div></div>
+  </div>
+</div>
+<div class="body-text">Payback típico: <strong>3 a 6 meses</strong>.<br>A pergunta não é se vale a pena. É por que você ainda não começou.</div>
+<div class="logo"><span class="mir">Mir</span><span class="ai">AI</span></div>
+</body>
+</html>

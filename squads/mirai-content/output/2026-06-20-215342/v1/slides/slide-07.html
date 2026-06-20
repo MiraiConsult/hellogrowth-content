@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1350px; background: #1d1c1a; overflow: hidden; }
+body { font-family: 'Inter', sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; padding: 80px 80px 120px; }
+.grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(0,196,106,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(0,196,106,0.025) 1px, transparent 1px); background-size: 40px 40px; }
+.content { position: relative; z-index: 1; text-align: center; }
+.pill { display: inline-block; background: rgba(0,196,106,0.12); border: 1px solid rgba(0,196,106,0.25); color: #00c46a; font-family: 'Inter'; font-weight: 600; font-size: 18px; padding: 8px 24px; border-radius: 50px; margin-bottom: 30px; text-transform: uppercase; letter-spacing: 0.1em; }
+.headline { font-family: 'Space Grotesk'; font-weight: 700; font-size: 50px; color: #efedeb; line-height: 1.15; margin-bottom: 50px; }
+.headline em { font-style: normal; color: #83e509; }
+.platform-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; width: 100%; max-width: 800px; margin-bottom: 40px; }
+.platform { background: rgba(239,237,235,0.04); border: 1px solid rgba(239,237,235,0.08); border-radius: 16px; padding: 24px 20px; text-align: center; }
+.platform-icon { font-size: 36px; margin-bottom: 10px; }
+.platform-name { font-family: 'Space Grotesk'; font-weight: 700; font-size: 22px; color: #efedeb; margin-bottom: 6px; }
+.platform-desc { font-family: 'Inter'; font-weight: 400; font-size: 17px; color: rgba(239,237,235,0.5); line-height: 1.3; }
+.body-text { font-family: 'Inter'; font-weight: 400; font-size: 24px; color: rgba(239,237,235,0.6); text-align: center; line-height: 1.5; max-width: 750px; }
+.logo { position: absolute; bottom: 50px; left: 50%; transform: translateX(-50%); font-family: 'Space Grotesk'; font-weight: 700; font-size: 36px; }
+.logo .mir { color: #efedeb; } .logo .ai { color: #00c46a; }
+</style>
+</head>
+<body>
+<div class="grid"></div>
+<div class="content">
+  <div class="pill">Ecossistema MirAI</div>
+  <div class="headline">Plataformas que <em>executam</em><br>o que você planejou</div>
+  <div class="platform-grid">
+    <div class="platform">
+      <div class="platform-icon">⭐</div>
+      <div class="platform-name">HelloGrowth</div>
+      <div class="platform-desc">Reputação e vendas pela base de clientes</div>
+    </div>
+    <div class="platform">
+      <div class="platform-icon">💬</div>
+      <div class="platform-name">Kaivaa</div>
+      <div class="platform-desc">Atendimento por IA no Instagram e WhatsApp</div>
+    </div>
+    <div class="platform">
+      <div class="platform-icon">📊</div>
+      <div class="platform-name">CRM com IA</div>
+      <div class="platform-desc">Pipeline de vendas com diretor de IA integrado</div>
+    </div>
+    <div class="platform">
+      <div class="platform-icon">⚙️</div>
+      <div class="platform-name">Admin Panel</div>
+      <div class="platform-desc">Cockpit operacional: financeiro, CS e clientes</div>
+    </div>
+  </div>
+  <div class="body-text">Cada plataforma resolve um gargalo. Juntas, transformam a operação.</div>
+</div>
+<div class="logo"><span class="mir">Mir</span><span class="ai">AI</span></div>
+</body>
+</html>

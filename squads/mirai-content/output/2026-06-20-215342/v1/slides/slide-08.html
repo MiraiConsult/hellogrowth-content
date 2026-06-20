@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1350px; background: #1d1c1a; overflow: hidden; }
+body { font-family: 'Inter', sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; padding: 80px 80px 120px; }
+.orb1 { position: absolute; top: -150px; left: 50%; transform: translateX(-50%); width: 700px; height: 700px; background: radial-gradient(circle, #00c46a 0%, transparent 55%); filter: blur(180px); opacity: 0.15; }
+.orb2 { position: absolute; bottom: -100px; right: -80px; width: 400px; height: 400px; background: radial-gradient(circle, #83e509 0%, transparent 70%); filter: blur(120px); opacity: 0.1; }
+.content { position: relative; z-index: 1; text-align: center; display: flex; flex-direction: column; align-items: center; }
+.kanji { font-family: 'Inter'; font-weight: 400; font-size: 60px; color: rgba(0,196,106,0.3); margin-bottom: 20px; }
+.headline { font-family: 'Space Grotesk'; font-weight: 700; font-size: 58px; color: #83e509; text-transform: uppercase; line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 20px; }
+.subtitle { font-family: 'Inter'; font-weight: 500; font-size: 30px; color: #efedeb; margin-bottom: 50px; }
+.cta-box { background: #00c46a; color: #1d1c1a; font-family: 'Space Grotesk'; font-weight: 700; font-size: 26px; padding: 20px 48px; border-radius: 100px; margin-bottom: 40px; }
+.save { font-family: 'Inter'; font-weight: 500; font-size: 22px; color: rgba(239,237,235,0.5); margin-bottom: 8px; }
+.source { font-family: 'Inter'; font-weight: 400; font-size: 17px; color: rgba(239,237,235,0.3); margin-top: 24px; }
+.logo { position: absolute; bottom: 50px; left: 50%; transform: translateX(-50%); font-family: 'Space Grotesk'; font-weight: 700; font-size: 50px; }
+.logo .mir { color: #efedeb; } .logo .ai { color: #00c46a; }
+</style>
+</head>
+<body>
+<div class="orb1"></div><div class="orb2"></div>
+<div class="content">
+  <div class="kanji">未来</div>
+  <div class="headline">O futuro pertence<br>a quem executa.</div>
+  <div class="subtitle">Saia da intenção. Chegue no resultado.</div>
+  <div class="cta-box">AGENDE UMA CONVERSA →</div>
+  <div class="save">💾 Salva e manda pra quem precisa sair do PowerPoint.</div>
+  <div class="source">Fontes: ABES (Jun/2026) · IBGE · Jitterbit/Carta Capital · GoMind</div>
+</div>
+<div class="logo"><span class="mir">Mir</span><span class="ai">AI</span></div>
+</body>
+</html>
