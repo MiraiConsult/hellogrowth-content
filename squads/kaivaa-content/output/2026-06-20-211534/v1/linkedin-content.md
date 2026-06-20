@@ -32,6 +32,8 @@ Sua equipe foca no estratégico. A IA cuida do repetitivo.
 
 A pergunta que fica: quanto lead sua empresa perdeu hoje por demorar mais de 5 minutos pra responder?
 
+📊 Fonte: SocialHub, março de 2026 — pesquisa com 180 negócios brasileiros.
+
 ## Hashtags
 
 #AtendimentoInteligente #IAparaNegocios #CustomerExperience #VendasDigitais #Kaivaa
