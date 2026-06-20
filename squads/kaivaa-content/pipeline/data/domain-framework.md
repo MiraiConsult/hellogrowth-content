@@ -1,6 +1,6 @@
 # Framework Operacional - Producao de Conteudo Social
 
-**Cliente:** HelloGrowth - "Mais reputacao. Mais confianca. Mais vendas!"
+**Cliente:** Kaivaa - "Sua atendente de IA no Instagram e WhatsApp"
 **Modo:** Alta Performance
 **Plataformas:** Instagram Feed, Instagram Reels, Instagram Stories, LinkedIn Post
 
@@ -19,17 +19,17 @@ O pipeline de criacao segue 7 etapas sequenciais. Cada etapa possui criterios de
 ## Etapa 1: Pesquisa e Selecao de Topico
 
 ### Objetivo
-Identificar topicos com alto potencial de engajamento e alinhamento estrategico com a HelloGrowth.
+Identificar topicos com alto potencial de engajamento e alinhamento estrategico com a Kaivaa.
 
 ### Processo
-1. **Analise de tendencias:** Verificar topicos em alta no nicho de negocios, marketing e reputacao empresarial.
-2. **Mapeamento de concorrencia:** Avaliar o que @brandsdecoded__ e @g4club_ estao publicando. Identificar gaps de conteudo.
+1. **Analise de tendencias:** Verificar topicos em alta no nicho de atendimento ao cliente, automacao de vendas, IA conversacional e comercio via redes sociais.
+2. **Mapeamento de concorrencia:** Avaliar o que concorrentes e perfis de referencia estao publicando. Identificar gaps de conteudo.
 3. **Alinhamento com pilares:** Todo topico deve se encaixar em pelo menos um pilar de conteudo:
-   - Reputacao empresarial
-   - Confianca e prova social
-   - Estrategias de vendas
-   - Cases e resultados
-   - Educacao de mercado
+   - Atendimento por IA (velocidade, qualidade, escala)
+   - Vendas por Instagram e WhatsApp
+   - Automacao sem perder o toque humano
+   - Tempo e produtividade do empreendedor
+   - Cases e resultados de clientes
 4. **Validacao de demanda:** Verificar volume de busca, perguntas frequentes do publico, comentarios em posts anteriores.
 
 ### Entregavel
@@ -46,11 +46,11 @@ Definir para quem estamos falando e em que estagio da jornada essa pessoa se enc
 
 | Nivel | Descricao | Abordagem de Conteudo |
 |-------|-----------|----------------------|
-| **Inconsciente** | Nao sabe que tem um problema. | Conteudo de choque, dados surpreendentes, provocacoes. |
-| **Consciente do Problema** | Sabe que tem um problema, mas nao conhece solucoes. | Conteudo educativo, nomear a dor, amplificar consequencias. |
-| **Consciente da Solucao** | Sabe que existem solucoes, mas nao conhece a HelloGrowth. | Comparativos, frameworks, metodologia proprietaria. |
-| **Consciente do Produto** | Conhece a HelloGrowth, mas ainda nao decidiu. | Cases, depoimentos, provas de resultado, garantias. |
-| **Mais Consciente** | Ja confia, so precisa de um empurrao. | Ofertas, urgencia, CTAs diretos, condicoes especiais. |
+| **Inconsciente** | Nao sabe que perde vendas por atendimento lento. | Conteudo de choque, dados surpreendentes sobre tempo de resposta e conversao. |
+| **Consciente do Problema** | Sabe que nao da conta de responder tudo, mas nao conhece solucoes. | Conteudo educativo, nomear a dor (DMs acumulando, leads esfriando). |
+| **Consciente da Solucao** | Sabe que existem chatbots/IA, mas nao conhece a Kaivaa. | Comparativos, diferenciais (IA que vende vs chatbot que responde FAQ). |
+| **Consciente do Produto** | Conhece a Kaivaa, mas ainda nao decidiu. | Demos, depoimentos, provas de resultado, facilidade de setup. |
+| **Mais Consciente** | Ja confia, so precisa de um empurrao. | Ofertas, urgencia, CTAs diretos, "comece gratis". |
 
 ### Segmentacao por Audiencia
 
@@ -72,11 +72,11 @@ Para cada topico selecionado, gerar 5 perspectivas emocionais distintas que pode
 
 ### Os 5 Angulos Emocionais
 
-1. **Dor/Medo:** "O que acontece se voce NAO fizer isso?" Explorar consequencias negativas da inacao.
-2. **Desejo/Aspiracao:** "Imagine seu negocio com 10x mais confianca do mercado." Visualizacao do resultado ideal.
-3. **Curiosidade/Surpresa:** "90% dos empresarios cometem este erro de reputacao." Dados inesperados, contraintuitivos.
-4. **Autoridade/Prova:** "Como levamos a empresa X de 0 a 500 avaliacoes em 90 dias." Cases reais, resultados concretos.
-5. **Urgencia/Escassez:** "O mercado esta mudando agora. Quem nao se adaptar, fica para tras." Timing e oportunidade.
+1. **Dor/Medo:** "Quanto voce perde por cada DM que demora mais de 5 minutos?" Explorar consequencias da demora e do atendimento manual.
+2. **Desejo/Aspiracao:** "Imagine acordar e ver que a IA ja vendeu enquanto voce dormia." Visualizacao do resultado ideal.
+3. **Curiosidade/Surpresa:** "78% dos leads desistem se nao recebem resposta em 10 minutos." Dados inesperados sobre atendimento.
+4. **Autoridade/Prova:** "Como a cafeteria X triplicou vendas por DM em 30 dias com IA." Cases reais, resultados concretos.
+5. **Urgencia/Escassez:** "Seu concorrente ja responde em 3 segundos. E voce?" Timing e oportunidade.
 
 ### Regra de Ouro
 Nunca produzir conteudo com apenas um angulo por topico. Gerar no minimo 3 angulos antes de escolher o melhor para cada plataforma.
@@ -110,11 +110,11 @@ Cada hook deve ter tres camadas simultaneas:
 
 ### Tecnicas de Hook Comprovadas
 
-1. **Numero + Resultado:** "3 estrategias que geraram R$500K em vendas"
-2. **Pergunta provocativa:** "Voce sabe por que seus clientes nao voltam?"
-3. **Afirmacao contraria:** "Hashtags nao funcionam mais. Faca isso em vez disso."
-4. **Promessa especifica:** "Depois de ler isso, voce nunca mais vai ignorar avaliacoes online."
-5. **Historia pessoal:** "Perdi meu maior cliente por causa de uma avaliacao negativa."
+1. **Numero + Resultado:** "3 DMs que viraram R$12K em vendas — sem voce digitar nada"
+2. **Pergunta provocativa:** "Quantos clientes voce perdeu enquanto estava ocupado demais pra responder?"
+3. **Afirmacao contraria:** "Chatbot nao vende. IA treinada no seu negocio, sim."
+4. **Promessa especifica:** "Depois de ver isso, voce nunca mais vai responder DM manualmente."
+5. **Historia pessoal:** "Eu perdia 4 horas por dia respondendo mensagens. Ate que..."
 
 ### Entregavel
 3 opcoes de hook por peca, com indicacao da opcao recomendada e justificativa.
@@ -133,7 +133,7 @@ Criar o conteudo completo, adaptado para cada plataforma.
 - Slide 1: Hook visual + texto impactante
 - Slides 2-8: Conteudo principal (1 ideia por slide, texto grande e legivel)
 - Slide 9: Resumo ou recapitulacao
-- Slide 10: CTA + branding
+- Slide 10: CTA forte
 - Caption: Hook textual + contexto + CTA + hashtags (3-5)
 
 #### Instagram Reels
@@ -171,7 +171,7 @@ Refinar cada peca para maximizar alcance e engajamento.
 ### Checklist de Otimizacao
 
 - [ ] **CTA claro e especifico:** "Salve este post" > "Curta" / "Comente SIM se voce concorda" > "Comente"
-- [ ] **Hashtags estrategicas:** 3-5 hashtags nichadas, sem hashtags genericas (#empreendedorismo com 50M+ posts)
+- [ ] **Hashtags estrategicas:** 3-5 hashtags nichadas, sem hashtags genericas
 - [ ] **SEO no caption:** Palavras-chave relevantes nas primeiras 2 linhas
 - [ ] **Alt text preenchido:** Descricao rica para acessibilidade e SEO
 - [ ] **Formatacao mobile-first:** Texto legivel em tela de smartphone
@@ -206,5 +206,5 @@ Ficha de avaliacao preenchida + decisao (APROVAR / REVISAR / REJEITAR).
 
 ---
 
-*Framework operacional v1.0 - Marco 2026*
-*Squad: Social Content - HelloGrowth*
+*Framework operacional v1.0 - Junho 2026*
+*Squad: Kaivaa Content*

@@ -1,15 +1,17 @@
 # Research Focus
 
-**Topic:** Reputação digital — avaliações Google, ranking local, SEO local, gestão de reviews, reputação odontológica
-**Time Range:** Último mês (maio-junho 2026)
-**Date:** 2026-06-18
+**Topic:** Atendimento por IA — chatbots para Instagram e WhatsApp, automação de vendas via DM, IA conversacional para pequenas empresas, tendências de atendimento digital no Brasil
+**Time Range:** Último mês
+**Date:** 2026-06-20
 
-## Contexto HelloGrowth
-A HelloGrowth atua em gestão de reputação online: monitora avaliações Google, automatiza coleta de depoimentos, ajuda clínicas odontológicas e empresas B2B a construir confiança digital e converter mais vendas via reputação.
+## Contexto Kaivaa
+A Kaivaa é uma plataforma SaaS que oferece atendimento por IA no Instagram e WhatsApp. A IA atua como vendedora virtual: responde clientes, mostra produtos com preço, qualifica leads e conduz para a venda — tudo com base no conhecimento que o dono do negócio ensina. Público-alvo: pequenos e médios negócios que vendem via redes sociais.
 
 ## Diretrizes para o Fábio Fonte
-- Buscar notícias recentes (último mês) sobre reputação digital, reviews online, gestão de avaliações
-- Priorizar dados estatísticos relevantes para clínicas odontológicas brasileiras
-- Identificar tendências, mudanças do Google em reviews e ranking local
-- Procurar casos práticos: clínicas que ganharam/perderam por causa de reputação
-- Buscar estudos sobre impacto de avaliações em decisão de compra no Brasil
+- Buscar notícias recentes sobre IA no atendimento ao cliente, chatbots para WhatsApp e Instagram
+- Priorizar dados sobre impacto de tempo de resposta nas vendas (quanto mais rápido, mais converte)
+- Identificar tendências de automação de vendas por mensagem no mercado brasileiro
+- Procurar estudos sobre abandono de carrinho/conversa por demora no atendimento
+- Buscar casos de negócios que aumentaram vendas com IA conversacional
+- Monitorar novidades da Meta (Instagram DM API, WhatsApp Business API)
+- Identificar dores comuns de quem vende pelo Instagram: tempo perdido respondendo DMs, leads que esfriam, atendimento fora de horário

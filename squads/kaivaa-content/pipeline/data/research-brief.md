@@ -1,6 +1,6 @@
 # Research Brief - Squad de Conteudo Social
 
-**Cliente:** HelloGrowth - "Mais reputacao. Mais confianca. Mais vendas!"
+**Cliente:** Kaivaa - "Sua atendente de IA no Instagram e WhatsApp"
 **Modo:** Alta Performance
 **Audiencia:** Misto (clientes + leads + publico geral)
 **Plataformas:** Instagram Feed, Instagram Reels, Instagram Stories, LinkedIn Post
@@ -133,6 +133,6 @@ Cada peca de conteudo e avaliada em escala de 1-5 nos seguintes criterios:
 
 ---
 
-*Documento atualizado em: Marco 2026*
+*Documento atualizado em: Junho 2026*
 *Versao: 1.0*
-*Squad: Social Content - HelloGrowth*
+*Squad: Kaivaa Content*
