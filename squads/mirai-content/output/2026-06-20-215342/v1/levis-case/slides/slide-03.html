@@ -1,23 +1,103 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-html,body{width:1080px;height:1350px;background:#0a0a0a;overflow:hidden}
-body{display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;padding:80px 70px 100px}
-.glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;background:radial-gradient(circle,#c41230 0%,transparent 60%);filter:blur(160px);opacity:0.08}
-.headline{font-family:'Space Grotesk';font-weight:700;font-size:52px;color:#ffffff;text-align:center;line-height:1.15;position:relative;z-index:1;margin-bottom:50px;max-width:860px}
-.headline em{font-style:normal;color:#c41230}
-.body-text{font-family:'Inter';font-weight:400;font-size:30px;color:rgba(255,255,255,0.7);text-align:center;line-height:1.55;max-width:800px;position:relative;z-index:1}
-.body-text strong{color:#ffffff;font-weight:600}
-.divider{width:60px;height:3px;background:#c41230;margin:50px 0;position:relative;z-index:1}
-.quote{font-family:'Space Grotesk';font-weight:600;font-size:34px;color:rgba(255,255,255,0.5);text-align:center;position:relative;z-index:1;font-style:italic;max-width:750px;line-height:1.4}
-.logo{position:absolute;bottom:45px;left:50%;transform:translateX(-50%);font-family:'Space Grotesk';font-weight:700;font-size:32px;color:rgba(255,255,255,0.15)}
-</style></head><body>
-<div class="glow"></div>
-<div class="headline">O que parece <em>brilhante e espontâneo</em> foi, na verdade, estratégia.</div>
-<div class="body-text">A Levi's <strong>sabia desde muito antes</strong> que seu logo seria coberto.<br><br>Em vez de reclamar, planejaram cada passo do que fariam <strong>quando</strong> isso acontecesse.</div>
-<div class="divider"></div>
-<div class="quote">"A sorte favorece quem se prepara."</div>
-<div class="logo">HelloGrowth</div>
-</body></html>
+@page { size: 1080px 1350px; margin: 0; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+  width: 1080px; height: 1350px;
+  background: #0a5e4d;
+  font-family: 'Inter', sans-serif;
+  color: #edf0ee;
+  overflow: hidden;
+  letter-spacing: -0.02em;
+}
+.card {
+  width: 1080px; height: 1350px;
+  position: relative;
+  background:
+    radial-gradient(ellipse 600px 600px at 50% 35%, rgba(191,255,0,0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at bottom left, rgba(40,174,97,0.15) 0%, transparent 55%),
+    linear-gradient(160deg, #0f6652 0%, #1b6b5b 40%, #004d40 100%);
+  padding: 100px 80px;
+}
+.handle {
+  position: absolute; top: 50px; left: 50%; transform: translateX(-50%);
+  font-size: 18px; font-weight: 500; color: rgba(237,240,238,0.4);
+  letter-spacing: 0.05em;
+}
+.kicker {
+  font-size: 28px; font-weight: 500; color: rgba(237,240,238,0.6);
+  text-transform: uppercase; letter-spacing: 0.15em;
+  margin-top: 100px; margin-bottom: 24px;
+}
+.title {
+  font-size: 72px; font-weight: 900;
+  color: #edf0ee; line-height: 1.05;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  margin-bottom: 50px;
+}
+.title .accent { color: #bfff00; }
+.body-text {
+  font-size: 34px; font-weight: 500;
+  color: rgba(237,240,238,0.8);
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.body-text strong { color: #edf0ee; font-weight: 800; }
+.divider {
+  width: 60px; height: 4px;
+  background: #bfff00;
+  margin: 40px 0;
+}
+.quote {
+  font-size: 36px; font-weight: 700;
+  color: rgba(237,240,238,0.5);
+  font-style: italic;
+  line-height: 1.35;
+}
+.bottom-row {
+  position: absolute; bottom: 130px; left: 80px; right: 80px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.logo-symbol img { height: 150px; }
+.arrow-next {
+  width: 84px; height: 84px;
+  background: #bfff00;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 6px 24px rgba(191,255,0,0.30);
+}
+.arrow-next svg { width: 38px; height: 38px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="handle">@hellogrowth__</div>
+
+  <div class="kicker">A virada</div>
+  <div class="title">O QUE PARECE <span class="accent">ESPONTÂNEO</span> FOI ESTRATÉGIA</div>
+
+  <div class="body-text">A Levi's <strong>sabia desde muito antes</strong> que seu logo seria coberto.</div>
+  <div class="body-text">Em vez de reclamar, planejaram cada passo do que fariam <strong>quando</strong> isso acontecesse.</div>
+
+  <div class="divider"></div>
+  <div class="quote">"A sorte favorece<br>quem se prepara."</div>
+
+  <div class="bottom-row">
+    <div class="logo-symbol">
+      <img src="assets/logo-symbol-light.svg" alt="HG">
+    </div>
+    <div class="arrow-next">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#004d40" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12"/>
+        <polyline points="12 5 19 12 12 19"/>
+      </svg>
+    </div>
+  </div>
+</div>
+</body>
+</html>

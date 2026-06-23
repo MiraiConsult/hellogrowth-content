@@ -1,36 +1,111 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet">
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-html,body{width:1080px;height:1350px;background:#0d0d0d;overflow:hidden}
-body{display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;padding:80px 70px 100px}
-.bar{position:absolute;left:0;top:150px;bottom:150px;width:5px;background:#c41230}
-.label{font-family:'Inter';font-weight:600;font-size:18px;text-transform:uppercase;letter-spacing:0.15em;color:rgba(255,255,255,0.3);margin-bottom:30px;position:relative;z-index:1}
-.money{font-family:'Orbitron';font-weight:800;font-size:120px;color:#c41230;line-height:0.9;position:relative;z-index:1;margin-bottom:10px}
-.money-label{font-family:'Inter';font-weight:500;font-size:28px;color:rgba(255,255,255,0.5);margin-bottom:50px;position:relative;z-index:1}
-.body-text{font-family:'Inter';font-weight:400;font-size:30px;color:rgba(255,255,255,0.75);text-align:center;line-height:1.55;max-width:840px;position:relative;z-index:1}
-.body-text strong{color:#ffffff;font-weight:600}
-.body-text em{font-style:normal;color:#c41230;font-weight:600}
-.timeline{display:flex;align-items:center;gap:16px;margin-top:50px;position:relative;z-index:1}
-.timeline-dot{width:12px;height:12px;border-radius:50%;background:#c41230}
-.timeline-line{width:120px;height:2px;background:rgba(255,255,255,0.1)}
-.timeline-text{font-family:'Space Grotesk';font-weight:600;font-size:20px;color:rgba(255,255,255,0.4)}
-.logo{position:absolute;bottom:45px;left:50%;transform:translateX(-50%);font-family:'Space Grotesk';font-weight:700;font-size:32px;color:rgba(255,255,255,0.15)}
-</style></head><body>
-<div class="bar"></div>
-<div class="label">O investimento</div>
-<div class="money">$220M</div>
-<div class="money-label">naming rights desde 2013</div>
-<div class="body-text">A Levi's investiu <strong>220 milhões de dólares</strong> para colocar o nome dela no estádio dos <strong>49ers</strong>.<br><br>Durante a Copa do Mundo 2026, a FIFA simplesmente mandou <em>tapar tudo com uma lona branca</em>.</div>
-<div class="timeline">
-  <div class="timeline-text">2013</div>
-  <div class="timeline-dot"></div>
-  <div class="timeline-line"></div>
-  <div class="timeline-text">Copa 2026</div>
-  <div class="timeline-dot"></div>
-  <div class="timeline-line"></div>
-  <div class="timeline-text">🔇</div>
+@page { size: 1080px 1350px; margin: 0; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+  width: 1080px; height: 1350px;
+  background: #0a5e4d;
+  font-family: 'Inter', sans-serif;
+  color: #edf0ee;
+  overflow: hidden;
+  letter-spacing: -0.02em;
+}
+.card {
+  width: 1080px; height: 1350px;
+  position: relative;
+  background:
+    radial-gradient(ellipse at top right, rgba(40,174,97,0.20) 0%, transparent 55%),
+    radial-gradient(ellipse at bottom left, rgba(40,174,97,0.18) 0%, transparent 55%),
+    linear-gradient(160deg, #0f6652 0%, #1b6b5b 40%, #0a5e4d 100%);
+  padding: 100px 80px;
+}
+.handle {
+  position: absolute; top: 50px; left: 50%; transform: translateX(-50%);
+  font-size: 18px; font-weight: 500; color: rgba(237,240,238,0.4);
+  letter-spacing: 0.05em;
+}
+.kicker {
+  font-size: 28px; font-weight: 500; color: rgba(237,240,238,0.6);
+  text-transform: uppercase; letter-spacing: 0.15em;
+  margin-top: 80px; margin-bottom: 20px;
+}
+.money {
+  font-size: 180px; font-weight: 900;
+  color: #edf0ee; line-height: 0.9;
+  letter-spacing: -0.06em;
+  margin-bottom: 10px;
+}
+.money .accent { color: #bfff00; }
+.subtitle {
+  font-size: 32px; font-weight: 500;
+  color: rgba(237,240,238,0.5);
+  margin-bottom: 50px;
+}
+.body-text {
+  font-size: 34px; font-weight: 500;
+  color: rgba(237,240,238,0.8);
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.body-text strong { color: #edf0ee; font-weight: 800; }
+.body-text .accent { color: #bfff00; font-weight: 800; }
+.timeline {
+  display: flex; align-items: center; gap: 14px;
+  margin-top: 30px;
+}
+.t-label { font-size: 24px; font-weight: 700; color: rgba(237,240,238,0.5); }
+.t-dot { width: 12px; height: 12px; border-radius: 50%; background: #28ae61; }
+.t-line { width: 100px; height: 2px; background: rgba(237,240,238,0.1); }
+.t-dot-red { width: 12px; height: 12px; border-radius: 50%; background: #c41230; }
+.bottom-row {
+  position: absolute; bottom: 130px; left: 80px; right: 80px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.logo-symbol img { height: 150px; }
+.arrow-next {
+  width: 84px; height: 84px;
+  background: #bfff00;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 6px 24px rgba(191,255,0,0.30);
+}
+.arrow-next svg { width: 38px; height: 38px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="handle">@hellogrowth__</div>
+
+  <div class="kicker">O investimento</div>
+  <div class="money"><span class="accent">$</span>220M</div>
+  <div class="subtitle">naming rights desde 2013</div>
+
+  <div class="body-text">A Levi's investiu <strong>220 milhões de dólares</strong> para colocar o nome no estádio dos 49ers.</div>
+  <div class="body-text">Durante a Copa 2026, a FIFA simplesmente mandou <span class="accent">tapar tudo com uma lona branca</span>.</div>
+
+  <div class="timeline">
+    <div class="t-label">2013</div>
+    <div class="t-dot"></div>
+    <div class="t-line"></div>
+    <div class="t-label">Copa 2026</div>
+    <div class="t-dot-red"></div>
+  </div>
+
+  <div class="bottom-row">
+    <div class="logo-symbol">
+      <img src="assets/logo-symbol-light.svg" alt="HG">
+    </div>
+    <div class="arrow-next">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#004d40" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12"/>
+        <polyline points="12 5 19 12 12 19"/>
+      </svg>
+    </div>
+  </div>
 </div>
-<div class="logo">HelloGrowth</div>
-</body></html>
+</body>
+</html>
