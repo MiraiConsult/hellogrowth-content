@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+@page { size: 1080px 1350px; margin: 0; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+  width: 1080px; height: 1350px;
+  background: #0a5e4d;
+  font-family: 'Inter', sans-serif;
+  color: #edf0ee;
+  overflow: hidden;
+  letter-spacing: -0.02em;
+}
+.card {
+  width: 1080px; height: 1350px;
+  position: relative;
+  background:
+    radial-gradient(ellipse 700px 500px at 50% 35%, rgba(191,255,0,0.10) 0%, transparent 60%),
+    radial-gradient(ellipse at bottom right, rgba(40,174,97,0.18) 0%, transparent 55%),
+    linear-gradient(160deg, #004d40 0%, #1b6b5b 40%, #0a5e4d 100%);
+  padding: 100px 80px;
+  display: flex; flex-direction: column; justify-content: center;
+}
+.handle {
+  position: absolute; top: 50px; left: 50%; transform: translateX(-50%);
+  font-size: 18px; font-weight: 500; color: rgba(237,240,238,0.4);
+  letter-spacing: 0.05em;
+}
+.title {
+  font-size: 90px; font-weight: 900;
+  color: #edf0ee; line-height: 1.0;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  margin-bottom: 8px;
+}
+.pilula-line { margin-bottom: 50px; }
+.pilula {
+  display: inline-block;
+  background: #bfff00;
+  font-size: 80px; font-weight: 900;
+  color: #004d40; line-height: 1;
+  padding: 16px 40px;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  border-radius: 100px;
+  box-shadow: 0 12px 50px rgba(191,255,0,0.3);
+}
+.body-text {
+  font-size: 34px; font-weight: 500;
+  color: rgba(237,240,238,0.8);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.body-text strong { color: #edf0ee; font-weight: 800; }
+.callout {
+  background: rgba(0,77,64,0.5);
+  border: 2px solid rgba(40,174,97,0.3);
+  border-radius: 24px;
+  padding: 32px 36px;
+  margin-top: 20px;
+}
+.callout-text {
+  font-size: 30px; font-weight: 700;
+  color: rgba(237,240,238,0.7);
+  line-height: 1.4;
+}
+.callout-text .accent { color: #bfff00; font-weight: 800; }
+.bottom-row {
+  position: absolute; bottom: 130px; left: 80px; right: 80px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.logo-symbol img { height: 150px; }
+.arrow-next {
+  width: 84px; height: 84px;
+  background: #bfff00;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 6px 24px rgba(191,255,0,0.30);
+}
+.arrow-next svg { width: 38px; height: 38px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="handle">@hellogrowth__</div>
+
+  <div class="title">NÃO FOI<br>SORTE.</div>
+  <div class="pilula-line"><span class="pilula">FOI PROCESSO.</span></div>
+
+  <div class="body-text">Eles <strong>já sabiam o que fariam</strong> quando o logo sumisse. Tinham um plano antes de precisar improvisar.</div>
+
+  <div class="callout">
+    <div class="callout-text">A sua clínica também precisa de um plano — <span class="accent">antes de precisar improvisar.</span></div>
+  </div>
+
+  <div class="bottom-row">
+    <div class="logo-symbol"><img src="assets/logo-symbol-light.svg" alt="HG"></div>
+    <div class="arrow-next">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#004d40" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+      </svg>
+    </div>
+  </div>
+</div>
+</body>
+</html>

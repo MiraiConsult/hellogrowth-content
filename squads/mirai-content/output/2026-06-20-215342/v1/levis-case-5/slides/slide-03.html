@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+@page { size: 1080px 1350px; margin: 0; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+  width: 1080px; height: 1350px;
+  background: #e0eadb;
+  font-family: 'Inter', sans-serif;
+  color: #004d40;
+  overflow: hidden;
+  letter-spacing: -0.02em;
+}
+.card {
+  width: 1080px; height: 1350px;
+  position: relative;
+  background:
+    radial-gradient(ellipse 800px 600px at top right, rgba(191,255,0,0.20) 0%, transparent 60%),
+    radial-gradient(ellipse 600px 600px at bottom left, rgba(40,174,97,0.12) 0%, transparent 65%),
+    linear-gradient(180deg, #f2f7ee 0%, #e8ede5 50%, #e0eadb 100%);
+  padding: 100px 80px;
+}
+.handle {
+  position: absolute; top: 40px; left: 50%; transform: translateX(-50%);
+  font-size: 18px; font-weight: 500; color: rgba(0,77,64,0.4);
+  letter-spacing: 0.05em;
+}
+.kicker {
+  font-size: 28px; font-weight: 500; color: rgba(0,77,64,0.5);
+  text-transform: uppercase; letter-spacing: 0.15em;
+  margin-top: 60px; margin-bottom: 18px;
+}
+.title {
+  font-size: 58px; font-weight: 900;
+  color: #004d40; line-height: 1.05;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  margin-bottom: 32px;
+}
+.title .accent { color: #28ae61; }
+.profile-mock {
+  display: flex; align-items: center; gap: 28px;
+  background: rgba(255,255,255,0.7);
+  border: 2px solid rgba(0,77,64,0.08);
+  border-radius: 24px;
+  padding: 24px 28px;
+  margin-bottom: 30px;
+  backdrop-filter: blur(6px);
+}
+.avatar {
+  width: 110px; height: 110px; border-radius: 50%;
+  background: #c41230;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.avatar-lona { width: 65px; height: 30px; background: #edf0ee; border-radius: 3px; }
+.profile-info { flex: 1; }
+.profile-name { font-size: 22px; font-weight: 800; color: #004d40; margin-bottom: 6px; }
+.profile-stats { display: flex; gap: 20px; }
+.stat-num { font-size: 20px; font-weight: 800; color: #004d40; }
+.stat-label { font-size: 13px; font-weight: 500; color: rgba(0,77,64,0.5); }
+.body-text {
+  font-size: 34px; font-weight: 600;
+  color: #1b6b5b; line-height: 1.4;
+  margin-bottom: 14px;
+}
+.body-text strong { color: #004d40; font-weight: 800; }
+.results {
+  display: flex; gap: 20px; margin-top: 24px; margin-bottom: 14px;
+}
+.result-card {
+  flex: 1;
+  background: rgba(0,77,64,0.06);
+  border: 2px solid rgba(0,77,64,0.1);
+  border-radius: 20px;
+  padding: 24px 20px;
+  text-align: center;
+}
+.result-icon { font-size: 32px; margin-bottom: 8px; }
+.result-value { font-size: 48px; font-weight: 900; color: #004d40; letter-spacing: -0.04em; }
+.result-label { font-size: 18px; font-weight: 500; color: rgba(0,77,64,0.5); }
+.pilula {
+  display: inline-block;
+  background: #bfff00;
+  font-size: 32px; font-weight: 900;
+  color: #004d40; line-height: 1;
+  padding: 14px 32px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  box-shadow: 0 12px 50px rgba(191,255,0,0.3);
+  margin-top: 10px;
+}
+.bottom-row {
+  position: absolute; bottom: 130px; left: 80px; right: 80px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.logo-full img { height: 110px; }
+.arrow-next {
+  width: 84px; height: 84px;
+  background: #28ae61;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 8px 28px rgba(40,174,97,0.40);
+}
+.arrow-next svg { width: 38px; height: 38px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="handle">@hellogrowth__</div>
+
+  <div class="kicker">O movimento</div>
+  <div class="title">TRANSFORMOU A <span class="accent">CENSURA</span> EM MARKETING</div>
+
+  <div class="profile-mock">
+    <div class="avatar"><div class="avatar-lona"></div></div>
+    <div class="profile-info">
+      <div class="profile-name">Levi's ✓</div>
+      <div class="profile-stats">
+        <div class="stat-item"><div class="stat-num">161</div><div class="stat-label">posts</div></div>
+        <div class="stat-item"><div class="stat-num">10,4 mi</div><div class="stat-label">seguidores</div></div>
+        <div class="stat-item"><div class="stat-num">34</div><div class="stat-label">seguindo</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="body-text">Trocou a foto de perfil em <strong>todas as redes</strong> para imitar o logo encoberto.</div>
+
+  <div class="results">
+    <div class="result-card">
+      <div class="result-icon">❤️</div>
+      <div class="result-value">700K</div>
+      <div class="result-label">likes em 24h</div>
+    </div>
+    <div class="result-card">
+      <div class="result-icon">▶️</div>
+      <div class="result-value">9M+</div>
+      <div class="result-label">views TikTok</div>
+    </div>
+  </div>
+  <div class="pilula">custo: R$ 0</div>
+
+  <div class="bottom-row">
+    <div class="logo-full"><img src="assets/logo-full.svg" alt="HelloGrowth"></div>
+    <div class="arrow-next">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#edf0ee" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+      </svg>
+    </div>
+  </div>
+</div>
+</body>
+</html>
