@@ -1,0 +1,76 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap');
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { width:1080px; height:1350px; overflow:hidden; font-family:'Inter',sans-serif; letter-spacing:-0.02em; }
+.card { width:1080px; height:1350px; position:relative; padding:100px 86px; }
+/* DARK */
+.dark { background:
+   radial-gradient(ellipse at top right, rgba(40,174,97,0.22) 0%, transparent 55%),
+   radial-gradient(ellipse at bottom left, rgba(191,255,0,0.10) 0%, transparent 55%),
+   linear-gradient(160deg,#0f6652 0%,#1b6b5b 42%,#004d40 100%);
+   color:#edf0ee; }
+/* LIGHT */
+.light { background:
+   radial-gradient(ellipse 900px 700px at top left, rgba(191,255,0,0.22) 0%, transparent 60%),
+   radial-gradient(ellipse 700px 800px at bottom right, rgba(40,174,97,0.13) 0%, transparent 65%),
+   linear-gradient(180deg,#f4f8f0 0%,#e8efe4 50%,#e0eadb 100%);
+   color:#004d40; }
+.handle { position:absolute; top:46px; left:50%; transform:translateX(-50%);
+   font-size:19px; font-weight:500; letter-spacing:0.06em; }
+.dark .handle { color:rgba(237,240,238,0.45); }
+.light .handle { color:rgba(0,77,64,0.42); }
+.kicker { font-size:26px; font-weight:600; text-transform:uppercase; letter-spacing:0.15em; margin-bottom:22px; }
+.dark .kicker { color:#bfff00; }
+.light .kicker { color:rgba(0,77,64,0.55); }
+.badge { display:inline-flex; align-items:center; justify-content:center;
+   width:78px; height:78px; border-radius:20px; font-size:34px; font-weight:900;
+   background:#bfff00; color:#004d40; margin-bottom:26px; }
+.headline { font-weight:900; line-height:1.04; letter-spacing:-0.035em; margin-bottom:30px; }
+.dark .headline { color:#edf0ee; }
+.light .headline { color:#004d40; }
+.headline .ac { color:#bfff00; }
+.light .headline .ac { color:#28ae61; }
+.support { font-weight:500; line-height:1.5; }
+.dark .support { color:rgba(237,240,238,0.86); }
+.light .support { color:#1b6b5b; }
+.support .ac { font-weight:800; }
+.dark .support .ac { color:#bfff00; }
+.light .support .ac { color:#28ae61; }
+.support strong { font-weight:800; }
+.dark .support strong { color:#edf0ee; }
+.light .support strong { color:#004d40; }
+.pill { display:inline-block; background:#bfff00; color:#004d40; font-weight:900;
+   text-transform:uppercase; border-radius:100px; box-shadow:0 12px 50px rgba(191,255,0,0.30); }
+/* data pills row */
+.datarow { display:flex; gap:18px; margin:30px 0 8px; }
+.datapill { flex:1; border-radius:22px; padding:28px 20px; text-align:center; }
+.dark .datapill { background:rgba(255,255,255,0.07); border:2px solid rgba(255,255,255,0.10); }
+.light .datapill { background:rgba(255,255,255,0.65); border:2px solid rgba(0,77,64,0.10); }
+.datapill .v { font-size:54px; font-weight:900; letter-spacing:-0.04em; }
+.dark .datapill .v { color:#bfff00; }
+.light .datapill .v { color:#28ae61; }
+.datapill .l { font-size:21px; font-weight:600; margin-top:6px; }
+.dark .datapill .l { color:rgba(237,240,238,0.6); }
+.light .datapill .l { color:rgba(0,77,64,0.55); }
+/* big number */
+.bignum { font-size:300px; font-weight:900; line-height:0.85; letter-spacing:-0.06em; color:#bfff00; margin-bottom:6px; }
+.bottom { position:absolute; bottom:84px; left:86px; right:86px; display:flex; align-items:center; justify-content:space-between; }
+.logo img { height:62px; }
+.src { position:absolute; bottom:54px; left:86px; right:86px; font-size:17px; font-weight:500; }
+.dark .src { color:rgba(237,240,238,0.45); }
+.light .src { color:rgba(0,77,64,0.45); }
+.arrow { width:84px; height:84px; border-radius:50%; display:flex; align-items:center; justify-content:center; }
+.dark .arrow { background:#bfff00; box-shadow:0 6px 24px rgba(191,255,0,0.30); }
+.light .arrow { background:#28ae61; box-shadow:0 8px 28px rgba(40,174,97,0.40); }
+.arrow svg { width:38px; height:38px; }
+.center { display:flex; flex-direction:column; justify-content:center; height:100%; }
+</style></head>
+<body><div class="card dark"><div class="handle">@hellogrowth__</div>
+
+<div class="kicker">O dado desconfortável</div>
+<div class="bignum">41%</div>
+<div class="headline" style="font-size:46px; margin-top:14px;">DAS CLÍNICAS PEQUENAS<br>NÃO FAZEM <span class="ac">NADA</span> DE MARKETING</div>
+<div class="support" style="font-size:31px; max-width:900px;">E 1 em cada 5 opera sem nenhum sistema de gestão. Isso não é operação enxuta — é a agenda entregue à <span class="ac">sorte</span>: enche quando a indicação aparece e esvazia quando ela some.</div>
+
+<div class="bottom" ><div class="logo"><img src="assets/logo-full-light.svg" alt="HelloGrowth"></div><div class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="#004d40" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div></div>
+</div></body></html>

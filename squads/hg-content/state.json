@@ -1,21 +1,21 @@
 {
   "squad": "hg-content",
   "status": "running",
-  "step": { "current": 6, "total": 12, "label": "step-06-create-instagram" },
+  "step": { "current": 9, "total": 12, "label": "step-09-content-approval" },
   "agents": [
     { "id": "researcher", "name": "Fábio Fonte", "icon": "🔍", "status": "done", "deliverTo": null, "desk": { "col": 1, "row": 1 } },
-    { "id": "instagram-creator", "name": "Iago Insta", "icon": "📱", "status": "working", "deliverTo": null, "desk": { "col": 2, "row": 1 } },
-    { "id": "linkedin-creator", "name": "Luna LinkedIn", "icon": "💼", "status": "idle", "deliverTo": null, "desk": { "col": 3, "row": 1 } },
-    { "id": "designer", "name": "Dani Design", "icon": "🎨", "status": "idle", "deliverTo": null, "desk": { "col": 1, "row": 2 } },
+    { "id": "instagram-creator", "name": "Iago Insta", "icon": "📱", "status": "done", "deliverTo": null, "desk": { "col": 2, "row": 1 } },
+    { "id": "linkedin-creator", "name": "Luna LinkedIn", "icon": "💼", "status": "done", "deliverTo": null, "desk": { "col": 3, "row": 1 } },
+    { "id": "designer", "name": "Dani Design", "icon": "🎨", "status": "done", "deliverTo": null, "desk": { "col": 1, "row": 2 } },
     { "id": "reviewer", "name": "Vera Veredito", "icon": "✅", "status": "idle", "deliverTo": null, "desk": { "col": 2, "row": 2 } },
     { "id": "instagram-publisher", "name": "Pub Insta", "icon": "📤", "status": "idle", "deliverTo": null, "desk": { "col": 3, "row": 2 } }
   ],
   "handoff": {
-    "from": "researcher",
-    "to": "instagram-creator",
-    "message": "Ângulo #1 (Educativo — duas clínicas iguais faturam diferente) selecionado.",
-    "completedAt": "2026-06-30T16:30:00Z"
+    "from": "designer",
+    "to": "reviewer",
+    "message": "9 slides renderizados + LinkedIn pronto. Aguardando aprovação do conteúdo.",
+    "completedAt": "2026-06-30T16:52:00Z"
   },
   "startedAt": "2026-06-30T16:24:52Z",
-  "updatedAt": "2026-06-30T16:33:00Z"
+  "updatedAt": "2026-06-30T16:52:00Z"
 }
