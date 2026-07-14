@@ -1,0 +1,20 @@
+image_manifest:
+  run: "2026-06-30-hexa-uber"
+  images:
+    - slide: 1
+      role: "capa"
+      briefing: "torcedor brasileiro abrindo a bandeira do Brasil em estadio da Copa"
+      file: "photos/capa-bandeira.jpg"
+      source: "Pexels — foto de Caio"
+      original_url: "https://www.pexels.com/photo/man-raising-brazil-flag-inside-football-stadium-58461/"
+      license: "Pexels License — uso livre, sem atribuicao obrigatoria"
+      framing: "bandeira no centro-superior; texto no terco inferior sob a grade verde"
+    - slide: 3
+      role: "ilustracao"
+      briefing: "mao segurando celular com app e saldo de estrelas"
+      file: "photos/phoneapp.jpg"
+      source: "Pexels"
+      original_url: "https://www.pexels.com/photo/16052344/"
+      license: "Pexels License — uso livre"
+      framing: "celular ao centro; headline no rodape"
+  solid_green_slides: [2, 4]
