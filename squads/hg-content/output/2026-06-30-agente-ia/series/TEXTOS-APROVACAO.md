@@ -1,19 +1,19 @@
-# Série "O Agente Artificial da sua clínica" — Textos para aprovação
+# Agente Artificial — Textos para aprovação
+
+> `[PRINT]` = espaço reservado para a captura de tela real da conversa.
 
 ---
 
 # POST 1 — 3 cards
 
 ## Card 1
-Oi, quanto custa um implante?
-
-Depende do caso 🙂 me conta o que você sente?
-
 O AGENTE ARTIFICIAL DA SUA CLÍNICA
 
 **TODA IA PRA CLÍNICA PARECE IGUAL. ATÉ O PACIENTE ESCREVER.**
 
 O que separa uma da outra não é o modelo de IA. É quem ensinou ela.
+
+`[PRINT — conversa curta: paciente pergunta, agente responde no tom da clínica]`
 
 ## Card 2
 A DIFERENÇA
@@ -23,16 +23,13 @@ A DIFERENÇA
 Construída com a base de conhecimento da sua clínica. Atende 24/7, no seu tom, com as suas regras.
 
 ## Card 3
-ESSA É A 1ª DE UMA SÉRIE
+**ELA NÃO ATENDE. ELA ACOMPANHA O PACIENTE INTEIRO.**
 
-**NOS PRÓXIMOS POSTS, TUDO QUE ELA FAZ.**
-
-- Responde no tom da sua clínica (com exemplos)
-- Atende 24/7 e conduz até o agendamento
-- Confirma e não deixa a cadeira vazia
+- Responde a qualquer hora e conduz até o agendamento
+- Confirma a consulta e não deixa a cadeira vazia
 - Vende antes e cuida da sua nota no Google
 
-Segue o perfil pra não perder os próximos. 💚
+CONHECER O AGENTE 💚
 
 ## Legenda
 Toda IA pra clínica parece igual. Até o paciente escrever. 🦷🤖
@@ -41,9 +38,9 @@ O que separa uma IA que converte de uma que irrita não é o modelo. É quem ens
 
 O agente artificial da HelloGrowth não é uma IA genérica adaptada pra odontologia — é a atendente construída com a base de conhecimento da SUA clínica. Atende 24/7, no seu tom, com as suas regras.
 
-Essa é a 1ª de uma série de 3. Nos próximos posts eu mostro, com exemplos reais, tudo que ela faz.
+E ela não só responde: acompanha o paciente do primeiro "bom dia" até a avaliação no Google.
 
-Segue pra não perder. 💚
+Quer ver ela atendendo no tom da sua clínica? Link na bio. 💚
 
 #odontologia #gestaodeclinicas #inteligenciaartificial #hellogrowth #clinicaodontologica #dentista #marketingodontologico #atendimento
 
@@ -52,42 +49,40 @@ Segue pra não perder. 💚
 # POST 2 — 6 cards
 
 ## Card 1
-AGENTE IA · EXEMPLOS REAIS
-
 **A MESMA PERGUNTA. DUAS RESPOSTAS.**
 
 Uma faz o paciente sumir. A outra faz ele marcar.
 
 ## Card 2
+PREÇO
+
 "Quanto custa um clareamento?"
 
-IA GENÉRICA
-"Os valores variam conforme o caso. Recomendo entrar em contato com a clínica para mais informações."
+`[PRINT — resposta da IA genérica]`
 
-AGENTE TREINADO
-"O clareamento a laser aqui sai R$ 890 e já inclui a avaliação 😊 Dá pra parcelar em 3x sem juros. Quer que eu veja um horário essa semana?"
+`[PRINT — resposta do agente treinado]`
 
 Ela sabe o preço, a regra e a forma de pagamento — porque você ensinou.
 
 ## Card 3
+CONVÊNIO
+
 "Vocês atendem meu convênio?"
 
-IA GENÉRICA
-"Não tenho essa informação. Por favor, consulte a recepção."
+`[PRINT — resposta da IA genérica]`
 
-AGENTE TREINADO
-"A gente não trabalha com convênio, mas tem plano próprio e parcelamento em até 12x 🙂 Na prática costuma sair mais em conta. Quer que eu te explique?"
+`[PRINT — resposta do agente treinado]`
 
 "Não sei" mata a conversa. A regra da clínica vira resposta.
 
 ## Card 4
+URGÊNCIA
+
 "Tô com muita dor, o que eu faço?"
 
-IA GENÉRICA
-"Sinto muito. Recomendo procurar um dentista o quanto antes."
+`[PRINT — resposta da IA genérica]`
 
-AGENTE TREINADO
-"Dor a gente prioriza 😟 Consegue vir hoje às 16h ou amanhã às 9h? Enquanto isso, evita mastigar desse lado e não coloca nada quente."
+`[PRINT — resposta do agente treinado]`
 
 Urgência é encaixe, não protocolo. Ela sabe qual horário pode oferecer.
 
@@ -99,11 +94,9 @@ POR QUE A DIFERENÇA É TÃO GRANDE
 IA genérica responde sobre odontologia. A sua responde pela sua clínica: seus preços, suas regras, sua agenda, seu jeito de falar.
 
 ## Card 6
-NO PRÓXIMO POST
+**A DIFERENÇA NÃO ESTÁ NA IA. ESTÁ EM QUEM ENSINOU.**
 
-**O QUE ELA FAZ O DIA TODO (INCLUSIVE 23H47).**
-
-Do primeiro "bom dia" até a avaliação no Google — sem ninguém da equipe apertar nada.
+Uma atendente treinada com a base de conhecimento da sua clínica — que responde 24/7 no seu tom.
 
 CONHECER O AGENTE 💚
 
@@ -112,7 +105,7 @@ CONHECER O AGENTE 💚
 
 IA genérica: "Os valores variam conforme o caso. Entre em contato com a clínica." 🥱
 
-Agente treinado: "O clareamento a laser aqui sai R$ 890 e já inclui a avaliação. Dá pra parcelar em 3x. Quer que eu veja um horário essa semana?" ⚡
+Agente treinado: responde o valor, explica o que está incluso, oferece o parcelamento da sua clínica e já convida pro horário. ⚡
 
 Percebeu? O modelo de IA é o mesmo. A base de conhecimento não.
 
@@ -122,11 +115,11 @@ E isso muda tudo em 3 momentos que decidem a venda:
 
 💰 Preço — "varia conforme o caso" vs. valor + parcelamento + convite pro horário
 🏥 Convênio — "não tenho essa informação" vs. a alternativa que você oferece
-🦷 Dor — "procure um dentista" vs. o encaixe de hoje às 16h
+🦷 Dor — "procure um dentista" vs. o encaixe de hoje à tarde
 
 "Não sei" mata a conversa. E cada conversa morta é um paciente que foi pro concorrente.
 
-No próximo post: o que ela faz o dia todo (inclusive às 23h47). 👀
+Quer ver ela atendendo no tom da sua clínica? Link na bio. 💚
 
 #odontologia #gestaodeclinicas #inteligenciaartificial #clinicaodontologica #marketingodontologico #hellogrowth #atendimento #dentista #captacaodepacientes
 
@@ -135,15 +128,11 @@ No próximo post: o que ela faz o dia todo (inclusive às 23h47). 👀
 # POST 3 — 6 cards
 
 ## Card 1
-Boa noite, vocês fazem implante? — 23:47
-
-Fazemos sim! 🙂 Me conta: é um dente só ou mais de um?
-
-AGENTE IA · O CICLO COMPLETO
-
 **ENQUANTO VOCÊ DORME, ALGUÉM ESTÁ ESCOLHENDO UMA CLÍNICA.**
 
 E escolhe a que respondeu. Não a melhor — a que respondeu.
+
+`[PRINT — conversa de madrugada, com horário visível]`
 
 ## Card 2
 01 · RESPONDE A QUALQUER HORA
@@ -163,7 +152,7 @@ O paciente não espera até segunda. Ele manda pra próxima clínica.
 - Explica o procedimento e trata o valor pela regra da clínica
 - Entrega pra equipe fechar o horário na agenda real
 
-Ela não inventa horário. Ela entrega o paciente pronto pra sua equipe.
+`[PRINT — agente explicando procedimento e valor]`
 
 ## Card 4
 03 · UM DIA ANTES
@@ -173,7 +162,7 @@ Ela não inventa horário. Ela entrega o paciente pronto pra sua equipe.
 - Confirma a presença e libera o horário se o paciente não vier
 - Avisa a equipe a tempo de reocupar a cadeira
 
-Cadeira vazia é o prejuízo mais silencioso da clínica.
+`[PRINT — mensagem de confirmação]`
 
 ## Card 5
 ANTES E DEPOIS DA CONSULTA
@@ -222,7 +211,3 @@ Não é uma IA que responde. É uma que trabalha.
 Quer ver ela atendendo no tom da sua clínica? Link na bio. 💚
 
 #odontologia #gestaodeclinicas #inteligenciaartificial #clinicaodontologica #marketingodontologico #hellogrowth #atendimento #dentista #captacaodepacientes
-
----
-
-*Obs.: os valores no Post 2 (R$ 890, 3x, 12x, não atende convênio) são exemplos — trocar pelos reais antes de publicar.*
