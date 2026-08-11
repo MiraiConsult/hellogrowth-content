@@ -1,0 +1,228 @@
+# Série "O Agente Artificial da sua clínica" — Textos para aprovação
+
+---
+
+# POST 1 — 3 cards
+
+## Card 1
+Oi, quanto custa um implante?
+
+Depende do caso 🙂 me conta o que você sente?
+
+O AGENTE ARTIFICIAL DA SUA CLÍNICA
+
+**TODA IA PRA CLÍNICA PARECE IGUAL. ATÉ O PACIENTE ESCREVER.**
+
+O que separa uma da outra não é o modelo de IA. É quem ensinou ela.
+
+## Card 2
+A DIFERENÇA
+
+**NÃO É UMA IA GENÉRICA. É A ATENDENTE DA SUA CLÍNICA.**
+
+Construída com a base de conhecimento da sua clínica. Atende 24/7, no seu tom, com as suas regras.
+
+## Card 3
+ESSA É A 1ª DE UMA SÉRIE
+
+**NOS PRÓXIMOS POSTS, TUDO QUE ELA FAZ.**
+
+- Responde no tom da sua clínica (com exemplos)
+- Atende 24/7 e conduz até o agendamento
+- Confirma e não deixa a cadeira vazia
+- Vende antes e cuida da sua nota no Google
+
+Segue o perfil pra não perder os próximos. 💚
+
+## Legenda
+Toda IA pra clínica parece igual. Até o paciente escrever. 🦷🤖
+
+O que separa uma IA que converte de uma que irrita não é o modelo. É quem ensinou ela.
+
+O agente artificial da HelloGrowth não é uma IA genérica adaptada pra odontologia — é a atendente construída com a base de conhecimento da SUA clínica. Atende 24/7, no seu tom, com as suas regras.
+
+Essa é a 1ª de uma série de 3. Nos próximos posts eu mostro, com exemplos reais, tudo que ela faz.
+
+Segue pra não perder. 💚
+
+#odontologia #gestaodeclinicas #inteligenciaartificial #hellogrowth #clinicaodontologica #dentista #marketingodontologico #atendimento
+
+---
+
+# POST 2 — 6 cards
+
+## Card 1
+AGENTE IA · EXEMPLOS REAIS
+
+**A MESMA PERGUNTA. DUAS RESPOSTAS.**
+
+Uma faz o paciente sumir. A outra faz ele marcar.
+
+## Card 2
+"Quanto custa um clareamento?"
+
+IA GENÉRICA
+"Os valores variam conforme o caso. Recomendo entrar em contato com a clínica para mais informações."
+
+AGENTE TREINADO
+"O clareamento a laser aqui sai R$ 890 e já inclui a avaliação 😊 Dá pra parcelar em 3x sem juros. Quer que eu veja um horário essa semana?"
+
+Ela sabe o preço, a regra e a forma de pagamento — porque você ensinou.
+
+## Card 3
+"Vocês atendem meu convênio?"
+
+IA GENÉRICA
+"Não tenho essa informação. Por favor, consulte a recepção."
+
+AGENTE TREINADO
+"A gente não trabalha com convênio, mas tem plano próprio e parcelamento em até 12x 🙂 Na prática costuma sair mais em conta. Quer que eu te explique?"
+
+"Não sei" mata a conversa. A regra da clínica vira resposta.
+
+## Card 4
+"Tô com muita dor, o que eu faço?"
+
+IA GENÉRICA
+"Sinto muito. Recomendo procurar um dentista o quanto antes."
+
+AGENTE TREINADO
+"Dor a gente prioriza 😟 Consegue vir hoje às 16h ou amanhã às 9h? Enquanto isso, evita mastigar desse lado e não coloca nada quente."
+
+Urgência é encaixe, não protocolo. Ela sabe qual horário pode oferecer.
+
+## Card 5
+POR QUE A DIFERENÇA É TÃO GRANDE
+
+**O MODELO É O MESMO. A BASE DE CONHECIMENTO NÃO.**
+
+IA genérica responde sobre odontologia. A sua responde pela sua clínica: seus preços, suas regras, sua agenda, seu jeito de falar.
+
+## Card 6
+NO PRÓXIMO POST
+
+**O QUE ELA FAZ O DIA TODO (INCLUSIVE 23H47).**
+
+Do primeiro "bom dia" até a avaliação no Google — sem ninguém da equipe apertar nada.
+
+CONHECER O AGENTE 💚
+
+## Legenda
+"Quanto custa um clareamento?"
+
+IA genérica: "Os valores variam conforme o caso. Entre em contato com a clínica." 🥱
+
+Agente treinado: "O clareamento a laser aqui sai R$ 890 e já inclui a avaliação. Dá pra parcelar em 3x. Quer que eu veja um horário essa semana?" ⚡
+
+Percebeu? O modelo de IA é o mesmo. A base de conhecimento não.
+
+Uma responde SOBRE odontologia. A outra responde PELA sua clínica — com os seus preços, as suas regras, a sua agenda e o seu jeito de falar.
+
+E isso muda tudo em 3 momentos que decidem a venda:
+
+💰 Preço — "varia conforme o caso" vs. valor + parcelamento + convite pro horário
+🏥 Convênio — "não tenho essa informação" vs. a alternativa que você oferece
+🦷 Dor — "procure um dentista" vs. o encaixe de hoje às 16h
+
+"Não sei" mata a conversa. E cada conversa morta é um paciente que foi pro concorrente.
+
+No próximo post: o que ela faz o dia todo (inclusive às 23h47). 👀
+
+#odontologia #gestaodeclinicas #inteligenciaartificial #clinicaodontologica #marketingodontologico #hellogrowth #atendimento #dentista #captacaodepacientes
+
+---
+
+# POST 3 — 6 cards
+
+## Card 1
+Boa noite, vocês fazem implante? — 23:47
+
+Fazemos sim! 🙂 Me conta: é um dente só ou mais de um?
+
+AGENTE IA · O CICLO COMPLETO
+
+**ENQUANTO VOCÊ DORME, ALGUÉM ESTÁ ESCOLHENDO UMA CLÍNICA.**
+
+E escolhe a que respondeu. Não a melhor — a que respondeu.
+
+## Card 2
+01 · RESPONDE A QUALQUER HORA
+
+**PRIMEIRO CONTATO**
+
+- Atende inclusive fora do expediente, fim de semana e feriado
+- Levanta a queixa, a urgência e de onde veio o contato
+
+O paciente não espera até segunda. Ele manda pra próxima clínica.
+
+## Card 3
+02 · ENQUANTO O INTERESSE ESTÁ QUENTE
+
+**CONDUÇÃO ATÉ O AGENDAMENTO**
+
+- Explica o procedimento e trata o valor pela regra da clínica
+- Entrega pra equipe fechar o horário na agenda real
+
+Ela não inventa horário. Ela entrega o paciente pronto pra sua equipe.
+
+## Card 4
+03 · UM DIA ANTES
+
+**CONFIRMAÇÃO DE CONSULTA**
+
+- Confirma a presença e libera o horário se o paciente não vier
+- Avisa a equipe a tempo de reocupar a cadeira
+
+Cadeira vazia é o prejuízo mais silencioso da clínica.
+
+## Card 5
+ANTES E DEPOIS DA CONSULTA
+
+**ELA VENDE ANTES. E CUIDA DEPOIS.**
+
+04 · PRÉ-VENDA
+- Identifica oportunidades de venda antes da consulta
+- Prepara o dentista pra vender mais e melhor
+
+05 · PÓS-VENDA
+- Mede a satisfação do paciente
+- Direciona quem gostou pro Google
+- Aciona a equipe quando a nota vem baixa
+
+## Card 6
+**E O CICLO RECOMEÇA A CADA NOVA CONSULTA.**
+
+Uma atendente que não dorme, não esquece de confirmar e não deixa uma avaliação boa se perder. No tom da sua clínica.
+
+CONHECER O AGENTE 💚
+
+## Legenda
+23h47. Um paciente com dor abre o Instagram e manda mensagem pra 3 clínicas.
+
+Duas respondem na segunda-feira. Uma responde na hora.
+
+Adivinha qual ele escolheu? Não foi a melhor. Foi a que respondeu. 🕐
+
+É por isso que o agente artificial não é "um chatbot". Ele acompanha o paciente inteiro:
+
+1️⃣ PRIMEIRO CONTATO — responde a qualquer hora (inclusive fim de semana), levanta a queixa e a urgência
+
+2️⃣ AGENDAMENTO — explica o procedimento, trata o valor pela sua regra e entrega o paciente pronto pra equipe fechar na agenda real
+
+3️⃣ CONFIRMAÇÃO — um dia antes, confirma a presença e libera a cadeira se o paciente não vier (com tempo de reocupar)
+
+4️⃣ PRÉ-VENDA — identifica oportunidade antes da consulta e prepara o dentista pra vender melhor
+
+5️⃣ PÓS-VENDA — mede a satisfação, manda quem gostou pro Google e aciona a equipe quando a nota vem baixa
+
+E o ciclo recomeça a cada nova consulta. 🔁
+
+Não é uma IA que responde. É uma que trabalha.
+
+Quer ver ela atendendo no tom da sua clínica? Link na bio. 💚
+
+#odontologia #gestaodeclinicas #inteligenciaartificial #clinicaodontologica #marketingodontologico #hellogrowth #atendimento #dentista #captacaodepacientes
+
+---
+
+*Obs.: os valores no Post 2 (R$ 890, 3x, 12x, não atende convênio) são exemplos — trocar pelos reais antes de publicar.*
