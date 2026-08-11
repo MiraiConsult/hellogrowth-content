@@ -5,7 +5,7 @@ from hg_lib import page
 
 OUT = "squads/hg-content/output/2026-06-30-agente-ia/series/post-1-promessa/slides"
 os.makedirs(OUT, exist_ok=True)
-SERIE = "Agente IA · 1 de 5"
+SERIE = "Agente IA · 1 de 3"
 TOTAL = 3
 cards = []
 
@@ -30,8 +30,8 @@ cards.append(("card-3","dark",True,True, f'''
 <div class="kicker">Essa é a 1ª de uma série</div>
 <div class="headline" style="font-size:58px;">NOS PRÓXIMOS POSTS,<br>TUDO QUE ELA <span class="ac">FAZ.</span></div>
 <ul class="blist" style="margin-top:40px;">
-  <li>Atende 24/7 e capta o paciente</li>
-  <li>Conduz até o agendamento</li>
+  <li>Responde no tom da sua clínica (com exemplos)</li>
+  <li>Atende 24/7 e conduz até o agendamento</li>
   <li>Confirma e não deixa a cadeira vazia</li>
   <li>Vende antes e cuida da sua nota no Google</li>
 </ul>
