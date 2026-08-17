@@ -1,6 +1,6 @@
 # Agente Artificial — Textos para aprovação
 
-> `[PRINT]` = espaço reservado para a captura de tela real da conversa.
+> As conversas são **reais**, tiradas dos prints do site do agente (`prints-site/`), refeitas como texto editável no Figma. Onde havia blur, entram os placeholders `[NOME]`, `[CLÍNICA]`, `[PROCEDIMENTO]`.
 
 ---
 
@@ -13,7 +13,11 @@ O AGENTE ARTIFICIAL DA SUA CLÍNICA
 
 O que separa uma da outra não é o modelo de IA. É quem ensinou ela.
 
-`[PRINT — conversa curta: paciente pergunta, agente responde no tom da clínica]`
+> **Conversa** *(print 06 — o paciente nem suspeita que é IA)*
+> — Aparelho `12:06`
+> — Que ótimo! Você já tem aparelho ou está pensando em começar o tratamento? `12:07`
+> — Quero começar o tratamento `12:07`
+> — Temos opções de aparelho metálico e estético. Você tem alguma preferência, ou quer saber mais sobre cada um? `12:08`
 
 ## Card 2
 A DIFERENÇA
@@ -49,42 +53,51 @@ Quer ver ela atendendo no tom da sua clínica? Link na bio. 💚
 # POST 2 — 6 cards
 
 ## Card 1
+AGENTE IA · EXEMPLOS REAIS
+
 **A MESMA PERGUNTA. DUAS RESPOSTAS.**
 
 Uma faz o paciente sumir. A outra faz ele marcar.
 
 ## Card 2
-PREÇO
+PRIMEIRO CONTATO
 
-"Quanto custa um clareamento?"
+"Oi, gostaria de saber sobre extração de siso"
 
-`[PRINT — resposta da IA genérica]`
+> **IA GENÉRICA** *(print 01)*
+> — Oi, tudo bem? 🌸 Pra facilitar: você prefere agendar um horário, saber valores/condições ou tirar uma dúvida rápida? `09:49`
 
-`[PRINT — resposta do agente treinado]`
+> **AGENTE TREINADO** *(print 02)*
+> — Me informaram que teria que ser com um buco `20:08`
+> — Isso mesmo! Siso próximo ao nervo é exatamente o caso do Dr. `[NOME]`, nosso cirurgião bucomaxilofacial. `20:08`
 
-Ela sabe o preço, a regra e a forma de pagamento — porque você ensinou.
+Uma devolve um menu. A outra entende o caso e já encaminha pro especialista certo.
 
 ## Card 3
-CONVÊNIO
+PREÇO
 
-"Vocês atendem meu convênio?"
+"Quanto vocês cobram?"
 
-`[PRINT — resposta da IA genérica]`
+> **CLÍNICA A · só os doutores passam preço** *(print 10)*
+> — Sobre o valor, somente o Dr. `[NOME]` ou a Dra. `[NOME]` passam os números, mas pode ficar tranquila que os valores são bem acessíveis. Sua prima pode vir a partir das 16h? `20:19`
 
-`[PRINT — resposta do agente treinado]`
+> **CLÍNICA B · ela passa o valor** *(print 11)*
+> — Por aqui o `[PROCEDIMENTO]` unitário com coroa em porcelana gira em torno de R$3.200. Que tal agendar uma avaliação gratuita para o dentista examinar e confirmar o plano ideal para você? `19:47`
 
-"Não sei" mata a conversa. A regra da clínica vira resposta.
+Mesma pergunta, regras opostas. Ela não improvisa — segue a regra da sua clínica.
 
 ## Card 4
 URGÊNCIA
 
-"Tô com muita dor, o que eu faço?"
+"Meu filho está com uma bolha na gengiva"
 
-`[PRINT — resposta da IA genérica]`
+> **Conversa** *(print 07)*
+> — Preciso de atendimento para meu filho `07:41`
+> — Ele tem 7 anos. Está com uma bolha na gengiva `07:42`
+> — Entendo, isso merece atenção! Bolha na gengiva pode indicar uma infecção que precisa ser avaliada logo. `07:43`
+> — Posso verificar um horário de urgência para ele hoje, quer que eu cheque a disponibilidade? `07:44`
 
-`[PRINT — resposta do agente treinado]`
-
-Urgência é encaixe, não protocolo. Ela sabe qual horário pode oferecer.
+Ela reconhece a urgência e já age — sem esperar o paciente pedir.
 
 ## Card 5
 POR QUE A DIFERENÇA É TÃO GRANDE
@@ -101,23 +114,21 @@ Uma atendente treinada com a base de conhecimento da sua clínica — que respon
 CONHECER O AGENTE 💚
 
 ## Legenda
-"Quanto custa um clareamento?"
+"Quanto vocês cobram?"
 
-IA genérica: "Os valores variam conforme o caso. Entre em contato com a clínica." 🥱
+Numa clínica, a resposta certa é: *"somente o Dr. e a Dra. passam os números."*
+Na outra, é: *"o unitário com coroa gira em torno de R$3.200 — quer agendar uma avaliação gratuita?"*
 
-Agente treinado: responde o valor, explica o que está incluso, oferece o parcelamento da sua clínica e já convida pro horário. ⚡
+Mesma pergunta. Regras opostas. E ela acerta as duas. 🎯
 
-Percebeu? O modelo de IA é o mesmo. A base de conhecimento não.
+Porque o que separa uma IA que converte de uma que irrita não é o modelo. É a base de conhecimento — quem ensinou ela.
 
-Uma responde SOBRE odontologia. A outra responde PELA sua clínica — com os seus preços, as suas regras, a sua agenda e o seu jeito de falar.
+Uma IA genérica devolve um menu: "você prefere agendar, saber valores ou tirar uma dúvida?" 🥱
+A treinada lê "meu siso está no nervo" e responde: "é exatamente o caso do nosso cirurgião bucomaxilofacial." ⚡
 
-E isso muda tudo em 3 momentos que decidem a venda:
+Uma responde SOBRE odontologia. A outra responde PELA sua clínica.
 
-💰 Preço — "varia conforme o caso" vs. valor + parcelamento + convite pro horário
-🏥 Convênio — "não tenho essa informação" vs. a alternativa que você oferece
-🦷 Dor — "procure um dentista" vs. o encaixe de hoje à tarde
-
-"Não sei" mata a conversa. E cada conversa morta é um paciente que foi pro concorrente.
+E isso decide se o paciente marca ou some.
 
 Quer ver ela atendendo no tom da sua clínica? Link na bio. 💚
 
@@ -128,11 +139,17 @@ Quer ver ela atendendo no tom da sua clínica? Link na bio. 💚
 # POST 3 — 6 cards
 
 ## Card 1
+O CICLO COMPLETO
+
 **ENQUANTO VOCÊ DORME, ALGUÉM ESTÁ ESCOLHENDO UMA CLÍNICA.**
 
 E escolhe a que respondeu. Não a melhor — a que respondeu.
 
-`[PRINT — conversa de madrugada, com horário visível]`
+> **Conversa** *(print 02 — 20h03)*
+> — Boa noite `20:03`
+> — Boa noite, `[NOME]`! Aqui é a Ana Clara, da `[CLÍNICA]` 🤖 Como posso te ajudar hoje? `20:03`
+> — Gostaria de saber se para avaliação de extração de siso tem custo! `20:06`
+> — Sim, a avaliação tem custo de R$75 para pacientes particulares. `20:07`
 
 ## Card 2
 01 · RESPONDE A QUALQUER HORA
@@ -152,7 +169,11 @@ O paciente não espera até segunda. Ele manda pra próxima clínica.
 - Explica o procedimento e trata o valor pela regra da clínica
 - Entrega pra equipe fechar o horário na agenda real
 
-`[PRINT — agente explicando procedimento e valor]`
+> **Conversa** *(print 04 — três queixas viram um plano)*
+> — Falta de dente `09:36`
+> — Dentes tortos `09:36`
+> — E amarelos `09:36`
+> — A boa notícia é que dá pra resolver tudo com um plano só. Que tal marcar uma avaliação pra ver isso de perto? `09:36`
 
 ## Card 4
 03 · UM DIA ANTES
@@ -162,7 +183,10 @@ O paciente não espera até segunda. Ele manda pra próxima clínica.
 - Confirma a presença e libera o horário se o paciente não vier
 - Avisa a equipe a tempo de reocupar a cadeira
 
-`[PRINT — mensagem de confirmação]`
+> **Conversa** *(print 12 — confirmação + pré-venda)*
+> — Passando aqui pra confirmar sua consulta marcada para **15/07/2026, 16:00** 🗓 `14:03`
+> — Ok `14:35`
+> — Perfeito, sua presença está confirmada 😊 Tenho um formulário rápido pra você preencher antes da consulta. `14:36`
 
 ## Card 5
 ANTES E DEPOIS DA CONSULTA
@@ -186,7 +210,7 @@ Uma atendente que não dorme, não esquece de confirmar e não deixa uma avalia�
 CONHECER O AGENTE 💚
 
 ## Legenda
-23h47. Um paciente com dor abre o Instagram e manda mensagem pra 3 clínicas.
+20h03. Um paciente com dor de siso abre o WhatsApp e manda mensagem pra 3 clínicas.
 
 Duas respondem na segunda-feira. Uma responde na hora.
 
@@ -196,11 +220,11 @@ Adivinha qual ele escolheu? Não foi a melhor. Foi a que respondeu. 🕐
 
 1️⃣ PRIMEIRO CONTATO — responde a qualquer hora (inclusive fim de semana), levanta a queixa e a urgência
 
-2️⃣ AGENDAMENTO — explica o procedimento, trata o valor pela sua regra e entrega o paciente pronto pra equipe fechar na agenda real
+2️⃣ AGENDAMENTO — o paciente manda "falta de dente", "dentes tortos", "e amarelos" — e ela transforma três queixas soltas em um plano só, com motivo pra agendar
 
 3️⃣ CONFIRMAÇÃO — um dia antes, confirma a presença e libera a cadeira se o paciente não vier (com tempo de reocupar)
 
-4️⃣ PRÉ-VENDA — identifica oportunidade antes da consulta e prepara o dentista pra vender melhor
+4️⃣ PRÉ-VENDA — emenda o formulário que prepara o dentista pra vender melhor
 
 5️⃣ PÓS-VENDA — mede a satisfação, manda quem gostou pro Google e aciona a equipe quando a nota vem baixa
 
@@ -211,3 +235,13 @@ Não é uma IA que responde. É uma que trabalha.
 Quer ver ela atendendo no tom da sua clínica? Link na bio. 💚
 
 #odontologia #gestaodeclinicas #inteligenciaartificial #clinicaodontologica #marketingodontologico #hellogrowth #atendimento #dentista #captacaodepacientes
+
+---
+
+## Prints ainda não usados (material para próximos posts)
+- **03** — Perguntaram se o dentista estava no consultório. Ela não inventou uma resposta.
+- **05** — Antes de agendar, ela pergunta como o paciente conheceu a clínica.
+- **08** — Explica prazo de cicatrização, prótese provisória e o que vem antes e depois.
+- **09** — Conhece a linha de produtos da clínica, não "ortodontia em geral".
+- **13** — Manda a pesquisa de satisfação sozinha, no momento certo.
+- **14** — Nota 10 recebida — ela agradece e já pede indicação.
