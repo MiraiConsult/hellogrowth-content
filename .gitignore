@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.vercel
+
+# MC Castro — negócio separado, não deve entrar em repos da Mirai/GitHub team
+dev/ratos/mccastro
+dev/mccastro
+Mc Castro
+OneDrive - Mc Castro
